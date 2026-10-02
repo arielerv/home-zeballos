@@ -193,7 +193,7 @@ const workspace = {
     neighborsTogglePending: 'Casas linderas y calles · evidencia pendiente', orbitPending: 'Mostrar recorrido del sol · maqueta',
     buildingLayerHouse: 'Casa',
     fromZeballos: 'Desde Zeballos', fromDardoRocha: 'Desde Dardo Rocha',
-    modelSource: 'Maqueta sin escala: casa remodelada sobre el terreno, la pileta y el garaje del Blender original · encaje de la casa no verificado',
+    modelSource: 'Sin escala · 3 techos: izquierda PB+P1 alta, centro bajo, derecha media · límites intactos · PA interior, cotas y giro pileta pendientes',
     priorBlenderLayerNotice: 'Capas preliminares trazadas de la planta limpia; dimensiones, cubierta y posición en el terreno sin verificar.',
     buildingSunTitle: 'El sol a lo largo del año.', buildingSunNote: 'El sol y las sombras del render son ilustrativos, no una predicción: norte y ubicación de la casa no calibrados.',
     reviewShadowsNotice: 'Sol y sombras animados en la maqueta para revisión visual. La dirección no está alineada al norte: no predice sombras reales.',

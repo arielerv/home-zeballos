@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "status": "local-owner-review-only-not-approved-BIM",
+  "publication": "OWNER AUTHORIZED 2026-10-02: subi los cambios; publish reviewed nonmetric preview to arielerv/home-zeballos only, NOT architectural BIM release",
+  "publicationHistory": "Previous HOLD: no commit, push or deployment before owner review; superseded by explicit owner publication authorization after side-to-side roof review",
+  "source": {
+    "plan": "assets/reference/casa-2071-planta-limpia.png",
+    "annotation": "Owner-attached marked screenshot in this conversation; 728x703; original attachment not available as a filesystem file",
+    "authority": "Owner: red removes wall/door obstructions or demolished structures; black indicates walls",
+    "coordinates": "clean-plan source pixels; correspondence to annotation visually inferred, not metric calibration"
+  },
+  "wallSegmentsPixels": [
+    [[111,122],[330,122]], [[610,122],[1140,122]],
+    [[111,122],[163,314]], [[163,314],[163,837]], [[1140,122],[1140,837]],
+    [[318,470],[369,470]], [[369,470],[728,470]],
+    [[729,470],[771,470]], [[850,470],[882,470]], [[935,470],[1140,470]],
+    [[369,507],[369,741]], [[369,790],[369,837]],
+    [[540,741],[540,837]], [[369,837],[540,837]], [[540,772],[850,772]],
+    [[850,470],[850,497]], [[850,545],[850,837]],
+    [[850,701],[950,701]], [[1055,701],[1140,701]], [[850,837],[1140,837]],
+    [[730,122],[730,255]], [[730,318],[730,470]],
+    [[607,278],[730,278]], [[730,278],[730,318]], [[607,278],[607,470]],
+    [[730,219],[915,219]], [[915,122],[915,378]], [[915,430],[915,470]],
+    [[844,219],[844,255]], [[844,318],[844,376]], [[844,376],[915,376]],
+    [[163,710],[369,710]]
+  ],
+  "changes": [
+    {"id":"DEM-01", "kind":"demolition", "source":"red point 1", "objects":["Exterior 11 0","Exterior 11 1","Exterior 11 2"], "scope":"small rear annex internal shell only; preserve garage floor, larger garage walls, paving and every parcel boundary"},
+    {"id":"OPEN-09", "kind":"remove-wall", "source":"red bedroom 3 head", "segments":[[[163,470],[318,470]],[[163,507],[320,507]]], "meaning":"remove both parallel obstructing bands; keep short black-marked head [318,470]..[369,470]"},
+    {"id":"OPEN-11", "kind":"remove-wall", "source":"red hall/living boundary", "segments":[[[369,741],[489,741]]]},
+    {"id":"OPEN-10", "kind":"remove-wall", "source":"red right-hand room to complementary kitchen", "segments":[[[950,701],[1055,701]]]},
+    {"id":"OPEN-03", "kind":"remove-wall", "source":"red service-room access", "segments":[[[844,255],[844,318]]]},
+    {"id":"WALL-06", "kind":"add-wall", "source":"black bathroom L", "segments":[[[662,278],[730,278]],[[730,278],[730,318]]]},
+    {"id":"WALL-05", "kind":"add-wall", "source":"black upper-right room wall", "segments":[[[915,257],[915,318]]]},
+    {"id":"WALL-11", "kind":"add-wall", "source":"black hall front", "segments":[[[425,837],[477,837]]]},
+    {"id":"WALL-10", "kind":"add-wall", "source":"black complementary kitchen front and living partition", "segments":[[[939,837],[1072,837]],[[850,715],[850,769]]]},
+    {"id":"PLAN-05", "kind":"source-reanalysis", "source":"clean plan door swing at right-hand bedroom/distributor", "segments":[[[915,378],[915,430]]], "meaning":"remove the misplaced continuous wall across the visible door, not the black-marked wall above it"},
+    {"id":"DEDUP-09", "kind":"source-reanalysis", "source":"generator had duplicate wall segments on x=369", "meaning":"one wall per source axis; do not double thickness or hide door gaps"}
+  ],
+  "accessesPixels": [
+    {"id":"ACC-rear", "rooms":["INT-01"], "exterior":true, "segment":[[330,122],[610,122]], "source":"clean plan double rear doors"},
+    {"id":"ACC-01-09", "rooms":["INT-01","INT-09"], "exterior":false, "segment":[[200,470],[310,470]], "source":"owner red removal; passage rather than assumed door leaf"},
+    {"id":"ACC-01-06", "rooms":["INT-01","INT-06"], "exterior":false, "segment":[[730,255],[730,278]], "source":"remaining source gap outside black L; width/access needs review"},
+    {"id":"ACC-04-06", "rooms":["INT-04","INT-06"], "exterior":false, "segment":[[730,340],[730,410]], "source":"clean plan shows bathroom access here; CURRENT WALL STILL BLOCKS: report, do not invent a replacement"},
+    {"id":"ACC-03-04", "rooms":["INT-03","INT-04"], "exterior":false, "segment":[[844,255],[844,318]], "source":"owner red service opening"},
+    {"id":"ACC-04-05", "rooms":["INT-04","INT-05"], "exterior":false, "segment":[[915,378],[915,430]], "source":"clean plan door swing"},
+    {"id":"ACC-04-08", "rooms":["INT-04","INT-08"], "exterior":false, "segment":[[771,470],[850,470]], "source":"clean plan double door"},
+    {"id":"ACC-07-08", "rooms":["INT-07","INT-08"], "exterior":false, "segment":[[850,497],[850,545]], "source":"clean plan door swing"},
+    {"id":"ACC-08-11", "rooms":["INT-08","INT-11"], "exterior":false, "segment":[[369,741],[489,741]], "source":"owner red removal"},
+    {"id":"ACC-07-10", "rooms":["INT-07","INT-10"], "exterior":false, "segment":[[950,701],[1055,701]], "source":"owner red removal"}
+  ],
+  "stair": {
+    "status": "source-observed-symbolic-visual-review-not-dimensioned-stair",
+    "polygonPixels": [[49,71],[159,28],[213,115],[82,171]],
+    "centerPixels": [137,109],
+    "edgeStationsPixels": [[82,171],[75,153],[69,139],[62,121],[56,105],[49,88],[49,71],[70,63],[92,54],[113,46],[137,36],[159,28],[169,47],[180,68],[191,88],[202,106],[213,115]],
+    "source": "visible fan stair top-left of clean plan; exact number of steps, rise and access direction unverified; drawn steps are a diagram, not stair specification"
+  },
+  "upperFloor": {
+    "ownerStatement": "hay un primer piso aparte de planta baja, que esta en todo el lado izquierdo",
+    "supersedes": "earlier one-storey-left instruction",
+    "sourcePath": "assets/reference/1er piso.webp",
+    "status": "owner-defined-left-external-massing-preview; interior-3D-placement-blocked-unreviewed-correspondences",
+    "latestScope": "Owner accepts THREE sectors, left PB+P1 highest, central lowest, right intermediate; latest correction makes ridges SIDE-TO-SIDE, source x, NOT front-to-patio. Sector footprints and external shell unchanged, NOT registration of separate upper plan.",
+    "rooms": [
+      {"id":"PA-01", "label":"Dormitorio", "printedDimensionsM":[3.20,3.00], "polygonPixels":[[280,294],[457,294],[457,458],[280,458]]},
+      {"id":"PA-02", "label":"Estar", "printedDimensionsM":[3.05,3.00], "polygonPixels":[[466,294],[601,294],[632,279],[632,458],[466,458]]},
+      {"id":"PA-03", "label":null, "printedDimensionsM":null, "polygonPixels":[[641,274],[842,178],[842,458],[641,458]]}
+    ],
+    "footprintPixels": [[274,286],[601,286],[850,165],[850,467],[274,467]],
+    "unknowns": ["which lower-plan left edge/width corresponds to upper-floor source", "registered upper-floor boundary and stair landing", "floor-to-floor height", "whether source dimensions describe retained or target upper floor"],
+    "renderPolicy": "Show owner-defined left external PB+P1 mass with explicit arbitrary display elevations and tentative half-kitchen split in roof register; no metric height claims. Keep upper room plan separate in 2D: do not duplicate PB rooms or invent a registered upper interior. Owner must review massing before publication."
+  },
+  "pool": {
+    "ownerStatement": "La pileta tambien esta rotada un poco mas",
+    "centerPolicy":"preserve center and shape",
+    "rotationDegrees":null,
+    "direction":null,
+    "status":"pending-angle-or-reviewable-direction; original pool unchanged rather than guessing"
+  },
+  "protected": ["Contorno trazado de la planta - no mensura", "Limite de plano 0", "Limite de plano 1", "Limite de plano 2", "Limite de plano 3", "Limite de plano 4", "Limite de plano 5", "Limite de plano 6", "Solado alrededor de pileta", "Acceso Zeballos"]
+}

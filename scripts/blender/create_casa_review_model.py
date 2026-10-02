@@ -9,6 +9,7 @@ the source for IFC/DXF/DWG/OBJ interchange. Keep the historic Blender untouched.
 import hashlib
 import json
 import math
+import shutil
 from pathlib import Path
 
 import bpy
@@ -17,6 +18,7 @@ from mathutils import Vector
 ROOT = Path(__file__).resolve().parents[2]
 TRACE = ROOT / "assets/reference/casa-tentative-trace-draft.json"
 ROOF_TRACE = ROOT / "assets/reference/casa-roof-review-draft.json"
+CORRECTIONS = ROOT / "assets/reference/casa-owner-corrections-review.json"
 HISTORICAL_SITE = ROOT / "specs/001-initial-imports/casa-2071-revision.blend"
 SOURCE = ROOT / "assets/reference/casa-2071-planta-limpia.png"
 BLEND = ROOT / "assets/blender/casa-2071-maqueta-revision.blend"
@@ -24,9 +26,17 @@ RENDER = ROOT / "assets/blender/casa-2071-maqueta-revision.png"
 GLB = ROOT / "apps/web/public/models/casa-2071/casa-2071-maqueta-revision.glb"
 trace = json.loads(TRACE.read_text(encoding="utf-8"))
 roof_trace = json.loads(ROOF_TRACE.read_text(encoding="utf-8"))
+corrections = json.loads(CORRECTIONS.read_text(encoding="utf-8"))
 assert trace["source"]["sha256"] == hashlib.sha256(SOURCE.read_bytes()).hexdigest()
 assert trace["coordinateSystem"] == "source-image-pixels-origin-top-left"
 assert trace["metricCalibration"].startswith("blocked")
+
+# Preserve the prior review separately; never overwrite the historical source.
+for previous in (BLEND, RENDER, GLB):
+    backup = ROOT / "artifacts/casa-before-owner-wall-review" / previous.name
+    if previous.exists() and not backup.exists():
+        backup.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copy2(previous, backup)
 
 bpy.ops.wm.read_factory_settings(use_empty=True)
 scene = bpy.context.scene
@@ -38,8 +48,12 @@ scene["source_sha256"] = trace["source"]["sha256"]
 scene["coordinate_system"] = "source-image-pixels-scaled-for-display-NOT-metres"
 scene["metric_calibration"] = "blocked"
 scene["height_note"] = "2.8 m owner-authorized provisional intent; illustrative vertical display only"
-scene["roof_note"] = "Multiple pitched roof volumes for visual review. Left-wing ridge axis owner-corrected; extents, pitch and eaves unverified; see casa-roof-review-draft.json"
-scene["site_note"] = "Original Blender site contour, paving, pool, garage and entrance are retained verbatim as prior-state context. New house is visually positioned, not cadastral registration. Neighbors NOT modeled."
+scene["roof_note"] = "Exactly three sectors with SIDE-TO-SIDE ridges (source x), not front-to-patio; left PB+P1 highest, centre lowest, right intermediate. All heights ARBITRARY display units, NOT metres. One red/brown material."
+scene["site_note"] = "Original contour, paving, pool, garage perimeter and entrance preserved. Only small annex Exterior 11 walls omitted per red point 1. House display placement unreviewed; neighbors are separate web context."
+scene["owner_corrections"] = "assets/reference/casa-owner-corrections-review.json"
+scene["publication"] = corrections["publication"]
+scene["upper_floor_status"] = corrections["upperFloor"]["status"]
+scene["pool_rotation_status"] = corrections["pool"]["status"]
 scene["site_source"] = "specs/001-initial-imports/casa-2071-revision.blend"
 scene["validation"] = "Owner authorized 2D then illustrative 3D for feedback; wall vertices and all metric BIM/release gates unreviewed/BLOCKED"
 
@@ -51,6 +65,7 @@ GROUPS = {
     "fixtures": "05 - Equipamiento orientativo",
     "labels": "06 - Rotulos de planta",
     "roof": "07 - Cubierta ilustrativa",
+    "storey": "08 - Planta alta envolvente de revision",
 }
 collections = {}
 for role, name in GROUPS.items():
@@ -77,7 +92,7 @@ def material(name, rgba):
 
 wall_material = material("Muros · blanco cálido · borrador", (0.92, 0.9, 0.84, 1))
 cut_material = material("Corte · grafito · borrador", (0.43, 0.47, 0.46, 1))
-tile_material = material("Teja · referencia visual", (0.65, 0.29, 0.18, 1))
+tile_material = material(roof_trace["material"]["name"], tuple(roof_trace["material"]["rgba"]))
 label_material = material("Rótulos independientes", (0.15, 0.25, 0.30, 1))
 garden_material = material("Exterior visible en planta", (0.50, 0.62, 0.40, 1))
 furniture_material = material("Muebles dibujados · posición visual", (0.48, 0.34, 0.22, 1))
@@ -143,7 +158,7 @@ site_names = {
     "Acceso Zeballos", "Pileta - borde", "Pileta - espejo de agua",
     "GARAJE / SALIDA",
     *(f"Limite de plano {index}" for index in range(7)),
-    *(f"Exterior {part} {index}" for part in (10, 11) for index in range(3)),
+    *(f"Exterior 10 {index}" for index in range(3)),
 }
 with bpy.data.libraries.load(str(HISTORICAL_SITE), link=False) as (source_data, dest_data):
     missing = site_names - set(source_data.objects)
@@ -171,27 +186,7 @@ for obj in dest_data.objects:
 # Coordinates below are approximate visual axes read on the clean drawing.
 # Door gaps are left where the source depicts doors; kitchen and dining have NO
 # separating wall. No historical tabique is imported from the previous Blender.
-wall_segments = [
-    ((111, 122), (330, 122)), ((610, 122), (1140, 122)),
-    ((111, 122), (163, 314)), ((163, 314), (163, 837)),
-    ((1140, 122), (1140, 837)),
-    ((163, 470), (318, 470)), ((369, 470), (728, 470)),
-    ((729, 470), (771, 470)), ((850, 470), (882, 470)), ((935, 470), (1140, 470)),
-    ((369, 507), (369, 535)), ((369, 535), (369, 741)),
-    ((369, 790), (369, 837)), ((163, 507), (320, 507)),
-    ((369, 507), (369, 710)), ((163, 710), (369, 710)),
-    ((369, 741), (489, 741)), ((540, 741), (540, 837)),
-    ((369, 837), (425, 837)), ((477, 837), (540, 837)),
-    ((540, 772), (850, 772)),
-    ((850, 470), (850, 497)), ((850, 545), (850, 715)),
-    ((850, 769), (850, 837)), ((850, 701), (1140, 701)),
-    ((850, 837), (939, 837)), ((1072, 837), (1140, 837)),
-    ((730, 122), (730, 219)), ((730, 219), (730, 255)),
-    ((730, 318), (730, 470)), ((607, 278), (662, 278)),
-    ((607, 278), (607, 470)), ((730, 219), (915, 219)),
-    ((915, 122), (915, 257)), ((915, 318), (915, 470)),
-    ((844, 219), (844, 376)), ((844, 376), (915, 376)),
-]
+wall_segments = corrections["wallSegmentsPixels"]
 
 
 def beam(name, a, b, bottom, top, width, role, mat):
@@ -221,7 +216,33 @@ def beam(name, a, b, bottom, top, width, role, mat):
 for index, (start, end) in enumerate(wall_segments):
     base_name = f"MURO VISUAL {index + 1:02} · eje en píxeles"
     beam(base_name + " · corte", start, end, .04, .85, .065, "wall", cut_material)
-    beam(base_name + " · alto", start, end, .85, 2.65, .065, "upper", wall_material)
+    # Right body is owner-defined taller than centre, not another storey.
+    # Split crossing axes at source x850; never add a partition to kitchen/dining.
+    cuts = [0., 1.]
+    if start[0] != end[0]:
+        fraction = (850 - start[0]) / (end[0] - start[0])
+        if 0 < fraction < 1:
+            cuts.insert(1, fraction)
+    for part, (a, b) in enumerate(zip(cuts, cuts[1:])):
+        left = [start[k] + a * (end[k] - start[k]) for k in range(2)]
+        right = [start[k] + b * (end[k] - start[k]) for k in range(2)]
+        body = roof_trace["volumes"][2 if (left[0] + right[0]) / 2 >= 850 else 1]
+        wall = beam(base_name + f" · alto {part}", left, right, .85,
+                    body["wallTopDisplay"], .065, "upper", wall_material)
+        wall["height_units"] = "arbitrary review display units NOT metres"
+
+# Source-observed stair symbol only, not invented risers or a storey elevation.
+stair = corrections["stair"]
+for index, (start, end) in enumerate(zip(
+        stair["polygonPixels"], stair["polygonPixels"][1:] + stair["polygonPixels"][:1])):
+    symbol = beam(f"Escalera exterior · contorno fuente {index + 1}", start, end,
+                  .02, .055, .025, "wall", cut_material)
+    symbol["stable_id"] = f"STAIR-TRACE-{index + 1}"
+    symbol["review_status"] = stair["status"]
+for index, station in enumerate(stair["edgeStationsPixels"]):
+    symbol = beam(f"Escalera exterior · abanico fuente {index + 1}",
+                  stair["centerPixels"], station, .02, .055, .012, "wall", cut_material)
+    symbol["review_status"] = stair["status"]
 
 
 # Optional fixtures are simple silhouettes of furniture actually visible in the
@@ -236,12 +257,43 @@ for name, start, end, width in [
     fixture = beam(name + " · silueta orientativa", start, end, .06, .25, width, "fixtures", furniture_material)
     fixture["provenance"] = "visible approximate position on the clean source plan"
 
-# Review-only roofs: the owner corrected the left-wing ridge direction. The
-# aerial shows multiple roof masses but does not register them to plan pixels.
-# Each 2D extent/axis is recorded separately for review; no patio roofs.
+# Owner-defined external upper mass only. The separate upper-room source is
+# not registered; do NOT duplicate PB partitions, windows or furniture upstairs.
+left_body = roof_trace["volumes"][0]
+upper_floor = polygon("PA · losa de envolvente · no plano registrado",
+                      left_body["footprintPixels"], roof_trace["upperSlabDisplay"],
+                      "storey", wall_material)
+upper_floor["stable_id"] = "PA-MASS-SLAB"
+upper_floor["review_status"] = corrections["upperFloor"]["status"]
+upper_floor["height_units"] = "arbitrary review display units NOT metres"
+for index, start in enumerate(left_body["footprintPixels"]):
+    end = left_body["footprintPixels"][(index + 1) % len(left_body["footprintPixels"])]
+    shell = beam(f"PA · envolvente izquierda {index + 1}", start, end,
+                 roof_trace["upperSlabDisplay"], left_body["wallTopDisplay"],
+                 .065, "storey", wall_material)
+    shell["review_status"] = "external-massing-only; upper-room registration blocked"
+    shell["height_units"] = "arbitrary review display units NOT metres"
+
+
+# Three continuous gables. Clip the sloped footprint in SOURCE pixels before
+# applying the display transform, retaining the existing diagonal rear-left edge.
+def half_footprint(points, split, keep_left, axis):
+    output = []
+    for index, end in enumerate(points):
+        start = points[index - 1]
+        inside_start = start[axis] <= split if keep_left else start[axis] >= split
+        inside_end = end[axis] <= split if keep_left else end[axis] >= split
+        if inside_start != inside_end:
+            fraction = (split - start[axis]) / (end[axis] - start[axis])
+            output.append([start[k] + fraction * (end[k] - start[k]) for k in range(2)])
+        if inside_end:
+            output.append(end)
+    return output
+
+
 def roof_plane(name, corners):
     mesh = bpy.data.meshes.new(name)
-    mesh.from_pydata(corners, [], [(0, 1, 2, 3)])
+    mesh.from_pydata(corners, [], [tuple(range(len(corners)))])
     mesh.update()
     obj = link(bpy.data.objects.new(name, mesh), "roof", tile_material)
     obj["pitch_and_ridge"] = "illustrative-unmeasured"
@@ -251,24 +303,47 @@ def roof_plane(name, corners):
 
 for volume in roof_trace["volumes"]:
     x0, y0, x1, y1 = volume["boundsPixels"]
-    left, far = xy(x0, y0)
-    right, near = xy(x1, y1)
-    if volume["ridgeAxis"] == "y":
-        middle = (left + right) / 2
-        faces = [
-            [(left, far, 2.72), (left, near, 2.72), (middle, near, 3.32), (middle, far, 3.32)],
-            [(middle, far, 3.32), (middle, near, 3.32), (right, near, 2.72), (right, far, 2.72)],
-        ]
-    else:
-        middle = (far + near) / 2
-        faces = [
-            [(left, far, 2.72), (right, far, 2.72), (right, middle, 3.32), (left, middle, 3.32)],
-            [(left, middle, 3.32), (right, middle, 3.32), (right, near, 2.72), (left, near, 2.72)],
-        ]
-    for index, face in enumerate(faces, 1):
+    assert volume["ridgeAxis"] == "x"
+    middle = (y0 + y1) / 2
+    def roof_height(y):
+        return volume["eaveDisplay"] + (volume["ridgeDisplay"] - volume["eaveDisplay"]) * (1 - abs(y - middle) / ((y1 - y0) / 2))
+    for index, keep_left in enumerate((True, False), 1):
+        plan = half_footprint(volume["footprintPixels"], middle, keep_left, 1)
+        face = [(*xy(px, py), roof_height(py)) for px, py in plan]
         roof = roof_plane(f"Tejas · {volume['id']} · faldón {index}", face)
         roof["ridge_axis_plan"] = volume["ridgeAxis"]
         roof["review_status"] = volume["status"]
+        roof["roof_body_id"] = volume["id"]
+        roof["continuous_span_source_pixels"] = json.dumps([y0, y1])
+        roof["ridge_span_source_pixels"] = json.dumps([x0, x1])
+        roof["height_units"] = "arbitrary review display units NOT metres"
+    # Close lateral gables on the existing polygon edges, including the left
+    # diagonal. Split at the y-midpoint so closing faces follow the roof peak.
+    for label, is_left in (("lateral izquierdo", True), ("lateral derecho", False)):
+        vertices, faces = [], []
+        outline = volume["footprintPixels"]
+        for index, start in enumerate(outline):
+            end = outline[(index + 1) % len(outline)]
+            if start[1] == end[1] or ((start[0] + end[0]) / 2 < (x0 + x1) / 2) != is_left:
+                continue
+            stations = [start]
+            if min(start[1], end[1]) < middle < max(start[1], end[1]):
+                fraction = (middle - start[1]) / (end[1] - start[1])
+                stations.append([start[0] + fraction * (end[0] - start[0]), middle])
+            stations.append(end)
+            for a, b in zip(stations, stations[1:]):
+                offset = len(vertices)
+                vertices.extend([(*xy(*a), volume["wallTopDisplay"]),
+                                 (*xy(*b), volume["wallTopDisplay"]),
+                                 (*xy(*b), roof_height(b[1])), (*xy(*a), roof_height(a[1]))])
+                faces.append(tuple(range(offset, offset + 4)))
+        mesh = bpy.data.meshes.new(f"Testero · {volume['id']} · {label}")
+        mesh.from_pydata(vertices, [], faces)
+        mesh.update()
+        gable = link(bpy.data.objects.new(mesh.name, mesh), "roof", wall_material)
+        gable["roof_body_id"] = volume["id"]
+        gable["roof_trace"] = "assets/reference/casa-roof-review-draft.json"
+        gable["height_units"] = "arbitrary review display units NOT metres"
 
 # Neutral studio illumination: this is NOT a georeferenced sun simulation.
 world = bpy.data.worlds.new("Iluminación de maqueta · no estudio solar")
@@ -301,6 +376,7 @@ scene.render.filepath = str(RENDER)
 # preview only to expose rooms. It remains a toggleable collection for 3D review.
 collections["roof"].hide_render = True
 collections["upper"].hide_render = True
+collections["storey"].hide_render = True
 for screen in bpy.data.screens:
     for area in screen.areas:
         if area.type == "VIEW_3D":
@@ -316,6 +392,10 @@ bpy.ops.render.render(write_still=True)
 
 collections["roof"].hide_render = False
 collections["upper"].hide_render = False
+collections["storey"].hide_render = False
+scene.render.filepath = str(ROOT / "artifacts/casa-local-review/three-gables-exterior.png")
+Path(scene.render.filepath).parent.mkdir(parents=True, exist_ok=True)
+bpy.ops.render.render(write_still=True)
 bpy.ops.object.select_all(action="DESELECT")
 for collection in collections.values():
     for obj in collection.objects:

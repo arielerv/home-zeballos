@@ -13,6 +13,22 @@
 
 ## Model transition
 
+### Nueva revisión local, posterior a calles/veredas
+
+- [x] Propietario autoriza «subi los cambios» tras revisión de cumbreras transversales. Levantar HOLD solo para preview sin escala en home-zeballos/Pages; BIM y pendientes métricos siguen bloqueados, fotos/secretos excluidos.
+
+- [x] Corrección posterior: propietario acepta tres sectores, pero pide cumbreras de lado a lado (x), NO frente→patio. Esta indicación sustituye la dirección previa; conservar huellas, alturas relativas y color. Solo revisión local sin publicar.
+
+- [x] Registrar aclaración de tres cubiertas continuas frente→patio y teja rojo/marrón uniforme: izquierda PB+P1 sobre pieza/media cocina-comedor, centro bajo, derecha intermedia. Mostrar envolvente externa en coordenadas arbitrarias de revisión; no inventar registro interior de PA. Contornos protegidos y publicación bloqueada.
+
+- [x] Registrar rojo = aperturas/demolición y negro = paredes en `casa-owner-corrections-review.json`; preservar contornos. Punto 1: pequeña construcción junto a pileta, no garaje completo.
+- [ ] Revisar ejes en píxeles y aberturas/muros según marcas; quitar duplicados y auditar polígonos/obstrucciones/conectividad sin convertir píxeles a m².
+- [x] Orientar tres cumbreras continuas frente→fondo (y de imagen), seis faldones con el mismo material, jerarquía izquierda > derecha > central en alturas arbitrarias, sin afirmar cotas medidas.
+- [x] Trazar símbolo de escalera abanico superior izquierda; subida/contrahuella/llegada pendientes, no escalera dimensionada.
+- [x] PB + planta alta izquierda **sustituye izquierda de una planta**. Traza separada de `assets/reference/1er piso.webp`; envolvente externa de revisión permitida por aclaración, registro interior y alturas métricas bloqueados, sin copiar PB.
+- [ ] Giro pileta: conservar centro/forma; sentido/ángulo pendientes, no inventarlos ante usuario ausente.
+- [ ] Verificar solo localmente. **No commit/push/deploy hasta que el usuario vea esta revisión.**
+
 ### Contexto solicitado el 2026-10-02
 
 - [x] Reemplazar el botón deshabilitado Mostrar edificio de Casa por Mostrar/Ocultar vecinos, sin ocultar la vivienda/sitio; habilitar también el check en Edificio y sol. Mantener T3 intacto.
@@ -61,7 +77,7 @@ Los rótulos del UI y la lista de ambientes conservan nombres de referencia para
 - [ ] Transcribe and constrain the final plan with its room names/areas/annotations; do not rename unlabeled rooms or infer unprinted dimensions. Keep pixel geometry separate until reviewed calibration.
 - [ ] Preserve the complete property boundary, patio, pool, garden, accesses, and all unaffected house portions. Do not create parcel subdivisions from lot labels.
 - [ ] Rebuild the rooms/walls to match the tentative-plan design after 2D trace review and calibration; retain uncertainty/provenance for each unresolved element.
-- [ ] Represent the left-hand portion as one storey.
+- [ ] Represent PB + first floor across the left side under the latest correction; the one-storey instruction is superseded. Registered footprint/height remain pending.
 - [ ] Review the swimming pool from an overhead Street View/reference image and adjust its position to match the visible site. Keep the current pool shape/location provisional until checked.
 - [ ] Do not include the demolished small room beside the pool on the Dardo Rocha side in the finished-house model.
 - [ ] Design the renovated street-facing facade from the target plans and supplied photographs. Use Street View to understand frontage and site context, not to recreate the old house.
@@ -71,7 +87,7 @@ Los rótulos del UI y la lista de ambientes conservan nombres de referencia para
 
 - [ ] Modelar y mostrar directamente la **casa terminada refaccionada** en los tabs existentes; no crear vistas o fases separadas de casa vieja, demolición, obra o anteproyecto.
 - [ ] Partir del diseño completo que muestra la planta tentativa; conservar Blender sin modificar como referencia histórica, y modelar el sitio retenido solo tras reconciliar fuentes. Validar escala/orientación antes de detalles.
-- [ ] Mostrar la construcción izquierda de un solo piso y representar por separado los cuerpos de distinta altura.
+- [ ] Mostrar PB + primer piso del lado izquierdo tras revisar amarre/altura; sustituida la indicación de una sola planta.
 - [ ] Preparar una planta cenital sin techo, una axonométrica/corte 3D y vistas peatonales desde Zeballos y Dardo Rocha; añadir una vista aérea del conjunto.
 - [ ] Permitir alternar techo/cubierta, planta por nivel, corte interior, pileta, límites de propiedad y contexto de vecinos; mostrar la casa terminada y conservar patio/sitio que no se refacciona.
 - [ ] Etiquetar ambientes y elementos con los IDs estables de la tabla siguiente. Añadir esos IDs sobre una copia de la planta para encontrarlos visualmente.

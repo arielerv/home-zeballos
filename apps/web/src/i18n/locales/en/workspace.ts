@@ -122,7 +122,7 @@ const workspace = {
     neighborsTogglePending: 'Nearby homes and streets · pending evidence', orbitPending: 'Show sun path · review model',
     buildingLayerHouse: 'House',
     fromZeballos: 'From Zeballos', fromDardoRocha: 'From Dardo Rocha',
-    modelSource: 'Unscaled review: remodeled house with original Blender site, pool and garage · house placement unverified',
+    modelSource: 'Unscaled · 3 roofs: left G+1 high, centre low, right medium · boundaries intact · upper interior, dimensions and pool rotation pending',
     priorBlenderLayerNotice: 'Draft layers traced from the clean house plan; dimensions, roof and site placement are unverified.',
     buildingSunTitle: 'Sun through the year.', buildingSunNote: 'The rendered sun and shadows are illustrative, not a prediction: house placement and north are uncalibrated.',
     reviewShadowsNotice: 'Animated sun and shadows in the review model. Direction is not aligned to north and does not predict real shadows.',

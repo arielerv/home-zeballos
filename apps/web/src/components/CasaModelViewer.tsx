@@ -47,6 +47,10 @@ function Model({ view, resetVersion, showSite, cutaway, showFixtures, showLabels
         object.visible = showLabels
       } else if (sourceCollection === '07 - Cubierta ilustrativa') {
         object.visible = !cutaway && view !== 'plan'
+      } else if (sourceCollection === '08 - Planta alta envolvente de revision') {
+        // External P1 mass is a visual review shell, not registered upstairs rooms.
+        // Hide it with cutaway so it never occludes the ground-floor review.
+        object.visible = !cutaway && view !== 'plan'
       }
       if ('isMesh' in object && object.isMesh) {
         object.castShadow = sourceCollection !== '01 - Terreno y jardin' && sourceCollection !== '02 - Ambientes trazados'

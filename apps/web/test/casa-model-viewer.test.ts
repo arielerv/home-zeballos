@@ -114,10 +114,10 @@ test('Casa review GLB exports stable Blender collection IDs for model-layer togg
   assert.equal(floors.length, 11)
   assert.equal(new Set(floors.map(node => node.extras?.stable_id)).size, 11)
   assert.ok(gltf.nodes.filter(node => node.extras?.casaCollection === '06 - Rotulos de planta').length >= 9)
-  assert.equal(gltf.nodes.filter(node => node.extras?.casaCollection === '07 - Cubierta ilustrativa').length, 10)
+  assert.equal(gltf.nodes.filter(node => node.extras?.casaCollection === '07 - Cubierta ilustrativa').length, 12) // six slopes + six closing gables
   const leftRoof = gltf.nodes.filter(node => node.name?.startsWith('Tejas · left-wing'))
   assert.equal(leftRoof.length, 2)
-  assert.ok(leftRoof.every(node => node.extras?.ridge_axis_plan === 'y'))
+  assert.ok(leftRoof.every(node => node.extras?.ridge_axis_plan === 'x'))
   assert.ok(gltf.nodes.filter(node => node.extras?.casaCollection === '07 - Cubierta ilustrativa').every(node => node.extras?.roof_trace === 'assets/reference/casa-roof-review-draft.json'))
   assert.equal(gltf.nodes.filter(node => node.extras?.casaCollection === '05 - Equipamiento orientativo').length, 5)
   for (const part of ['Contorno trazado de la planta - no mensura', 'Solado alrededor de pileta', 'Pileta - borde', 'Pileta - espejo de agua', 'GARAJE / SALIDA', 'Acceso Zeballos']) {
