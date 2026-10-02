@@ -1,0 +1,58 @@
+{
+  "checkpoint": "checkpoint/t3-building-sun-v1",
+  "blenderVersion": "5.2.2 LTS",
+  "files": [
+    {
+      "file": "assets/blender/asset-library.blend",
+      "bytes": 1420321,
+      "sha256": "4229ddf7aabeb7ab4e200988fa8c7ea8aa3144c11243c9bd1f51123035999e0d",
+      "scenes": [
+        {
+          "name": "T3 \u00b7 Current-state asset library",
+          "objects": 95
+        }
+      ],
+      "missingExternalImages": []
+    },
+    {
+      "file": "assets/blender/door-frame.blend",
+      "bytes": 68235,
+      "sha256": "d24be3555315aa30e0ac630d86fe2dace2e0e926305bbda8c9e34ff1b1f74606",
+      "scenes": [
+        {
+          "name": "T3 - Door Frame Sample",
+          "objects": 6
+        }
+      ],
+      "missingExternalImages": []
+    },
+    {
+      "file": "assets/blender/t3-building-context.blend",
+      "bytes": 455082,
+      "sha256": "2aeb60ec0473169d417593fde3130629c9ea42145cca587b88643fec8aee91ad",
+      "scenes": [
+        {
+          "name": "Scene",
+          "objects": 3
+        },
+        {
+          "name": "T3 Building Sun",
+          "objects": 639
+        }
+      ],
+      "missingExternalImages": []
+    },
+    {
+      "file": "assets/blender/t3-current-state.blend",
+      "bytes": 4872346,
+      "sha256": "827e65b2743d9fece7e9b4b93a26392f61e045fa69c5bc1fc470361b1b599f38",
+      "scenes": [
+        {
+          "name": "T3 \u00b7 Current apartment \u00b7 estimated geometry",
+          "objects": 1103
+        }
+      ],
+      "missingExternalImages": []
+    }
+  ]
+}

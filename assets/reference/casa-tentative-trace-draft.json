@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "traceId": "casa-2071-tentative-plan-trace-draft",
+  "source": {
+    "path": "assets/reference/casa-2071-planta-limpia.png",
+    "sha256": "5c75336ffeb97e040d19bd99febce18909814563bb51bd4feb5ce993770c7aac",
+    "widthPixels": 1158,
+    "heightPixels": 852
+  },
+  "status": "draft-unreviewed",
+  "coordinateSystem": "source-image-pixels-origin-top-left",
+  "metricCalibration": "blocked-no-reviewed-control-points-or-reliable-length",
+  "proposedCalibrationBaseline": {
+    "description": "Approximate exterior house width at the lower edge of the kitchen / baño 1 in the supplied plan; verify both endpoints against the original raster before using.",
+    "startPixels": [143, 424],
+    "endPixels": [1030, 424],
+    "pixelDistance": 887,
+    "measuredLengthMetres": null,
+    "reviewStatus": "unreviewed-pixel-observation",
+    "modelUse": "blocked"
+  },
+  "scaleResearch2026-10-02": {
+    "ownerIntent": "An approximate visual mockup is acceptable if explicitly identified as approximate; the request is not for a surveyed construction drawing.",
+    "cartography": {
+      "sourcePath": "assets/reference/carto.webp",
+      "visibleLot10ZeballosFrontageMetres": 15,
+      "measurementKind": "printed parcel frontage, not the width of the house",
+      "correspondingEndpointsOnCleanHouseImage": null
+    },
+    "roomAreaPixelChecks": {
+      "mostRoomsApproxPixelsPerMetre": "67–70 inferred independently from printed areas and provisional pixel polygons; not a length calibration",
+      "INT-09ApproxPixelsPerMetre": 50.67,
+      "warning": "Bedroom 3 does not agree with the other provisional polygons; do not rescale walls to force areas to match."
+    },
+    "status": "hypothesis-only; no verified building/parcel control-point correspondence"
+  },
+  "geometryUse": "visual 2D tracing proposal only; do not extrude or export as metric geometry",
+  "provenance": "Manually traced from the clean user-supplied PNG's visible wall/room edges for review. Vertices are approximate pixel observations and require owner review against the untouched source image. Patio and second frontage/garage are outside this cropped plan.",
+  "rooms": [
+    { "id": "INT-01", "sourceRoomId": "tentative-room-01", "label": "Sala de estar, comedor, cocina", "printedAreaM2": 38.35, "polygonPixels": [[111,122],[730,122],[730,278],[607,278],[607,470],[163,470],[163,314]] },
+    { "id": "INT-02", "sourceRoomId": "tentative-room-02", "label": "Baño 2", "printedAreaM2": 3.65, "polygonPixels": [[733,122],[915,122],[915,215],[733,215]] },
+    { "id": "INT-03", "sourceRoomId": "tentative-room-03", "label": "Hab. Serv.", "printedAreaM2": 2.30, "polygonPixels": [[844,220],[915,220],[915,376],[844,376]] },
+    { "id": "INT-04", "sourceRoomId": "tentative-room-04", "label": "Distribuidor", "printedAreaM2": 7.27, "polygonPixels": [[733,220],[840,220],[840,378],[915,378],[915,470],[733,470]] },
+    { "id": "INT-05", "sourceRoomId": "tentative-room-05", "label": null, "printedAreaM2": 15.31, "polygonPixels": [[921,122],[1139,122],[1139,470],[921,470]] },
+    { "id": "INT-06", "sourceRoomId": "tentative-room-06", "label": "Baño 1", "printedAreaM2": 4.55, "polygonPixels": [[612,280],[728,280],[728,470],[612,470]] },
+    { "id": "INT-07", "sourceRoomId": "tentative-room-07", "label": null, "printedAreaM2": 14.54, "polygonPixels": [[850,477],[1139,477],[1139,701],[850,701]] },
+    { "id": "INT-08", "sourceRoomId": "tentative-room-08", "label": "Living", "printedAreaM2": 28.09, "polygonPixels": [[369,477],[845,477],[845,772],[551,772],[551,736],[369,736]] },
+    { "id": "INT-09", "sourceRoomId": "tentative-room-09", "label": "Habitación 3", "printedAreaM2": 15.50, "polygonPixels": [[165,511],[366,511],[366,709],[165,709]] },
+    { "id": "INT-10", "sourceRoomId": "tentative-room-10", "label": "Cocina complementaria", "printedAreaM2": 8.11, "polygonPixels": [[850,706],[1139,706],[1139,837],[850,837]] },
+    { "id": "INT-11", "sourceRoomId": "tentative-room-11", "label": "Hall", "printedAreaM2": 4.32, "polygonPixels": [[369,741],[548,741],[548,835],[369,835]] }
+  ],
+  "limitations": [
+    "Room outlines are approximate visual traces, not approved wall centerlines.",
+    "Door/window openings and wall thicknesses are not traced or validated.",
+    "Printed areas are retained verbatim as source constraints and are not used to infer scale.",
+    "No 3D walls, levels, heights, roof, site boundary, north, shadows, or neighboring buildings are encoded."
+  ]
+}

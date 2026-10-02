@@ -1,0 +1,4 @@
+archit-app==0.7.0
+ezdxf==1.4.2
+ifcopenshell==0.8.4
+shapely==2.1.2

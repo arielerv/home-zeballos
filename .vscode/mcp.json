@@ -1,0 +1,20 @@
+{
+  "servers": {
+    "blender": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": ["--python", "3.11", "mcp-for-blender"],
+      "env": {
+        "BLENDER_HOST": "127.0.0.1",
+        "BLENDER_MCP_SAFE_MODE": "1",
+        "DISABLE_TELEMETRY": "true"
+      }
+    },
+    "google-street-view": {
+      "type": "stdio",
+      "command": "bash",
+      "args": ["${workspaceFolder}/scripts/run_street_view_mcp.sh"],
+      "cwd": "${workspaceFolder}"
+    }
+  }
+}

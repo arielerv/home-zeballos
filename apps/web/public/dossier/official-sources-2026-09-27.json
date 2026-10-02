@@ -1,0 +1,391 @@
+{
+  "format_version": 1,
+  "purpose": "Selected research evidence for the local property dossier proof of concept. Served with the application for offline source inspection; not live API responses.",
+  "capture_kind": "Selected public records and fields, preserving source field names and values. Original HTTP response bytes are not retained; response_sha256 fingerprints those original bytes.",
+  "scope_note": "Database assertions about parcel/building/group; not certification of apartment dimensions, floor, ownership or energy performance.",
+  "sources": [
+    {
+      "id": "rnb",
+      "publisher": "RNB",
+      "url": "https://rnb-api.beta.gouv.fr/api/alpha/buildings/4V8DBS2K1JDV/",
+      "retrieved_at": "2026-09-27T12:36:55.983833+00:00",
+      "http_status": 200,
+      "response_sha256": "f0d8ec26b32ac5f931ad659d94a33731d2458e3936ec5ecc8f51b6dd9c4b4fff",
+      "selection": "Only rnb_id, status, addresses and ext_ids; no contributor data.",
+      "data": {
+        "rnb_id": "4V8DBS2K1JDV",
+        "status": "constructed",
+        "addresses": [
+          {
+            "id": "29232_2090_00001_ter",
+            "ban_id": null,
+            "source": "bdnb",
+            "street_number": "1",
+            "street_rep": "TER",
+            "street": "impasse Jean-Baptiste Colbert",
+            "city_name": "Quimper",
+            "city_zipcode": "29000",
+            "city_insee_code": "29232"
+          },
+          {
+            "id": "29232_2090_00001_bis",
+            "ban_id": null,
+            "source": "bdnb",
+            "street_number": "1",
+            "street_rep": "BIS",
+            "street": "impasse Jean-Baptiste Colbert",
+            "city_name": "Quimper",
+            "city_zipcode": "29000",
+            "city_insee_code": "29232"
+          },
+          {
+            "id": "29232_2090_00001",
+            "ban_id": null,
+            "source": "bdnb",
+            "street_number": "1",
+            "street_rep": null,
+            "street": "impasse Jean-Baptiste Colbert",
+            "city_name": "Quimper",
+            "city_zipcode": "29000",
+            "city_insee_code": "29232"
+          }
+        ],
+        "ext_ids": [
+          {
+            "id": "bdnb-bc-JHL1-J71F-D2CT",
+            "source": "bdnb",
+            "created_at": "2023-12-09T19:28:38.428647+00:00",
+            "source_version": "2023_01"
+          },
+          {
+            "id": "BATIMENT0000000316727839",
+            "source": "bdtopo",
+            "created_at": "2023-12-21T23:29:10.069442+00:00",
+            "source_version": "bdtopo_2023_09"
+          }
+        ]
+      }
+    },
+    {
+      "id": "cadastre",
+      "publisher": "IGN API Carto / DGFiP",
+      "url": "https://apicarto.ign.fr/api/cadastre/parcelle?code_insee=29232&section=AL&numero=0538",
+      "retrieved_at": "2026-09-27T12:36:56.104706+00:00",
+      "http_status": 200,
+      "response_sha256": "8f90376af8d5001ad73f4ad8bdad53224ba7ee4e52e322feb6998d4de181b3da",
+      "selection": "Feature with properties.idu == 29232000AL0538.",
+      "data": [
+        {
+          "type": "Feature",
+          "id": "parcelle.69167043",
+          "geometry": {
+            "type": "MultiPolygon",
+            "coordinates": [
+              [
+                [
+                  [
+                    -4.10665438,
+                    48.00110041
+                  ],
+                  [
+                    -4.10674011,
+                    48.00113416
+                  ],
+                  [
+                    -4.10677552,
+                    48.00114819
+                  ],
+                  [
+                    -4.10680565,
+                    48.00116001
+                  ],
+                  [
+                    -4.10683849,
+                    48.00117293
+                  ],
+                  [
+                    -4.1068608,
+                    48.0011817
+                  ],
+                  [
+                    -4.10687262,
+                    48.0011865
+                  ],
+                  [
+                    -4.10688016,
+                    48.00118947
+                  ],
+                  [
+                    -4.10690232,
+                    48.00119807
+                  ],
+                  [
+                    -4.10693504,
+                    48.00121118
+                  ],
+                  [
+                    -4.10693746,
+                    48.00121211
+                  ],
+                  [
+                    -4.10696916,
+                    48.00122456
+                  ],
+                  [
+                    -4.1069703,
+                    48.00122503
+                  ],
+                  [
+                    -4.10700469,
+                    48.00123849
+                  ],
+                  [
+                    -4.10703341,
+                    48.00124986
+                  ],
+                  [
+                    -4.10706754,
+                    48.00126333
+                  ],
+                  [
+                    -4.10709869,
+                    48.00127572
+                  ],
+                  [
+                    -4.1071574,
+                    48.00129882
+                  ],
+                  [
+                    -4.10709206,
+                    48.00135862
+                  ],
+                  [
+                    -4.10700983,
+                    48.00143389
+                  ],
+                  [
+                    -4.10698572,
+                    48.00145587
+                  ],
+                  [
+                    -4.10696162,
+                    48.00147793
+                  ],
+                  [
+                    -4.106486,
+                    48.00128997
+                  ],
+                  [
+                    -4.10633957,
+                    48.00123324
+                  ],
+                  [
+                    -4.1063457,
+                    48.00123079
+                  ],
+                  [
+                    -4.10640454,
+                    48.00120581
+                  ],
+                  [
+                    -4.10646138,
+                    48.00118195
+                  ],
+                  [
+                    -4.10657642,
+                    48.00113332
+                  ],
+                  [
+                    -4.10665438,
+                    48.00110041
+                  ]
+                ]
+              ]
+            ]
+          },
+          "geometry_name": "geom",
+          "properties": {
+            "gid": 68510061,
+            "numero": "0538",
+            "feuille": 1,
+            "section": "AL",
+            "code_dep": "29",
+            "nom_com": "Quimper",
+            "code_com": "232",
+            "com_abs": "000",
+            "code_arr": "000",
+            "idu": "29232000AL0538",
+            "contenance": 1192,
+            "code_insee": "29232"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bdnb",
+      "publisher": "BDNB",
+      "url": "https://api.bdnb.io/v1/bdnb/donnees/batiment_groupe_complet/adresse?cle_interop_adr=eq.29232_2090_00001_ter&limit=5",
+      "retrieved_at": "2026-09-27T12:36:56.190421+00:00",
+      "http_status": 200,
+      "response_sha256": "3792c26d812f5823643b32cd67a42e864b88f54f33bcdc795f4bbcbbfbd79cd3",
+      "selection": "Selected group-level identification, geometry, age, material-code labels and dwelling counts only. Energy/representative-DPE attributes omitted.",
+      "data": [
+        {
+          "batiment_groupe_id": "bdnb-bg-W5NJ-PFRZ-ME3E",
+          "l_parcelle_id": [
+            "29232000AL0538"
+          ],
+          "annee_construction": 1956,
+          "nb_log": 30,
+          "nb_log_rnc": 30.0,
+          "surface_emprise_sol": 475,
+          "hauteur_mean": 16,
+          "fiabilite_emprise_sol": "BONNE",
+          "fiabilite_hauteur": "BONNE",
+          "mat_mur_txt": "BETON - PIERRE",
+          "mat_toit_txt": "ZINC ALUMINIUM"
+        }
+      ]
+    },
+    {
+      "id": "ign",
+      "publisher": "IGN BD TOPO",
+      "url": "https://data.geopf.fr/wfs/ows?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&TYPENAMES=BDTOPO_V3%3Abatiment&OUTPUTFORMAT=application%2Fjson&COUNT=200&BBOX=48.0004%2C-4.1083%2C48.0024%2C-4.1053%2Curn%3Aogc%3Adef%3Acrs%3AEPSG%3A%3A4326",
+      "retrieved_at": "2026-09-27T12:36:56.070647+00:00",
+      "http_status": 200,
+      "response_sha256": "969dbf4328ee3beee3f8f6b4b9e1fae897aaf005c326b52b9e21a12c175371da",
+      "selection": "Feature with properties.cleabs == BATIMENT0000000316727839 from the bounding-box response; other buildings omitted.",
+      "data": [
+        {
+          "type": "Feature",
+          "id": "batiment.24917374",
+          "geometry": {
+            "type": "MultiPolygon",
+            "coordinates": [
+              [
+                [
+                  [
+                    -4.10694368,
+                    48.00141359,
+                    24.3
+                  ],
+                  [
+                    -4.10699635,
+                    48.0014348,
+                    24.3
+                  ],
+                  [
+                    -4.1070791,
+                    48.00135931,
+                    24.3
+                  ],
+                  [
+                    -4.10659248,
+                    48.0011647,
+                    24.3
+                  ],
+                  [
+                    -4.10656277,
+                    48.00113397,
+                    24.3
+                  ],
+                  [
+                    -4.10644812,
+                    48.00118248,
+                    24.3
+                  ],
+                  [
+                    -4.10649348,
+                    48.00122943,
+                    24.3
+                  ],
+                  [
+                    -4.10694964,
+                    48.00140781,
+                    24.3
+                  ],
+                  [
+                    -4.10694368,
+                    48.00141359,
+                    24.3
+                  ]
+                ]
+              ]
+            ]
+          },
+          "geometry_name": "geometrie",
+          "properties": {
+            "cleabs": "BATIMENT0000000316727839",
+            "nature": "Indifférenciée",
+            "usage_1": "Résidentiel",
+            "usage_2": "Annexe",
+            "construction_legere": false,
+            "etat_de_l_objet": "En service",
+            "date_creation": "2012-12-17T14:53:42.457Z",
+            "date_modification": "2019-03-25T06:31:23.773Z",
+            "date_d_apparition": "1956-01-01Z",
+            "date_de_confirmation": null,
+            "sources": null,
+            "identifiants_sources": "",
+            "methode_d_acquisition_planimetrique": "BDParcellaire recalée",
+            "methode_d_acquisition_altimetrique": "Interpolation bâti BDTopo",
+            "precision_planimetrique": 3,
+            "precision_altimetrique": 2.5,
+            "nombre_de_logements": 30,
+            "nombre_d_etages": 5,
+            "materiaux_des_murs": "13",
+            "materiaux_de_la_toiture": "30",
+            "hauteur": 15.5,
+            "altitude_minimale_sol": 8.8,
+            "altitude_minimale_toit": 24.3,
+            "altitude_maximale_toit": 25.1,
+            "altitude_maximale_sol": 8.8,
+            "origine_du_batiment": "Cadastre",
+            "appariement_fichiers_fonciers": "A 1.0",
+            "identifiants_rnb": "4V8DBS2K1JDV"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ban",
+      "publisher": "IGN Geocodage / BAN",
+      "url": "https://data.geopf.fr/geocodage/search?q=1+ter+impasse+Jean-Baptiste+Colbert+Quimper&limit=5",
+      "retrieved_at": "2026-09-27T12:36:55.944148+00:00",
+      "http_status": 200,
+      "response_sha256": "2f491fb74f0b1494e4e2260ae0252374846dd6934a4c938628648fb5b628197d",
+      "selection": "Feature with properties.id == 29232_2090_00001_ter; other search candidates omitted.",
+      "data": [
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -4.106796,
+              48.001415
+            ]
+          },
+          "properties": {
+            "label": "1ter impasse Jean-Baptiste Colbert 29000 Quimper",
+            "score": 0.8184320930232557,
+            "housenumber": "1ter",
+            "id": "29232_2090_00001_ter",
+            "banId": "c724aebf-8640-4d02-88fb-7d909b97a0ee",
+            "name": "1ter impasse Jean-Baptiste Colbert",
+            "postcode": "29000",
+            "citycode": "29232",
+            "x": 170707.48,
+            "y": 6790615.77,
+            "city": "Quimper",
+            "context": "29, Finistère, Bretagne",
+            "type": "housenumber",
+            "importance": 0.63066,
+            "depcode": "29",
+            "street": "impasse Jean-Baptiste Colbert",
+            "_type": "address"
+          }
+        }
+      ]
+    }
+  ]
+}

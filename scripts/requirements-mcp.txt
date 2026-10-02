@@ -1,0 +1,3 @@
+fastmcp==4.0.10
+mcp==2.2.0
+street-view-mcp @ git+https://github.com/vlad-ds/street-view-mcp.git@f0e001dd54d0eb316b8b0eba8f5c9d6af0415968

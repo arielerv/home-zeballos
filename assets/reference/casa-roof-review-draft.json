@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "status": "unreviewed-visual-roof-study-not-metric",
+  "planSource": "assets/reference/casa-2071-planta-limpia.png",
+  "aerialObservation": "Google Maps satellite at Av. Estanislao Zeballos 2071, Castelar, inspected 2026-10-02: several separate reddish tiled roof bodies along Zeballos and toward Dardo Rocha; no measured pitches, ridges or georeferenced footprint extracted",
+  "ownerCorrection": "The first single roof was incomplete and its ridge ran the wrong direction. Turn the left-wing ridge through 90 degrees and represent the other roof bodies separately.",
+  "coordinates": "approximate clean-plan pixels, not georeferenced to satellite",
+  "volumes": [
+    { "id": "left-wing", "boundsPixels": [111,122,730,470], "ridgeAxis": "y", "status": "owner-corrected-axis; extents illustrative" },
+    { "id": "rear-east", "boundsPixels": [730,122,1140,470], "ridgeAxis": "y", "status": "satellite-massing-hypothesis" },
+    { "id": "front-living", "boundsPixels": [369,470,850,772], "ridgeAxis": "x", "status": "satellite-massing-hypothesis" },
+    { "id": "front-east", "boundsPixels": [850,470,1140,837], "ridgeAxis": "y", "status": "satellite-massing-hypothesis" },
+    { "id": "bedroom-three", "boundsPixels": [163,507,369,710], "ridgeAxis": "y", "status": "plan-footprint-hypothesis" }
+  ],
+  "limit": "Illustrative masses only. Do not assert roof pitch, exact shape, level, structural continuity or solar shading; the small front garden and the patio remain uncovered. Owner must review the 2D extents and aerial-to-plan alignment before a metric roof."
+}

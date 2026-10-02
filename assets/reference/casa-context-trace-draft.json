@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "status": "approximate-context-review-only",
+  "requestedAt": "2026-10-02",
+  "metricCalibrated": false,
+  "height": null,
+  "cartography": {
+    "path": "assets/reference/carto.webp",
+    "sha256": "9623b5940f6c566d90b141ed670a7191656eb7e1e6748a7a64b244d1d89e4ee0",
+    "size": [1920, 1440],
+    "units": "source-pixels",
+    "printedFrontage": {"lot": "10", "value": 15, "unit": "m", "use": "reference only, not model scale"}
+  },
+  "aerial": {
+    "source": "Google Maps north-up satellite; Airbus imagery, inspected privately via shared browser",
+    "url": "https://www.google.com/maps/@-34.65883,-58.63555,80m/data=!3m1!1e3",
+    "inspectedAt": "2026-10-02",
+    "viewport": [1055,654],
+    "scaleBar": {"label": "10 m", "cssPixels": 80, "use": "visual cross-check only, not surveyed calibration"},
+    "imagePublished": false,
+    "units": "observed screenshot pixels",
+    "cartographyControlPoints": [
+      {"id":"zeballos-west", "aerial":[476,514], "carto":[922,907]},
+      {"id":"zeballos-east", "aerial":[603,548], "carto":[1187,974]},
+      {"id":"dardo-north", "aerial":[665,262], "carto":[1358,445]},
+      {"id":"rear-west", "aerial":[461,318], "carto":[902,575]}
+    ],
+    "controlPointStatus": "visually inferred parcel corners from fences/roof separations/trees; NOT surveyed, requires owner review",
+    "controlPointUncertaintyPixels": 15,
+    "rejectedFit": "An initial four-curb-corner fit retained only 15–34% of roofs inside the inferred lots and cut through the owner's pool; rejected, not used. Parcel-corner fit retains over 98% of roof bodies 7, 11, 12. Lot 9 initially retained 84.6%. Owner subsequently confirmed the corner house is the adjoining neighbor. Its preview is fitted without deformation by the minimum source-pixel translation constrained to the declared uncertainty plus actual fit residual, not by lowering containment validation. This remains an unreviewed display estimate, not independent calibration."
+  },
+  "siteControlPoints": [
+    {"id":"zeballos-west", "carto":[922,907], "model":[0,0]},
+    {"id":"zeballos-east", "carto":[1187,974], "model":[14.34200668334961,0]},
+    {"id":"neck-east", "carto":[1252,670], "model":[14.34200668334961,-14.464588165283203]},
+    {"id":"dardo-south", "carto":[1402,630], "model":[21.737743377685547,-18.060304641723633]},
+    {"id":"dardo-north", "carto":[1358,445], "model":[17.447399139404297,-26.55927085876465]},
+    {"id":"rear-west", "carto":[902,575], "model":[-4.290343761444092,-16.13986587524414]},
+    {"id":"neck-west", "carto":[952,757], "model":[0,-7.559177398681641]}
+  ],
+  "modelSource": "apps/web/public/models/casa-2071/casa-2071-maqueta-revision.glb",
+  "siteObject": "Contorno trazado de la planta - no mensura",
+  "modelUnits": "existing arbitrary review display coordinates, NOT calibrated metres",
+  "neighbors": [
+    {"id":"lot-11", "lot":"11", "sharedEdge":[5,6,0], "parcel":[[591,663],[902,575],[952,757],[922,907],[687,848],[615,774]], "roofAerial":[[339,351],[467,350],[483,407],[473,432],[459,451],[353,416],[329,402]]},
+    {"id":"lot-12", "lot":"12", "sharedEdge":[5], "parcel":[[547,475],[931,367],[974,554],[902,575],[591,663]], "roofAerial":[[314,277],[451,252],[471,307],[483,318],[338,350]]},
+    {"id":"lot-7", "lot":"7", "sharedEdge":[4,5], "parcel":[[931,367],[1316,260],[1358,445],[974,554]], "roofAerial":[[550,214],[619,199],[640,270],[570,286],[556,268]]},
+    {"id":"lot-9", "lot":"9", "sharedEdge":[1,2,3], "parcel":[[1252,670],[1402,630],[1487,950],[1417,1038],[1187,974]], "roofAerial":[[613,423],[681,438],[671,493],[593,470]], "roofScope":"only the clear front tiled roof body; rear roof/garage parcel assignment is uncertain and omitted", "ownerConfirmedAdjacency":true, "placement":"minimum shape-preserving translation inside conservative source-pixel uncertainty envelope; estimated, not measured"}
+  ],
+  "streets": [
+    {"id":"zeballos", "label":"Zeballos", "polygon":[[230,713],[687,848],[1417,1038],[1765,1132],[1850,1390],[1740,1370],[250,949],[170,914]]},
+    {"id":"dardo", "label":"Dardo Rocha", "polygon":[[1240,0],[1487,950],[1417,1038],[1765,1132],[1810,1120],[1570,0]]},
+    {"id":"cautiva", "label":"La Cautiva", "polygon":[[254,0],[422,0],[615,774],[687,848],[354,790],[439,686]]}
+  ],
+  "processing": "Least-squares affine carto-to-existing-display-site fit over all seven common corners. Roof pixels mapped by separate inferred aerial-to-carto least-squares fit. Containment must reach 98%; never replace a roof by a clipped parcel-shaped roof. For owner-confirmed corner lot 9 only, a minimum rigid translation may fit the unchanged polygon inside the lot if its length is bounded by the conservative sum of declared picking uncertainty (15 aerial pixels) and actual affine residual mapped back to aerial pixels (5.8623 max). Computed shift is 18.9484 pixels, inside the 20.8623-pixel envelope. This is explicitly a provisional placement compensation, NOT verification of real building boundaries. No heights, no extrusion, no neighbor shadows. Streets include approximate sidewalks, not measured lane widths.",
+  "limitations": [
+    "Parcel polygons and roof outlines are different objects, shown with different styles.",
+    "Roof-to-lot assignments and both transforms are approximate, unreviewed; image roofs are not surveyed wall footprints.",
+    "Printed frontage is NOT used to stretch or move the preserved site or house.",
+    "Trees, roof overhang, resolution and inferred control points limit accuracy.",
+    "No BIM, cadastral boundary, north alignment or physical shadow validation follows from this preview."
+  ]
+}

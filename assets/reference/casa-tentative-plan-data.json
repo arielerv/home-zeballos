@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "projectId": "casa-2071",
+  "source": {
+    "id": "casa-plan-tentative-2026-10-02",
+    "path": "assets/reference/casa-2071-planta-limpia.png",
+    "mediaType": "image/png",
+    "widthPixels": 1158,
+    "heightPixels": 852,
+    "sha256": "5c75336ffeb97e040d19bd99febce18909814563bb51bd4feb5ce993770c7aac",
+    "supersedes": {
+      "path": "assets/reference/planos tentativa.jpeg",
+      "sha256": "371ae1f593d53884b314a653dce2ede8ded26931701b20add4b3f804b1127755",
+      "status": "archived-only-not-design-authority"
+    },
+    "role": "user-design-authority",
+    "use": "Target layout and remodel design; overrides contradictory room/wall geometry in the prior Blender model.",
+    "supersedesConflictingPriorBlender": true,
+    "metricCalibration": "unverified",
+    "reviewStatus": "clean plan archived; approximate pixel trace pending owner review; metric calibration blocked"
+  },
+  "designAuthority": {
+    "tentativePlan": "Controls the target finished layout in the areas it depicts, including the shown room arrangement and walls; it overrides conflicting prior Blender geometry there.",
+    "userCorrection2026-10-02": "The dining and kitchen are one connected room with no dividing wall; the separately labeled Living room remains a distinct room. The latest clean plan was supplied in docs and archived under assets/reference; the prior red-marked JPEG must not be displayed or traced as the target design. The drawing depicts the house only: the patio and the second frontage with garage are outside its cropped footprint.",
+    "ownerDemolitionCorrection2026-10-02": "Rooms/partitions in the earlier Blender that disagree with the clean target plan were demolished. Do not retain their walls to reconcile area discrepancies or draw them across the patio; model only target-plan walls after trace review. This does not identify the exact demolition boundaries or verify any printed area.",
+    "retainedExisting": "Outside demonstrated demolition or remodel, retain existing elements only when their presence and geometry are corroborated by supplied existing-state evidence.",
+    "heightCarryForward": "Carry an existing height only when evidence identifies that element as retained and explicitly supports its height; otherwise leave height unknown and block metric modeling.",
+    "unresolvedConflict": "Ask a focused question or leave geometry blocked. Never choose between conflicting sources silently."
+  },
+  "ownerProvisional3DInputs2026-10-02": {
+    "wallHeightMetres": 2.8,
+    "wallHeightStatus": "owner-authorized-illustrative-assumption-not-measured",
+    "roof": "two pitched planes with roof tiles; Google Maps/Street View photos are the owner's visual reference; exact ridge, slope, eaves and remodel scope unverified",
+    "realPhotosMeaning": "Google Maps or Street View imagery; visual roof evidence only, not surveyed dimensions",
+    "leftVolumeLevels": 1,
+    "leftVolumeStatus": "owner-specified",
+    "planScale": "unverified-no-reviewed-horizontal-distance",
+    "use": "record visual design intent only; does not calibrate the horizontal plan or authorize a metric final model"
+  },
+  "ownerParcelConfirmation2026-10-02": {
+    "lots": [8, 10],
+    "source": "owner explicitly confirmed the two color-marked parcels in assets/reference/carto.webp",
+    "houseFootprintStatus": "not delineated on cadastral screenshot",
+    "registrationToCleanPlan": "no reviewed common points",
+    "note": "15 m printed on the Zeballos frontage of lot 10 is a parcel edge; do not substitute it for the width of the house"
+  },
+  "rooms": [
+    { "id": "tentative-room-01", "label": "Sala de estar, comedor, cocina", "printedAreaM2": 38.35 },
+    { "id": "tentative-room-02", "label": "Baño 2", "printedAreaM2": 3.65 },
+    { "id": "tentative-room-03", "label": "Hab. Serv.", "printedAreaM2": 2.3 },
+    { "id": "tentative-room-04", "label": "Distribuidor", "printedAreaM2": 7.27 },
+    { "id": "tentative-room-05", "label": null, "printedAreaM2": 15.31 },
+    { "id": "tentative-room-06", "label": "Baño 1", "printedAreaM2": 4.55 },
+    { "id": "tentative-room-07", "label": null, "printedAreaM2": 14.54 },
+    { "id": "tentative-room-08", "label": "Living", "printedAreaM2": 28.09 },
+    { "id": "tentative-room-09", "label": "Habitación 3", "printedAreaM2": 15.5 },
+    { "id": "tentative-room-10", "label": "Cocina complementaria", "printedAreaM2": 8.11 },
+    { "id": "tentative-room-11", "label": "Hall", "printedAreaM2": 4.32 }
+  ],
+  "annotations": [
+    { "id": "column-note-01", "textAsShown": "Columna de 5m 40x40", "parsedMetricValue": null, "status": "review-required" },
+    { "id": "column-note-02", "textAsShown": "Columna de 210", "parsedMetricValue": null, "status": "review-required" },
+    { "id": "column-note-03", "textAsShown": "Columna de 210", "parsedMetricValue": null, "status": "review-required" },
+    { "id": "column-note-04", "textAsShown": "Columna de 280", "parsedMetricValue": null, "status": "review-required" },
+    { "id": "column-note-05", "textAsShown": "Columna de 280", "parsedMetricValue": null, "status": "review-required" }
+  ],
+  "rules": {
+    "sourceAreasAreConstraints": true,
+    "doNotRenameUnlabeledRooms": true,
+    "doNotInferUnprintedLengths": true,
+    "doNotConvertPixelsToMetersWithoutCalibration": true,
+    "supersedesConflictingPriorBlenderInterior": true,
+    "userResearchPhotosMayBePublished": false,
+    "sameBlockAdjoiningHomesOnlyForNeighbors": true,
+    "crossStreetCommercialFrontageIsNotNeighbor": true,
+    "streetViewMcpRecommendedImagesPerHouse": 5,
+    "streetViewMcpMaximumImagesBeforeNotice": 10,
+    "roomDoorAccessAndExteriorEgressAuditRequired": true,
+    "threeSectionTypesRequired": true,
+    "buildingAndSunShowsMovingSunPath": true,
+    "studyCoordinatesAndTimezoneVisible": true,
+    "buildingApartmentCompassAndSunLabelsRequired": true,
+    "perspectiveCameraIsDiagonal": true,
+    "floorPlanCameraIsTopDown": true,
+    "manualCameraOrbitPanZoomPreserved": true,
+    "cameraResetReturnsToPreset": true,
+    "sunRoomsFixturesPanelsPreserved": true,
+    "noNewTopLevelTabsOrMenus": true
+  }
+}

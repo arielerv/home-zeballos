@@ -1,0 +1,12 @@
+
+# Private source video derivatives
+*
+!.gitignore
+!casa-2071-planta-limpia.png
+!casa-tentative-plan-data.json
+!casa-tentative-trace-draft.json
+!casa-roof-review-draft.json
+!casa-context-trace-draft.json
+!casa-frontage-context-source.json
+# Existing dossier cartography; no Google/Street View research photographs.
+!carto.webp

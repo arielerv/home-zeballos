@@ -1,0 +1,41 @@
+{
+  "id": "casa-across-street-station-osm-v5",
+  "userRequestDate": "2026-10-02",
+  "source": "https://www.openstreetmap.org/api/0.6/way/472802802/full",
+  "osmWay": 472802802,
+  "osmVersion": 5,
+  "osmTimestamp": "2018-12-03T18:57:47Z",
+  "retrievedAt": "2026-10-02",
+  "license": "ODbL-1.0",
+  "attribution": "© OpenStreetMap contributors",
+  "role": "across-street-context",
+  "residentialNeighbor": false,
+  "height": null,
+  "geometry": "ground-contour-only",
+  "coordinates": [
+    [-34.6593319, -58.6355229],
+    [-34.6594216, -58.6355488],
+    [-34.6594035, -58.6356415],
+    [-34.6593237, -58.6360497],
+    [-34.659234, -58.6360238],
+    [-34.6593127, -58.6356213],
+    [-34.6593319, -58.6355229]
+  ],
+  "coordinateSystem": "WGS84 latitude/longitude degrees",
+  "localFit": {
+    "calibrated": false,
+    "status": "historical approximate display transform retained; not surveyed",
+    "implementation": "apps/web/src/data/casa-neighborhood.ts:toCasaLocal",
+    "sourceOrigin": "OSM interpolated address point, not parcel/building corner",
+    "streetAngleDegrees": 12,
+    "angleEvidence": "historical display estimate, unreviewed",
+    "blenderX": 7.1505733,
+    "blenderZ": 0.9397896
+  },
+  "limitations": [
+    "Current outline is mapped, not surveyed or confirmed current construction.",
+    "Model alignment and north are uncalibrated; contour display is approximate.",
+    "No extrusion, building height, shadow casting or adjoining-home substitution.",
+    "OSM bbox -58.6370,-34.6600,-58.6345,-34.6580 checked 2026-10-02 contains no adjoining residential building outlines."
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "name": "t3-designer",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@12.7.0",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "lint": "turbo run lint && eslint scripts",
+    "typecheck": "turbo run typecheck && tsc --project scripts/tsconfig.json",
+    "test": "turbo run test && node --test scripts/test/*.test.ts && python3 -m unittest discover -s scripts/blender/tests",
+    "blender:check": "uv run scripts/blender/check_mcp.py",
+    "architecture:validate": "uv run --with-requirements scripts/requirements-architecture.txt python scripts/architecture/archit_app_adapter.py",
+    "architecture:test": "uv run --with-requirements scripts/requirements-architecture.txt python -m unittest scripts.tests.test_archit_app_adapter scripts.tests.test_architecture_policy scripts.tests.test_street_view_usage",
+    "architecture:readiness": "node scripts/architecture/requirements_gate.mjs",
+    "architecture:release-gate": "node scripts/architecture/requirements_gate.mjs --release",
+    "architecture:snapshot": "node scripts/export_architecture_scene.ts",
+    "blender:sample": "node scripts/run_blender.mjs create_door_frame.py",
+    "scene:snapshot": "node scripts/export_scene.ts",
+    "blender:assets": "node scripts/run_blender.mjs create_current_assets.py",
+    "blender:apartment": "pnpm scene:snapshot && node scripts/run_blender.mjs assemble_apartment.py",
+    "check": "pnpm lint && pnpm typecheck && pnpm test && pnpm architecture:test && pnpm architecture:readiness && pnpm scene:verify && pnpm build",
+    "scene:verify": "node scripts/export_scene.ts --check",
+    "blender:validate": "python3 scripts/blender/validate_assets.py --report artifacts/reports/assets.json",
+    "blender:scene": "node scripts/run_blender.mjs assemble_project.py",
+    "blender:render": "node scripts/run_blender.mjs assemble_project.py --render",
+    "test:e2e": "pnpm --filter @t3-designer/web test:e2e",
+    "check:all": "pnpm architecture:release-gate && pnpm check && pnpm test:e2e"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.11.0",
+    "eslint-plugin-react-refresh": "^0.5.7",
+    "globals": "^17.12.0",
+    "turbo": "^2.11.3",
+    "typescript": "~6.0.3",
+    "typescript-eslint": "^8.70.1",
+    "@types/node": "^24.13.6",
+    "@t3-designer/scene-schema": "workspace:*",
+    "@t3-designer/geometry": "workspace:*",
+    "@t3-designer/architecture-model": "workspace:*"
+  }
+}

@@ -1,0 +1,130 @@
+import assert from 'node:assert/strict'
+import { readFileSync } from 'node:fs'
+import test from 'node:test'
+
+const viewerSource = readFileSync(new URL('../src/components/CasaModelViewer.tsx', import.meta.url), 'utf8')
+
+test('the Casa review GLB viewer centers source-pixel sketch geometry', () => {
+  assert.match(viewerSource, /<primitive object=\{model\} position=\{placement\} \/>/)
+  assert.match(viewerSource, /const placement = useMemo\(\(\) => \[-center\.x, -center\.y, -center\.z\]/)
+  assert.doesNotMatch(viewerSource, /new Group\(\)/)
+})
+
+test('the Casa contextual model viewer keeps materials and the animated T3 camera transition', () => {
+  assert.match(viewerSource, /const clone = scene\.clone\(true\)/)
+  assert.doesNotMatch(viewerSource, /new MeshBasicMaterial/)
+  assert.match(viewerSource, /advanceCameraTransition\(camera\.position, controls\.current\.target, goal\.current, delta\)/)
+  assert.match(viewerSource, /cameraView\.revision/)
+  assert.match(viewerSource, /onStart=\{\(\) => \{ goal\.current = null \}\}/)
+  assert.match(viewerSource, /reverseVerticalOrbit/)
+  assert.match(viewerSource, /className="view-buttons casa-model-views"/)
+})
+
+test('Casa toggles explicitly requested frontage context without substituting it for adjoining homes', () => {
+  assert.match(viewerSource, /showNeighbors && <group position=\{placement\}><CasaSiteContext/)
+  assert.match(viewerSource, /<primitive object=\{model\} position=\{placement\} \/>/)
+  const contextSource = readFileSync(new URL('../src/components/CasaSiteContext.tsx', import.meta.url), 'utf8')
+  assert.match(contextSource, /CASA_CONTEXT_OUTLINES\.map/)
+  assert.match(contextSource, /calibrated: false/)
+  assert.doesNotMatch(contextSource, /heightEstimate|castShadow|ExtrudeGeometry/)
+  const apartmentSource = readFileSync(new URL('../src/components/CasaApartmentExplorer.tsx', import.meta.url), 'utf8')
+  assert.match(apartmentSource, /aria-pressed=\{showNeighbors\} onClick=/)
+  assert.match(apartmentSource, /casa\.hideNeighbors.*casa\.showNeighbors/)
+  assert.doesNotMatch(apartmentSource, /apartment\.showBuilding|apartment\.hideBuilding/)
+  const buildingSource = readFileSync(new URL('../src/components/CasaBuildingExplorer.tsx', import.meta.url), 'utf8')
+  assert.match(buildingSource, /<CasaModelViewer initialView="axon" views=\{\['axon', 'plan'\]\}[^>]*solar=\{solar\}/)
+  assert.doesNotMatch(buildingSource, /<CasaTentativePlanViewer/)
+  assert.match(buildingSource, /casa\.neighborsTitle/)
+  assert.match(buildingSource, /casa\.neighborsPending/)
+  assert.match(buildingSource, /casa\.contextNotice/)
+  assert.doesNotMatch(buildingSource, /checked=\{showNeighbors\} disabled/)
+})
+
+test('Casa camera preserves top-down plan, diagonal perspective, free navigation, and reset', () => {
+  assert.match(viewerSource, /plan: \[0, radius \* 1\.8, 0\.01\]/)
+  assert.match(viewerSource, /axon: \[radius \* 1\.2, radius \* 0\.9, radius \* 1\.2\]/)
+  assert.match(viewerSource, /plan: t\('apartment\.plan'\), axon: t\('apartment\.perspective'\)/)
+  assert.match(viewerSource, /enableRotate\s+enablePan\s+enableZoom/)
+  assert.match(viewerSource, /aria-label=\{t\('apartment\.resetView'\)\}/)
+  assert.match(viewerSource, /revision: previous\.revision \+ 1/)
+})
+
+test('Casa reuses the T3 inspector, shows the Blender model, and keeps its source layers interactive', () => {
+  const apartmentSource = readFileSync(new URL('../src/components/CasaApartmentExplorer.tsx', import.meta.url), 'utf8')
+  assert.match(apartmentSource, /inspector-tabs/)
+  assert.match(apartmentSource, /setPanel\('sun'\)/)
+  assert.match(apartmentSource, /setPanel\('rooms'\)/)
+  assert.match(apartmentSource, /setPanel\('assets'\)/)
+  assert.match(apartmentSource, /<SolarControls solar=\{solar\} locationLabel=\{t\('casa\.location'\)\} hemisphere="south" astronomicalOnly \/>/)
+  assert.match(apartmentSource, /tentativePlan\.rooms\.map/)
+  assert.match(apartmentSource, /setSelectedRoomId\(room\.id\)/)
+  assert.match(apartmentSource, /<CasaModelViewer initialView="plan" views=\{\['axon', 'plan'\]\}[^>]*solar=\{solar\}/)
+  assert.match(apartmentSource, /checked=\{cutaway\} onChange=\{event => setCutaway\(event\.target\.checked\)\}/)
+  assert.match(apartmentSource, /checked=\{showFixtures\} onChange=\{event => setShowFixtures\(event\.target\.checked\)\}/)
+  assert.match(apartmentSource, /checked=\{showLabels\} onChange=\{event => setShowLabels\(event\.target\.checked\)\}/)
+  assert.match(apartmentSource, /casa\.roomFocusBlocked/)
+})
+
+test('Casa House and Building tabs both render the new review Blender GLB with honest provenance', () => {
+  const apartmentSource = readFileSync(new URL('../src/components/CasaApartmentExplorer.tsx', import.meta.url), 'utf8')
+  const buildingSource = readFileSync(new URL('../src/components/CasaBuildingExplorer.tsx', import.meta.url), 'utf8')
+  assert.match(apartmentSource, /<CasaModelViewer/)
+  assert.match(buildingSource, /<CasaModelViewer/)
+  assert.match(viewerSource, /const MODEL_URL = publicAssetUrl\('\/models\/casa-2071\/casa-2071-maqueta-revision\.glb'\)/)
+  assert.match(viewerSource, /casa\.modelSource/)
+  assert.match(viewerSource, /<CasaReviewSun solar=\{solar\} radius=\{radius\} showPath=\{showSunPath\}/)
+  assert.match(viewerSource, /shadows="percentage"/)
+  assert.match(viewerSource, /object\.receiveShadow = sourceCollection === '01 - Terreno y jardin'/)
+  assert.doesNotMatch(viewerSource, /CasaAstronomicalSky|casa-sky-study/)
+  const reviewSunSource = readFileSync(new URL('../src/components/CasaReviewSun.tsx', import.meta.url), 'utf8')
+  assert.match(reviewSunSource, /castShadow=\{solar\.sun\.isDaylight\}/)
+  assert.match(reviewSunSource, /const sun = solarRenderPosition\(solar\.sun\.direction,/)
+  assert.match(reviewSunSource, /const skyDistance = radius \* 1\.2/)
+  assert.match(reviewSunSource, /solarRenderPosition\(solar\.sun\.direction, skyDistance\)/)
+  assert.match(reviewSunSource, /solarRenderPosition\(point\.direction, skyDistance\)/)
+  assert.match(reviewSunSource, /const lightPosition = solarRenderPosition\(solar\.sun\.direction,/)
+  assert.match(reviewSunSource, /daylight\.map\(point => solarRenderPosition\(point\.direction,/)
+  assert.doesNotMatch(reviewSunSource, /Math\.sin|Math\.cos|const progress|const angle|camera-facing/)
+})
+
+test('Cutaway preserves the lower wall geometry and toggles only upper wall segments', () => {
+  assert.match(viewerSource, /object\.visible = !isUpperWall \|\| \(!cutaway && view !== 'plan'\)/)
+  assert.match(viewerSource, /'03 - Muros en corte a 1\.10 m'/)
+  assert.match(viewerSource, /'04 - Muros superiores - ocultos en corte'/)
+  assert.match(viewerSource, /sourceCollection === '07 - Cubierta ilustrativa'/)
+  assert.match(viewerSource, /object\.visible = !cutaway && view !== 'plan'/)
+})
+
+test('Casa review GLB exports stable Blender collection IDs for model-layer toggles', () => {
+  const buffer = readFileSync(new URL('../public/models/casa-2071/casa-2071-maqueta-revision.glb', import.meta.url))
+  assert.equal(buffer.toString('ascii', 0, 4), 'glTF')
+  const jsonLength = buffer.readUInt32LE(12)
+  const gltf = JSON.parse(buffer.toString('utf8', 20, 20 + jsonLength)) as {
+    nodes: Array<{ name?: string; extras?: { casaCollection?: string; source_sha256?: string; stable_id?: string; metric_geometry?: boolean; ridge_axis_plan?: string; roof_trace?: string } }>
+  }
+  const collections = new Set(gltf.nodes.map(node => node.extras?.casaCollection).filter(Boolean))
+  assert.ok(collections.has('01 - Terreno y jardin'))
+  assert.ok(collections.has('02 - Ambientes trazados'))
+  assert.ok(collections.has('03 - Muros en corte a 1.10 m'))
+  assert.ok(collections.has('04 - Muros superiores - ocultos en corte'))
+  assert.ok(collections.has('05 - Equipamiento orientativo'))
+  assert.ok(collections.has('06 - Rotulos de planta'))
+  assert.ok(collections.has('07 - Cubierta ilustrativa'))
+  const floors = gltf.nodes.filter(node => node.extras?.casaCollection === '02 - Ambientes trazados')
+  assert.equal(floors.length, 11)
+  assert.equal(new Set(floors.map(node => node.extras?.stable_id)).size, 11)
+  assert.ok(gltf.nodes.filter(node => node.extras?.casaCollection === '06 - Rotulos de planta').length >= 9)
+  assert.equal(gltf.nodes.filter(node => node.extras?.casaCollection === '07 - Cubierta ilustrativa').length, 10)
+  const leftRoof = gltf.nodes.filter(node => node.name?.startsWith('Tejas · left-wing'))
+  assert.equal(leftRoof.length, 2)
+  assert.ok(leftRoof.every(node => node.extras?.ridge_axis_plan === 'y'))
+  assert.ok(gltf.nodes.filter(node => node.extras?.casaCollection === '07 - Cubierta ilustrativa').every(node => node.extras?.roof_trace === 'assets/reference/casa-roof-review-draft.json'))
+  assert.equal(gltf.nodes.filter(node => node.extras?.casaCollection === '05 - Equipamiento orientativo').length, 5)
+  for (const part of ['Contorno trazado de la planta - no mensura', 'Solado alrededor de pileta', 'Pileta - borde', 'Pileta - espejo de agua', 'GARAJE / SALIDA', 'Acceso Zeballos']) {
+    assert.ok(gltf.nodes.some(node => node.name?.startsWith(part) && node.extras?.casaCollection === '01 - Terreno y jardin'), `${part} must be in the toggled site layer`)
+  }
+  assert.ok(gltf.nodes.filter(node => node.extras?.casaCollection === '01 - Terreno y jardin').every(node => node.extras?.source_sha256 !== '5c75336ffeb97e040d19bd99febce18909814563bb51bd4feb5ce993770c7aac'), 'site must identify the source Blender, not claim to come from the new house plan')
+  assert.ok(gltf.nodes.every(node => !node.name?.startsWith('Tabique ')), 'old demolished partitions must not be reintroduced')
+  assert.ok(gltf.nodes.filter(node => node.extras?.casaCollection).every(node => node.extras?.metric_geometry === false))
+  assert.ok(gltf.nodes.filter(node => node.extras?.casaCollection !== '01 - Terreno y jardin' && node.extras?.casaCollection).every(node => node.extras?.source_sha256 === '5c75336ffeb97e040d19bd99febce18909814563bb51bd4feb5ce993770c7aac'))
+})

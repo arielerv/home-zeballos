@@ -1,0 +1,6616 @@
+{
+  "generatedAt": "2026-09-26",
+  "coordinateSystem": "x east / y up / z south, metres",
+  "site": {
+    "latitude": 48.00129436934608,
+    "longitude": -4.106788129193569,
+    "timeZone": "Europe/Paris",
+    "address": "1 ter Rue Jean-Baptiste Colbert · Quimper",
+    "officialAddress": "1ter impasse Jean-Baptiste Colbert, 29000 Quimper",
+    "targetId": "BATIMENT0000000316727839",
+    "rnbId": "4V8DBS2K1JDV",
+    "groundAltitude": 8.8,
+    "retrievedAt": "2026-09-26",
+    "radiusMeters": 95,
+    "attribution": "© IGN · BD TOPO / BAN · DGFiP cadastre · RNB — Licence Ouverte 2.0",
+    "rnbUrl": "https://rnb-api.beta.gouv.fr/api/alpha/buildings/4V8DBS2K1JDV/",
+    "mapUrl": "https://rnb.beta.gouv.fr/carte?q=4V8DBS2K1JDV"
+  },
+  "buildings": [
+    {
+      "id": "BATIMENT0000000316727839",
+      "rnbId": "4V8DBS2K1JDV",
+      "isTarget": true,
+      "label": "1 / 1 bis / 1 ter Colbert",
+      "footprint": [
+        [
+          -11.608,
+          -13.256
+        ],
+        [
+          -15.538,
+          -15.615
+        ],
+        [
+          -21.713,
+          -7.221
+        ],
+        [
+          14.6,
+          14.418
+        ],
+        [
+          16.817,
+          17.835
+        ],
+        [
+          25.373,
+          12.441
+        ],
+        [
+          21.988,
+          7.221
+        ],
+        [
+          -12.052,
+          -12.614
+        ]
+      ],
+      "height": 15.5,
+      "roofHeight": 0.8,
+      "groundAltitude": 8.8,
+      "groundOffset": 0,
+      "floors": 5,
+      "planarAccuracy": 3,
+      "verticalAccuracy": 2.5,
+      "source": "ign-bdtopo"
+    },
+    {
+      "id": "BATIMENT0000000316727885",
+      "rnbId": "TPMHQ8MTKX7Q",
+      "isTarget": false,
+      "label": "Anexo",
+      "footprint": [
+        [
+          -5.46,
+          18.137
+        ],
+        [
+          -2.775,
+          13.374
+        ],
+        [
+          -4.369,
+          12.412
+        ],
+        [
+          -5.319,
+          11.895
+        ],
+        [
+          -8.004,
+          16.658
+        ]
+      ],
+      "height": 2.7,
+      "roofHeight": 0.3,
+      "groundAltitude": 7.8,
+      "groundOffset": -1,
+      "floors": 1,
+      "planarAccuracy": 3,
+      "verticalAccuracy": 2.5,
+      "source": "ign-bdtopo"
+    },
+    {
+      "id": "BATIMENT0000000316727888",
+      "rnbId": "PRJ981E42Z26",
+      "isTarget": false,
+      "label": "Anexo",
+      "footprint": [
+        [
+          -10.341,
+          15.262
+        ],
+        [
+          -7.547,
+          10.59
+        ],
+        [
+          -9.983,
+          9.202
+        ],
+        [
+          -10.101,
+          9.012
+        ],
+        [
+          -12.885,
+          13.784
+        ]
+      ],
+      "height": 3.2,
+      "roofHeight": 0.3,
+      "groundAltitude": 7.3,
+      "groundOffset": -1.5,
+      "floors": 1,
+      "planarAccuracy": 3,
+      "verticalAccuracy": 2.5,
+      "source": "ign-bdtopo"
+    },
+    {
+      "id": "BATIMENT0000000316727887",
+      "rnbId": "DHT4Q8B85PTP",
+      "isTarget": false,
+      "label": "Anexo",
+      "footprint": [
+        [
+          -10.341,
+          15.262
+        ],
+        [
+          -9.489,
+          15.788
+        ],
+        [
+          -8.004,
+          16.658
+        ],
+        [
+          -5.319,
+          11.895
+        ],
+        [
+          -5.854,
+          11.541
+        ],
+        [
+          -7.547,
+          10.59
+        ]
+      ],
+      "height": 2.7,
+      "roofHeight": 0.2,
+      "groundAltitude": 7.8,
+      "groundOffset": -1,
+      "floors": 1,
+      "planarAccuracy": 3,
+      "verticalAccuracy": 2.5,
+      "source": "ign-bdtopo"
+    },
+    {
+      "id": "BATIMENT0000000316727883",
+      "rnbId": "WNCCN3R5F83K",
+      "isTarget": false,
+      "label": "Anexo",
+      "footprint": [
+        [
+          -2.775,
+          13.374
+        ],
+        [
+          -5.46,
+          18.137
+        ],
+        [
+          -3.023,
+          19.525
+        ],
+        [
+          -0.33,
+          14.862
+        ],
+        [
+          -1.498,
+          14.163
+        ]
+      ],
+      "height": 2.7,
+      "roofHeight": 0.3,
+      "groundAltitude": 7.8,
+      "groundOffset": -1,
+      "floors": 1,
+      "planarAccuracy": 3,
+      "verticalAccuracy": 2.5,
+      "source": "ign-bdtopo"
+    },
+    {
+      "id": "BATIMENT0000000316727889",
+      "rnbId": "1AXRW4XS717N",
+      "isTarget": false,
+      "label": "Anexo",
+      "footprint": [
+        [
+          -12.885,
+          13.784
+        ],
+        [
+          -10.101,
+          9.012
+        ],
+        [
+          -12.537,
+          7.624
+        ],
+        [
+          -15.43,
+          12.305
+        ],
+        [
+          -12.994,
+          13.693
+        ]
+      ],
+      "height": 2.7,
+      "roofHeight": 0.3,
+      "groundAltitude": 7.8,
+      "groundOffset": -1,
+      "floors": 1,
+      "planarAccuracy": 3,
+      "verticalAccuracy": 2.5,
+      "source": "ign-bdtopo"
+    },
+    {
+      "id": "BATIMENT0000000316727890",
+      "rnbId": "NXGGG934JHJY",
+      "isTarget": false,
+      "label": "Anexo",
+      "footprint": [
+        [
+          -15.43,
+          12.305
+        ],
+        [
+          -12.537,
+          7.624
+        ],
+        [
+          -15.181,
+          6.154
+        ],
+        [
+          -17.866,
+          10.918
+        ]
+      ],
+      "height": 3.2,
+      "roofHeight": 0.3,
+      "groundAltitude": 7.3,
+      "groundOffset": -1.5,
+      "floors": 1,
+      "planarAccuracy": 3,
+      "verticalAccuracy": 2.5,
+      "source": "ign-bdtopo"
+    },
+    {
+      "id": "BATIMENT0000000316727882",
+      "rnbId": "B39X5AF73F8F",
+      "isTarget": false,
+      "label": "Anexo",
+      "footprint": [
+        [
+          -0.33,
+          14.862
+        ],
+        [
+          -3.023,
+          19.525
+        ],
+        [
+          -1.43,
+          20.486
+        ],
+        [
+          -0.796,
+          20.83
+        ],
+        [
+          1.998,
+          16.158
+        ]
+      ],
+      "height": 2.7,
+      "roofHeight": 0.3,
+      "groundAltitude": 7.8,
+      "groundOffset": -1,
+      "floors": 1,
+      "planarAccuracy": 3,
+      "verticalAccuracy": 2.5,
+      "source": "ign-bdtopo"
+    },
+    {
+      "id": "BATIMENT0000000316727891",
+      "rnbId": "DSJA1R2N7G5E",
+      "isTarget": false,
+      "label": "Anexo",
+      "footprint": [
+        [
+          -17.866,
+          10.918
+        ],
+        [
+          -15.181,
+          6.154
+        ],
+        [
+          -17.309,
+          4.84
+        ],
+        [
+          -20.093,
+          9.612
+        ]
+      ],
+      "height": 3.2,
+      "roofHeight": 0.3,
+      "groundAltitude": 7.3,
+      "groundOffset": -1.5,
+      "floors": 1,
+      "planarAccuracy": 3,
+      "verticalAccuracy": 2.5,
+      "source": "ign-bdtopo"
+    },
+    {
+      "id": "BATIMENT0000000316727884",
+      "rnbId": "54E6DMAH744R",
+      "isTarget": false,
+      "label": "Anexo",
+      "footprint": [
+        [
+          -0.796,
+          20.83
+        ],
+        [
+          1.857,
+          22.4
+        ],
+        [
+          4.551,
+          17.736
+        ],
+        [
+          1.998,
+          16.158
+        ]
+      ],
+      "height": 2.7,
+      "roofHeight": 0.3,
+      "groundAltitude": 7.8,
+      "groundOffset": -1,
+      "floors": 1,
+      "planarAccuracy": 3,
+      "verticalAccuracy": 2.5,
+      "source": "ign-bdtopo"
+    },
+    {
+      "id": "BATIMENT0000000316727892",
+      "rnbId": "ZJ3HHND3XK1C",
+      "isTarget": false,
+      "label": "Anexo",
+      "footprint": [
+        [
+          -17.309,
+          4.84
+        ],
+        [
+          -19.854,
+          3.361
+        ],
+        [
+          -22.638,
+          8.134
+        ],
+        [
+          -22.104,
+          8.487
+        ],
+        [
+          -20.093,
+          9.612
+        ]
+      ],
+      "height": 3,
+      "roofHeight": 0.1,
+      "groundAltitude": 7.5,
+      "groundOffset": -1.3,
+      "floors": 1,
+      "planarAccuracy": 3,
+      "verticalAccuracy": 2.5,
+      "source": "ign-bdtopo"
+    },
+    {
+      "id": "BATIMENT0000000316727886",
+      "rnbId": "4H1M64XFZ4EH",
+      "isTarget": false,
+      "label": "Anexo",
+      "footprint": [
+        [
+          4.551,
+          17.736
+        ],
+        [
+          1.857,
+          22.4
+        ],
+        [
+          5.887,
+          24.749
+        ],
+        [
+          11.017,
+          21.473
+        ]
+      ],
+      "height": 2.7,
+      "roofHeight": 0.3,
+      "groundAltitude": 7.8,
+      "groundOffset": -1,
+      "floors": 1,
+      "planarAccuracy": 3,
+      "verticalAccuracy": 2.5,
+      "source": "ign-bdtopo"
+    },
+    {
+      "id": "BATIMENT0000000316727893",
+      "rnbId": "Z6RTB6P16CE3",
+      "isTarget": false,
+      "label": "Anexo",
+      "footprint": [
+        [
+          -19.854,
+          3.361
+        ],
+        [
+          -22.19,
+          1.965
+        ],
+        [
+          -24.974,
+          6.737
+        ],
+        [
+          -22.638,
+          8.134
+        ]
+      ],
+      "height": 3,
+      "roofHeight": 0,
+      "groundAltitude": 7.5,
+      "groundOffset": -1.3,
+      "floors": 1,
+      "planarAccuracy": 3,
+      "verticalAccuracy": 2.5,
+      "source": "ign-bdtopo"
+    },
+    {
+      "id": "BATIMENT0000000316727769",
+      "rnbId": "PPAHABSVXEGV",
+      "isTarget": false,
+      "label": "Edificio vecino",
+      "footprint": [
+        [
+          22.009,
+          -23.725
+        ],
+        [
+          14.379,
+          -21.429
+        ],
+        [
+          15.03,
+          -19.78
+        ],
+        [
+          8.057,
+          -23.571
+        ],
+        [
+          3.498,
+          -20.648
+        ],
+        [
+          9.421,
+          -17.365
+        ],
+        [
+          18.513,
+          -12.358
+        ],
+        [
+          19.818,
+          -12.376
+        ],
+        [
+          23.532,
+          -13.514
+        ],
+        [
+          24.802,
+          -15.035
+        ]
+      ],
+      "height": 6.9,
+      "roofHeight": 3,
+      "groundAltitude": 10,
+      "groundOffset": 1.2,
+      "floors": 3,
+      "planarAccuracy": 3,
+      "verticalAccuracy": 2.5,
+      "source": "ign-bdtopo"
+    },
+    {
+      "id": "BATIMENT0000000316729392",
+      "rnbId": "68TADFW7ZM45",
+      "isTarget": false,
+      "label": "Anexo",
+      "footprint": [
+        [
+          -17.537,
+          -19.955
+        ],
+        [
+          -13.892,
+          -25.207
+        ],
+        [
+          -10.913,
+          -23.367
+        ],
+        [
+          -12.953,
+          -20.369
+        ],
+        [
+          -13.941,
+          -19.074
+        ],
+        [
+          -14.749,
+          -17.996
+        ]
+      ],
+      "height": 2.7,
+      "roofHeight": 0.2,
+      "groundAltitude": 7.7,
+      "groundOffset": -1.1,
+      "floors": 1,
+      "planarAccuracy": 5,
+      "verticalAccuracy": 1,
+      "source": "ign-bdtopo"
+    },
+    {
+      "id": "BATIMENT0000000316728081",
+      "rnbId": "FZVFXW2TETRH",
+      "isTarget": false,
+      "label": "Anexo",
+      "footprint": [
+        [
+          -11.718,
+          30.055
+        ],
+        [
+          -9.051,
+          25.092
+        ],
+        [
+          -11.388,
+          23.696
+        ],
+        [
+          -14.263,
+          28.577
+        ]
+      ],
+      "height": 4.1,
+      "roofHeight": 0,
+      "groundAltitude": 6.2,
+      "groundOffset": -2.6,
+      "floors": 1,
+      "planarAccuracy": 3,
+      "verticalAccuracy": 2.5,
+      "source": "ign-bdtopo"
+    },
+    {
+      "id": "BATIMENT0000000316728085",
+      "rnbId": "4EQYQ97XA41P",
+      "isTarget": false,
+      "label": "Anexo",
+      "footprint": [
+        [
+          -21.788,
+          24.233
+        ],
+        [
+          -19.013,
+          19.36
+        ],
+        [
+          -19.972,
+          18.743
+        ],
+        [
+          -21.349,
+          17.964
+        ],
+        [
+          -24.124,
+          22.836
+        ]
+      ],
+      "height": 3.6,
+      "roofHeight": 0,
+      "groundAltitude": 6.7,
+      "groundOffset": -2.1,
+      "floors": 1,
+      "planarAccuracy": 3,
+      "verticalAccuracy": 2.5,
+      "source": "ign-bdtopo"
+    },
+    {
+      "id": "BATIMENT0000000316728080",
+      "rnbId": "5FWVSS4YTATS",
+      "isTarget": false,
+      "label": "Anexo",
+      "footprint": [
+        [
+          -9.051,
+          25.092
+        ],
+        [
+          -11.718,
+          30.055
+        ],
+        [
+          -10.767,
+          30.572
+        ],
+        [
+          -9.5,
+          31.261
+        ],
+        [
+          -6.615,
+          26.48
+        ],
+        [
+          -8.418,
+          25.437
+        ]
+      ],
+      "height": 4.1,
+      "roofHeight": 0,
+      "groundAltitude": 6.2,
+      "groundOffset": -2.6,
+      "floors": 1,
+      "planarAccuracy": 3,
+      "verticalAccuracy": 2.5,
+      "source": "ign-bdtopo"
+    },
+    {
+      "id": "BATIMENT0000000316728083",
+      "rnbId": "C953ANE4C141",
+      "isTarget": false,
+      "label": "Anexo",
+      "footprint": [
+        [
+          -16.577,
+          20.748
+        ],
+        [
+          -19.252,
+          25.612
+        ],
+        [
+          -17.441,
+          26.753
+        ],
+        [
+          -16.699,
+          27.189
+        ],
+        [
+          -13.823,
+          22.308
+        ]
+      ],
+      "height": 3.8,
+      "roofHeight": 0,
+      "groundAltitude": 6.5,
+      "groundOffset": -2.3,
+      "floors": 1,
+      "planarAccuracy": 3,
+      "verticalAccuracy": 2.5,
+      "source": "ign-bdtopo"
+    },
+    {
+      "id": "BATIMENT0000000316728070",
+      "rnbId": "EWF5P411PYF6",
+      "isTarget": false,
+      "label": "Edificio vecino",
+      "footprint": [
+        [
+          -36.079,
+          -9.441
+        ],
+        [
+          -29.923,
+          -18.034
+        ],
+        [
+          -23.466,
+          -13.292
+        ],
+        [
+          -23.82,
+          -12.757
+        ],
+        [
+          -22.208,
+          -11.597
+        ],
+        [
+          -27.911,
+          -3.547
+        ]
+      ],
+      "height": 9.5,
+      "roofHeight": 2.8,
+      "groundAltitude": 7.2,
+      "groundOffset": -1.6,
+      "floors": 2,
+      "planarAccuracy": 3,
+      "verticalAccuracy": 1,
+      "source": "ign-bdtopo"
+    },
+    {
+      "id": "BATIMENT0000000316728082",
+      "rnbId": "ZSDNAQNJAFW5",
+      "isTarget": false,
+      "label": "Anexo",
+      "footprint": [
+        [
+          -14.263,
+          28.577
+        ],
+        [
+          -11.388,
+          23.696
+        ],
+        [
+          -13.823,
+          22.308
+        ],
+        [
+          -16.699,
+          27.189
+        ],
+        [
+          -15.856,
+          27.615
+        ],
+        [
+          -15.431,
+          27.879
+        ]
+      ],
+      "height": 3.8,
+      "roofHeight": 0,
+      "groundAltitude": 6.5,
+      "groundOffset": -2.3,
+      "floors": 1,
+      "planarAccuracy": 3,
+      "verticalAccuracy": 2.5,
+      "source": "ign-bdtopo"
+    },
+    {
+      "id": "BATIMENT0000000316728084",
+      "rnbId": "EXV8CXNZ44DG",
+      "isTarget": false,
+      "label": "Anexo",
+      "footprint": [
+        [
+          -19.013,
+          19.36
+        ],
+        [
+          -21.788,
+          24.233
+        ],
+        [
+          -20.095,
+          25.185
+        ],
+        [
+          -19.252,
+          25.612
+        ],
+        [
+          -16.577,
+          20.748
+        ]
+      ],
+      "height": 4,
+      "roofHeight": 0,
+      "groundAltitude": 6.3,
+      "groundOffset": -2.5,
+      "floors": 1,
+      "planarAccuracy": 3,
+      "verticalAccuracy": 2.5,
+      "source": "ign-bdtopo"
+    },
+    {
+      "id": "BATIMENT0000000316728079",
+      "rnbId": "6GEGCMB1P6H6",
+      "isTarget": false,
+      "label": "Anexo",
+      "footprint": [
+        [
+          -6.615,
+          26.48
+        ],
+        [
+          -9.5,
+          31.261
+        ],
+        [
+          -6.955,
+          32.74
+        ],
+        [
+          -1.635,
+          29.345
+        ]
+      ],
+      "height": 4.2,
+      "roofHeight": 0,
+      "groundAltitude": 6.1,
+      "groundOffset": -2.7,
+      "floors": 1,
+      "planarAccuracy": 3,
+      "verticalAccuracy": 2.5,
+      "source": "ign-bdtopo"
+    },
+    {
+      "id": "BATIMENT0000000316727770",
+      "rnbId": "CR92TQGHW51R",
+      "isTarget": false,
+      "label": "Edificio vecino",
+      "footprint": [
+        [
+          10.684,
+          -36.768
+        ],
+        [
+          7.368,
+          -35.665
+        ],
+        [
+          -2.4,
+          -32.573
+        ],
+        [
+          -0.574,
+          -26.811
+        ],
+        [
+          1.383,
+          -27.39
+        ],
+        [
+          3.498,
+          -20.648
+        ],
+        [
+          8.057,
+          -23.571
+        ],
+        [
+          12.616,
+          -26.495
+        ],
+        [
+          11.395,
+          -30.001
+        ],
+        [
+          11.884,
+          -30.146
+        ],
+        [
+          11.432,
+          -31.813
+        ],
+        [
+          12.212,
+          -32.084
+        ]
+      ],
+      "height": 6.9,
+      "roofHeight": 2,
+      "groundAltitude": 10,
+      "groundOffset": 1.2,
+      "floors": 2,
+      "planarAccuracy": 3,
+      "verticalAccuracy": 2.5,
+      "source": "ign-bdtopo"
+    },
+    {
+      "id": "BATIMENT0000000316728086",
+      "rnbId": "MQEXPCH6EMQ2",
+      "isTarget": false,
+      "label": "Anexo",
+      "footprint": [
+        [
+          -23.894,
+          16.485
+        ],
+        [
+          -26.669,
+          21.357
+        ],
+        [
+          -26.135,
+          21.711
+        ],
+        [
+          -24.124,
+          22.836
+        ],
+        [
+          -21.349,
+          17.964
+        ],
+        [
+          -22.834,
+          17.093
+        ]
+      ],
+      "height": 3.8,
+      "roofHeight": 0,
+      "groundAltitude": 6.5,
+      "groundOffset": -2.3,
+      "floors": 1,
+      "planarAccuracy": 3,
+      "verticalAccuracy": 2.5,
+      "source": "ign-bdtopo"
+    },
+    {
+      "id": "BATIMENT0000000316727768",
+      "rnbId": "X2XWJXAQMYAZ",
+      "isTarget": false,
+      "label": "Edificio vecino",
+      "footprint": [
+        [
+          14.379,
+          -21.429
+        ],
+        [
+          12.616,
+          -26.495
+        ],
+        [
+          19.549,
+          -30.938
+        ],
+        [
+          20.498,
+          -28.21
+        ],
+        [
+          22.009,
+          -23.725
+        ]
+      ],
+      "height": 9.1,
+      "roofHeight": 2.4,
+      "groundAltitude": 8.6,
+      "groundOffset": -0.2,
+      "floors": 3,
+      "planarAccuracy": 3,
+      "verticalAccuracy": 1,
+      "source": "ign-bdtopo"
+    },
+    {
+      "id": "BATIMENT0000000316728087",
+      "rnbId": "2GRBNHGMNEG5",
+      "isTarget": false,
+      "label": "Anexo",
+      "footprint": [
+        [
+          -26.221,
+          15.189
+        ],
+        [
+          -28.997,
+          20.061
+        ],
+        [
+          -26.986,
+          21.185
+        ],
+        [
+          -26.669,
+          21.357
+        ],
+        [
+          -23.894,
+          16.485
+        ]
+      ],
+      "height": 3.8,
+      "roofHeight": 0,
+      "groundAltitude": 6.5,
+      "groundOffset": -2.3,
+      "floors": 1,
+      "planarAccuracy": 3,
+      "verticalAccuracy": 2.5,
+      "source": "ign-bdtopo"
+    },
+    {
+      "id": "BATIMENT0000000316728088",
+      "rnbId": "TKDKE9RK2RTY",
+      "isTarget": false,
+      "label": "Anexo",
+      "footprint": [
+        [
+          -28.766,
+          13.71
+        ],
+        [
+          -31.541,
+          18.582
+        ],
+        [
+          -31.224,
+          18.754
+        ],
+        [
+          -28.997,
+          20.061
+        ],
+        [
+          -26.221,
+          15.189
+        ],
+        [
+          -26.964,
+          14.753
+        ],
+        [
+          -27.814,
+          14.227
+        ]
+      ],
+      "height": 4,
+      "roofHeight": 0,
+      "groundAltitude": 6.3,
+      "groundOffset": -2.5,
+      "floors": 1,
+      "planarAccuracy": 3,
+      "verticalAccuracy": 2.5,
+      "source": "ign-bdtopo"
+    },
+    {
+      "id": "BATIMENT0000000316729380",
+      "rnbId": "XSMNHK35A9ZA",
+      "isTarget": false,
+      "label": "Anexo",
+      "footprint": [
+        [
+          34.504,
+          13.426
+        ],
+        [
+          29.683,
+          14.564
+        ],
+        [
+          28.654,
+          9.835
+        ],
+        [
+          33.022,
+          7.029
+        ]
+      ],
+      "height": 2.4,
+      "roofHeight": 0.4,
+      "groundAltitude": 7.8,
+      "groundOffset": -1,
+      "floors": 1,
+      "planarAccuracy": 5,
+      "verticalAccuracy": 1,
+      "source": "ign-bdtopo"
+    },
+    {
+      "id": "BATIMENT0000000316728089",
+      "rnbId": "EX25QRT1DPC6",
+      "isTarget": false,
+      "label": "Anexo",
+      "footprint": [
+        [
+          -31.541,
+          18.582
+        ],
+        [
+          -28.766,
+          13.71
+        ],
+        [
+          -31.202,
+          12.322
+        ],
+        [
+          -34.086,
+          17.104
+        ]
+      ],
+      "height": 4,
+      "roofHeight": 0,
+      "groundAltitude": 6.3,
+      "groundOffset": -2.5,
+      "floors": 1,
+      "planarAccuracy": 3,
+      "verticalAccuracy": 2.5,
+      "source": "ign-bdtopo"
+    },
+    {
+      "id": "BATIMENT0000000316729393",
+      "rnbId": "SQH412C18X5R",
+      "isTarget": false,
+      "label": "Anexo",
+      "footprint": [
+        [
+          34.294,
+          15.554
+        ],
+        [
+          34.312,
+          15.753
+        ],
+        [
+          34.139,
+          16.07
+        ],
+        [
+          34.474,
+          17.548
+        ],
+        [
+          31.529,
+          18.315
+        ],
+        [
+          31.068,
+          16.548
+        ]
+      ],
+      "height": 2.6,
+      "roofHeight": 0.3,
+      "groundAltitude": 7.6,
+      "groundOffset": -1.2,
+      "floors": 0,
+      "planarAccuracy": 5,
+      "verticalAccuracy": 1,
+      "source": "ign-bdtopo"
+    },
+    {
+      "id": "BATIMENT0000000316729381",
+      "rnbId": "SQH412C18X5R",
+      "isTarget": false,
+      "label": "Edificio vecino",
+      "footprint": [
+        [
+          34.763,
+          17.421
+        ],
+        [
+          34.474,
+          17.548
+        ],
+        [
+          34.139,
+          16.07
+        ],
+        [
+          34.312,
+          15.753
+        ]
+      ],
+      "height": 2,
+      "roofHeight": 0.2,
+      "groundAltitude": 7.7,
+      "groundOffset": -1.1,
+      "floors": null,
+      "planarAccuracy": 5,
+      "verticalAccuracy": 1,
+      "source": "ign-bdtopo"
+    },
+    {
+      "id": "BATIMENT0000000316727771",
+      "rnbId": "YDQQVJQWZKNV",
+      "isTarget": false,
+      "label": "Edificio vecino",
+      "footprint": [
+        [
+          4.754,
+          -43.468
+        ],
+        [
+          7.368,
+          -35.665
+        ],
+        [
+          10.684,
+          -36.768
+        ],
+        [
+          15.94,
+          -38.65
+        ],
+        [
+          13.335,
+          -46.351
+        ],
+        [
+          12.755,
+          -46.098
+        ],
+        [
+          10.408,
+          -45.384
+        ]
+      ],
+      "height": 6.8,
+      "roofHeight": 3.4,
+      "groundAltitude": 10,
+      "groundOffset": 1.2,
+      "floors": 3,
+      "planarAccuracy": 3,
+      "verticalAccuracy": 2.5,
+      "source": "ign-bdtopo"
+    },
+    {
+      "id": "BATIMENT0000000316728068",
+      "rnbId": "R1HEJEH9G7MM",
+      "isTarget": false,
+      "label": "Edificio vecino",
+      "footprint": [
+        [
+          -26.675,
+          -24.355
+        ],
+        [
+          -34.265,
+          -13.824
+        ],
+        [
+          -43.138,
+          -19.754
+        ],
+        [
+          -42.513,
+          -20.615
+        ],
+        [
+          -44.433,
+          -21.848
+        ],
+        [
+          -42.465,
+          -24.538
+        ],
+        [
+          -37.36,
+          -31.428
+        ],
+        [
+          -36.816,
+          -32.08
+        ],
+        [
+          -36.372,
+          -32.723
+        ],
+        [
+          -26.05,
+          -25.215
+        ]
+      ],
+      "height": 6.7,
+      "roofHeight": 3.4,
+      "groundAltitude": 7.3,
+      "groundOffset": -1.5,
+      "floors": 3,
+      "planarAccuracy": 3,
+      "verticalAccuracy": 2.5,
+      "source": "ign-bdtopo"
+    },
+    {
+      "id": "BATIMENT0000000316729382",
+      "rnbId": "J4JEZTDRR7HN",
+      "isTarget": false,
+      "label": "Anexo",
+      "footprint": [
+        [
+          -45.674,
+          20.059
+        ],
+        [
+          -43.733,
+          17.07
+        ],
+        [
+          -41.397,
+          18.468
+        ],
+        [
+          -43.528,
+          21.573
+        ]
+      ],
+      "height": 3,
+      "roofHeight": 0.5,
+      "groundAltitude": 5.6,
+      "groundOffset": -3.2,
+      "floors": 1,
+      "planarAccuracy": 5,
+      "verticalAccuracy": 1,
+      "source": "ign-bdtopo"
+    },
+    {
+      "id": "BATIMENT0000000316727921",
+      "rnbId": "N52T3F23FJ1V",
+      "isTarget": false,
+      "label": "Edificio vecino",
+      "footprint": [
+        [
+          -15.935,
+          36.765
+        ],
+        [
+          -14.241,
+          37.717
+        ],
+        [
+          -19.638,
+          46.944
+        ],
+        [
+          -22.4,
+          45.286
+        ],
+        [
+          -23.261,
+          46.87
+        ],
+        [
+          -26.766,
+          44.775
+        ],
+        [
+          -27.627,
+          46.36
+        ],
+        [
+          -29.738,
+          45.244
+        ],
+        [
+          -33.034,
+          43.231
+        ],
+        [
+          -32.281,
+          41.555
+        ],
+        [
+          -35.785,
+          39.46
+        ],
+        [
+          -34.842,
+          37.668
+        ],
+        [
+          -38.88,
+          35.219
+        ],
+        [
+          -33.937,
+          26.534
+        ],
+        [
+          -27.68,
+          30.189
+        ],
+        [
+          -27.236,
+          29.547
+        ],
+        [
+          -23.324,
+          31.705
+        ],
+        [
+          -23.668,
+          32.339
+        ]
+      ],
+      "height": 11.5,
+      "roofHeight": 4.6,
+      "groundAltitude": 5.6,
+      "groundOffset": -3.2,
+      "floors": 4,
+      "planarAccuracy": 3,
+      "verticalAccuracy": 2.5,
+      "source": "ign-bdtopo"
+    },
+    {
+      "id": "BATIMENT0000000316727734",
+      "rnbId": "XZ92SRS19BY3",
+      "isTarget": false,
+      "label": "Edificio vecino",
+      "footprint": [
+        [
+          39.065,
+          -34.005
+        ],
+        [
+          38.965,
+          -33.995
+        ],
+        [
+          32.551,
+          -33.819
+        ],
+        [
+          32.981,
+          -26.825
+        ],
+        [
+          33.295,
+          -22.231
+        ],
+        [
+          42.998,
+          -22.705
+        ],
+        [
+          42.405,
+          -31.494
+        ],
+        [
+          44.109,
+          -31.547
+        ],
+        [
+          43.975,
+          -34.147
+        ]
+      ],
+      "height": 7,
+      "roofHeight": 2.4,
+      "groundAltitude": 9.9,
+      "groundOffset": 1.1,
+      "floors": 2,
+      "planarAccuracy": 3,
+      "verticalAccuracy": 2.5,
+      "source": "ign-bdtopo"
+    },
+    {
+      "id": "BATIMENT0000000316727772",
+      "rnbId": "D9VDPJGESH2F",
+      "isTarget": false,
+      "label": "Edificio vecino",
+      "footprint": [
+        [
+          4.754,
+          -43.468
+        ],
+        [
+          10.408,
+          -45.384
+        ],
+        [
+          9.197,
+          -48.792
+        ],
+        [
+          12.124,
+          -49.759
+        ],
+        [
+          10.614,
+          -54.243
+        ],
+        [
+          10.423,
+          -54.126
+        ],
+        [
+          9.384,
+          -56.745
+        ],
+        [
+          2.071,
+          -54.277
+        ],
+        [
+          0.802,
+          -53.861
+        ],
+        [
+          3.217,
+          -47.146
+        ],
+        [
+          3.008,
+          -46.123
+        ],
+        [
+          3.93,
+          -43.695
+        ]
+      ],
+      "height": 7.3,
+      "roofHeight": 2.9,
+      "groundAltitude": 10.2,
+      "groundOffset": 1.4,
+      "floors": 3,
+      "planarAccuracy": 3,
+      "verticalAccuracy": 2.5,
+      "source": "ign-bdtopo"
+    },
+    {
+      "id": "BATIMENT0000000331968680",
+      "rnbId": "B1T2TN9YBRVM",
+      "isTarget": false,
+      "label": "Edificio vecino",
+      "footprint": [
+        [
+          30.849,
+          60.874
+        ],
+        [
+          39.738,
+          55.853
+        ],
+        [
+          42.203,
+          55.329
+        ],
+        [
+          41.616,
+          52.167
+        ],
+        [
+          40.239,
+          52.493
+        ],
+        [
+          39.58,
+          48.533
+        ],
+        [
+          38.394,
+          48.74
+        ],
+        [
+          35.721,
+          35.821
+        ],
+        [
+          36.609,
+          35.64
+        ],
+        [
+          35.363,
+          29.624
+        ],
+        [
+          35.951,
+          29.47
+        ],
+        [
+          34.596,
+          23.363
+        ],
+        [
+          31.344,
+          24.059
+        ],
+        [
+          30.674,
+          23.315
+        ],
+        [
+          24.55,
+          24.471
+        ],
+        [
+          22.691,
+          26.146
+        ],
+        [
+          15.922,
+          27.962
+        ],
+        [
+          15.687,
+          27.582
+        ],
+        [
+          -5.754,
+          39.362
+        ],
+        [
+          1.185,
+          52.802
+        ],
+        [
+          3.903,
+          52.858
+        ],
+        [
+          15.403,
+          46.697
+        ],
+        [
+          19.725,
+          45.602
+        ],
+        [
+          19.463,
+          43.818
+        ],
+        [
+          24.564,
+          42.454
+        ],
+        [
+          27.134,
+          47.546
+        ],
+        [
+          26.473,
+          48.009
+        ],
+        [
+          27.34,
+          49.839
+        ],
+        [
+          25.429,
+          50.915
+        ]
+      ],
+      "height": 10.1,
+      "roofHeight": 22.3,
+      "groundAltitude": 6.8,
+      "groundOffset": -2,
+      "floors": null,
+      "planarAccuracy": 2.5,
+      "verticalAccuracy": 1.5,
+      "source": "ign-bdtopo"
+    },
+    {
+      "id": "BATIMENT0000000316728069",
+      "rnbId": "9XXKR3DVVKXG",
+      "isTarget": false,
+      "label": "Edificio vecino",
+      "footprint": [
+        [
+          -37.36,
+          -31.428
+        ],
+        [
+          -42.465,
+          -24.538
+        ],
+        [
+          -50.325,
+          -30.358
+        ],
+        [
+          -44.576,
+          -37.91
+        ],
+        [
+          -36.816,
+          -32.08
+        ]
+      ],
+      "height": 9.4,
+      "roofHeight": 2.5,
+      "groundAltitude": 7.1,
+      "groundOffset": -1.7,
+      "floors": 3,
+      "planarAccuracy": 3,
+      "verticalAccuracy": 1,
+      "source": "ign-bdtopo"
+    },
+    {
+      "id": "BATIMENT0000000316727871",
+      "rnbId": "VMSANMMRAY7K",
+      "isTarget": false,
+      "label": "Edificio vecino",
+      "footprint": [
+        [
+          48.794,
+          7.013
+        ],
+        [
+          48.284,
+          -1.984
+        ],
+        [
+          56.682,
+          -2.441
+        ],
+        [
+          57.092,
+          6.565
+        ]
+      ],
+      "height": 7.5,
+      "roofHeight": 2.3,
+      "groundAltitude": 8.2,
+      "groundOffset": -0.6,
+      "floors": 2,
+      "planarAccuracy": 3,
+      "verticalAccuracy": 1,
+      "source": "ign-bdtopo"
+    },
+    {
+      "id": "BATIMENT0000000316729470",
+      "rnbId": "32DENX4ZMQ8K",
+      "isTarget": false,
+      "label": "Edificio vecino",
+      "footprint": [
+        [
+          -8.875,
+          -50.877
+        ],
+        [
+          -13.36,
+          -49.367
+        ],
+        [
+          -14.307,
+          -55.411
+        ],
+        [
+          -14.434,
+          -55.701
+        ],
+        [
+          -10.61,
+          -56.749
+        ]
+      ],
+      "height": 3.1,
+      "roofHeight": 2,
+      "groundAltitude": 8.8,
+      "groundOffset": 0,
+      "floors": null,
+      "planarAccuracy": 5,
+      "verticalAccuracy": 1,
+      "source": "ign-bdtopo"
+    },
+    {
+      "id": "BATIMENT0000000316727735",
+      "rnbId": "KPR7MNYS7VVB",
+      "isTarget": false,
+      "label": "Edificio vecino",
+      "footprint": [
+        [
+          33.863,
+          -45.994
+        ],
+        [
+          29.369,
+          -44.583
+        ],
+        [
+          32.262,
+          -34.797
+        ],
+        [
+          37.064,
+          -36.135
+        ],
+        [
+          35.699,
+          -41.236
+        ],
+        [
+          41.615,
+          -41.368
+        ],
+        [
+          41.655,
+          -46.495
+        ],
+        [
+          37.841,
+          -46.453
+        ],
+        [
+          33.828,
+          -46.392
+        ]
+      ],
+      "height": 8.2,
+      "roofHeight": 2.6,
+      "groundAltitude": 10,
+      "groundOffset": 1.2,
+      "floors": 2,
+      "planarAccuracy": 3,
+      "verticalAccuracy": 2.5,
+      "source": "ign-bdtopo"
+    },
+    {
+      "id": "BATIMENT0000000316727762",
+      "rnbId": "PWZ5NYPAEXRM",
+      "isTarget": false,
+      "label": "Edificio vecino",
+      "footprint": [
+        [
+          -29.437,
+          -53.844
+        ],
+        [
+          -26.191,
+          -57.955
+        ],
+        [
+          -17.417,
+          -50.911
+        ],
+        [
+          -22.64,
+          -44.21
+        ],
+        [
+          -25.556,
+          -46.459
+        ],
+        [
+          -24.93,
+          -47.318
+        ],
+        [
+          -27.981,
+          -49.957
+        ],
+        [
+          -26.82,
+          -51.569
+        ]
+      ],
+      "height": 7.4,
+      "roofHeight": 1.7,
+      "groundAltitude": 7.9,
+      "groundOffset": -0.9,
+      "floors": 2,
+      "planarAccuracy": 3,
+      "verticalAccuracy": 1,
+      "source": "ign-bdtopo"
+    },
+    {
+      "id": "BATIMENT0000000316727929",
+      "rnbId": "3CVV986J8YNZ",
+      "isTarget": false,
+      "label": "Anexo",
+      "footprint": [
+        [
+          56.893,
+          -20.141
+        ],
+        [
+          57.33,
+          -10.838
+        ],
+        [
+          52.556,
+          -10.306
+        ],
+        [
+          51.974,
+          -20.1
+        ]
+      ],
+      "height": 2,
+      "roofHeight": 1.4,
+      "groundAltitude": 9.1,
+      "groundOffset": 0.3,
+      "floors": 1,
+      "planarAccuracy": 3,
+      "verticalAccuracy": 1,
+      "source": "ign-bdtopo"
+    },
+    {
+      "id": "BATIMENT0000000316727773",
+      "rnbId": "C355CKVQ9EWK",
+      "isTarget": false,
+      "label": "Anexo",
+      "footprint": [
+        [
+          0.313,
+          -53.716
+        ],
+        [
+          -2.716,
+          -62.786
+        ],
+        [
+          6.463,
+          -65.725
+        ],
+        [
+          9.384,
+          -56.745
+        ],
+        [
+          2.071,
+          -54.277
+        ],
+        [
+          0.802,
+          -53.861
+        ]
+      ],
+      "height": 10.4,
+      "roofHeight": 2.7,
+      "groundAltitude": 9.6,
+      "groundOffset": 0.8,
+      "floors": 1,
+      "planarAccuracy": 3,
+      "verticalAccuracy": 1,
+      "source": "ign-bdtopo"
+    },
+    {
+      "id": "BATIMENT0000000316727869",
+      "rnbId": "DBXSEJQY4J79",
+      "isTarget": false,
+      "label": "Edificio vecino",
+      "footprint": [
+        [
+          52.9,
+          16.89
+        ],
+        [
+          52.624,
+          9.379
+        ],
+        [
+          59.029,
+          9.103
+        ],
+        [
+          61.729,
+          8.96
+        ],
+        [
+          62.031,
+          17.874
+        ],
+        [
+          53.433,
+          18.349
+        ],
+        [
+          53.398,
+          16.844
+        ]
+      ],
+      "height": 8,
+      "roofHeight": 2.2,
+      "groundAltitude": 8,
+      "groundOffset": -0.8,
+      "floors": 3,
+      "planarAccuracy": 3,
+      "verticalAccuracy": 1,
+      "source": "ign-bdtopo"
+    },
+    {
+      "id": "BATIMENT0000000316727760",
+      "rnbId": "D4R2P6KVTDTK",
+      "isTarget": false,
+      "label": "Edificio vecino",
+      "footprint": [
+        [
+          -30.797,
+          -52.214
+        ],
+        [
+          -27.981,
+          -49.957
+        ],
+        [
+          -26.82,
+          -51.569
+        ],
+        [
+          -29.437,
+          -53.844
+        ]
+      ],
+      "height": 4.4,
+      "roofHeight": 1.4,
+      "groundAltitude": 9.7,
+      "groundOffset": 0.9,
+      "floors": null,
+      "planarAccuracy": 3,
+      "verticalAccuracy": 2.5,
+      "source": "ign-bdtopo"
+    },
+    {
+      "id": "BATIMENT0000000316727736",
+      "rnbId": "W3TQCMGMCYKC",
+      "isTarget": false,
+      "label": "Edificio vecino",
+      "footprint": [
+        [
+          23.308,
+          -57.197
+        ],
+        [
+          34.849,
+          -57.335
+        ],
+        [
+          37.658,
+          -57.388
+        ],
+        [
+          37.836,
+          -52.078
+        ],
+        [
+          30.108,
+          -51.984
+        ],
+        [
+          30.114,
+          -46.359
+        ],
+        [
+          24.895,
+          -46.29
+        ],
+        [
+          23.69,
+          -46.281
+        ],
+        [
+          21.71,
+          -52.633
+        ],
+        [
+          22.915,
+          -52.641
+        ],
+        [
+          24.618,
+          -52.694
+        ]
+      ],
+      "height": 4.3,
+      "roofHeight": 3.5,
+      "groundAltitude": 9.5,
+      "groundOffset": 0.7,
+      "floors": 2,
+      "planarAccuracy": 3,
+      "verticalAccuracy": 1,
+      "source": "ign-bdtopo"
+    },
+    {
+      "id": "BATIMENT0000000316727930",
+      "rnbId": "Z1572TE8MGPP",
+      "isTarget": false,
+      "label": "Edificio vecino",
+      "footprint": [
+        [
+          56.491,
+          -30.153
+        ],
+        [
+          46.146,
+          -30.123
+        ],
+        [
+          46.168,
+          -22.087
+        ],
+        [
+          55.209,
+          -22.099
+        ],
+        [
+          55.358,
+          -28.241
+        ],
+        [
+          56.572,
+          -28.15
+        ],
+        [
+          56.528,
+          -29.753
+        ]
+      ],
+      "height": 7,
+      "roofHeight": 1,
+      "groundAltitude": 10,
+      "groundOffset": 1.2,
+      "floors": 1,
+      "planarAccuracy": 3,
+      "verticalAccuracy": 2.5,
+      "source": "ign-bdtopo"
+    },
+    {
+      "id": "BATIMENT0000000316727928",
+      "rnbId": "4NKVC2DK2QC5",
+      "isTarget": false,
+      "label": "Anexo",
+      "footprint": [
+        [
+          58.028,
+          -10.9
+        ],
+        [
+          57.561,
+          -16.083
+        ],
+        [
+          60.958,
+          -16.288
+        ],
+        [
+          61.426,
+          -11.107
+        ]
+      ],
+      "height": 2.6,
+      "roofHeight": 0.6,
+      "groundAltitude": 8.7,
+      "groundOffset": -0.1,
+      "floors": 1,
+      "planarAccuracy": 3,
+      "verticalAccuracy": 1,
+      "source": "ign-bdtopo"
+    },
+    {
+      "id": "BATIMENT0000000316727870",
+      "rnbId": "JB5YTGEATG8H",
+      "isTarget": false,
+      "label": "Edificio vecino",
+      "footprint": [
+        [
+          58.352,
+          19.412
+        ],
+        [
+          61.949,
+          19.187
+        ],
+        [
+          62.207,
+          26.499
+        ],
+        [
+          57.695,
+          26.604
+        ],
+        [
+          57.876,
+          27.492
+        ],
+        [
+          55.865,
+          27.473
+        ],
+        [
+          55.883,
+          26.567
+        ],
+        [
+          53.084,
+          26.719
+        ],
+        [
+          52.745,
+          19.616
+        ]
+      ],
+      "height": 9.5,
+      "roofHeight": 1.9,
+      "groundAltitude": 8,
+      "groundOffset": -0.8,
+      "floors": 2,
+      "planarAccuracy": 3,
+      "verticalAccuracy": 1,
+      "source": "ign-bdtopo"
+    },
+    {
+      "id": "BATIMENT0000000316727765",
+      "rnbId": "18M5SFSAR45S",
+      "isTarget": false,
+      "label": "Edificio vecino",
+      "footprint": [
+        [
+          59.802,
+          5.416
+        ],
+        [
+          59.572,
+          -2.701
+        ],
+        [
+          68.794,
+          -2.93
+        ],
+        [
+          69.124,
+          5.178
+        ]
+      ],
+      "height": 10.3,
+      "roofHeight": 1.3,
+      "groundAltitude": 8.4,
+      "groundOffset": -0.4,
+      "floors": 2,
+      "planarAccuracy": 3,
+      "verticalAccuracy": 1,
+      "source": "ign-bdtopo"
+    },
+    {
+      "id": "BATIMENT0000000316727759",
+      "rnbId": "GZRGJSCMQQF9",
+      "isTarget": false,
+      "label": "Edificio vecino",
+      "footprint": [
+        [
+          -40.994,
+          -58.327
+        ],
+        [
+          -31.785,
+          -50.92
+        ],
+        [
+          -35.303,
+          -46.483
+        ],
+        [
+          -44.511,
+          -53.891
+        ]
+      ],
+      "height": 7.7,
+      "roofHeight": 1.4,
+      "groundAltitude": 7.1,
+      "groundOffset": -1.7,
+      "floors": 3,
+      "planarAccuracy": 3,
+      "verticalAccuracy": 1,
+      "source": "ign-bdtopo"
+    },
+    {
+      "id": "BATIMENT0000000316729469",
+      "rnbId": "HFHMPQTXG9SQ",
+      "isTarget": false,
+      "label": "Edificio vecino",
+      "footprint": [
+        [
+          -9.727,
+          -63.661
+        ],
+        [
+          -15.39,
+          -61.843
+        ],
+        [
+          -16.411,
+          -65.368
+        ],
+        [
+          -10.739,
+          -67.086
+        ]
+      ],
+      "height": 2.2,
+      "roofHeight": 1,
+      "groundAltitude": 9.3,
+      "groundOffset": 0.5,
+      "floors": null,
+      "planarAccuracy": 5,
+      "verticalAccuracy": 1,
+      "source": "ign-bdtopo"
+    },
+    {
+      "id": "BATIMENT0000000316727677",
+      "rnbId": "GA4F5K917K8S",
+      "isTarget": false,
+      "label": "Edificio vecino",
+      "footprint": [
+        [
+          -19.861,
+          70.073
+        ],
+        [
+          -19.787,
+          67.555
+        ],
+        [
+          -22.007,
+          67.454
+        ],
+        [
+          -21.785,
+          61.003
+        ],
+        [
+          -19.674,
+          61.013
+        ],
+        [
+          -19.536,
+          56.983
+        ],
+        [
+          -17.724,
+          57.019
+        ],
+        [
+          -17.695,
+          54.003
+        ],
+        [
+          -7.132,
+          54.155
+        ],
+        [
+          -7.119,
+          62.091
+        ],
+        [
+          -7.148,
+          65.107
+        ],
+        [
+          -6.342,
+          65.135
+        ],
+        [
+          -6.354,
+          69.456
+        ],
+        [
+          -7.16,
+          69.429
+        ],
+        [
+          -7.145,
+          75.155
+        ],
+        [
+          -17.817,
+          74.912
+        ],
+        [
+          -17.905,
+          71.704
+        ],
+        [
+          -19.826,
+          71.576
+        ]
+      ],
+      "height": 11,
+      "roofHeight": 5.2,
+      "groundAltitude": 5.7,
+      "groundOffset": -3.1,
+      "floors": 4,
+      "planarAccuracy": 3,
+      "verticalAccuracy": 2.5,
+      "source": "ign-bdtopo"
+    },
+    {
+      "id": "BATIMENT0000000316727903",
+      "rnbId": "FRXYRDRJ7WSX",
+      "isTarget": false,
+      "label": "Edificio vecino",
+      "footprint": [
+        [
+          47.203,
+          -52.924
+        ],
+        [
+          47.217,
+          -47.198
+        ],
+        [
+          42.715,
+          -46.994
+        ],
+        [
+          42.278,
+          -57.402
+        ],
+        [
+          46.998,
+          -57.427
+        ]
+      ],
+      "height": 4.9,
+      "roofHeight": 1.4,
+      "groundAltitude": 12.6,
+      "groundOffset": 3.8,
+      "floors": null,
+      "planarAccuracy": 3,
+      "verticalAccuracy": 1,
+      "source": "ign-bdtopo"
+    },
+    {
+      "id": "BATIMENT0000000316727692",
+      "rnbId": "KV5QRE119E4V",
+      "isTarget": false,
+      "label": "Edificio vecino",
+      "footprint": [
+        [
+          -4.83,
+          -70.633
+        ],
+        [
+          -2.895,
+          -64.78
+        ],
+        [
+          4.435,
+          -67.048
+        ],
+        [
+          4.725,
+          -67.175
+        ],
+        [
+          3.224,
+          -71.561
+        ],
+        [
+          2.545,
+          -71.299
+        ],
+        [
+          2.011,
+          -72.757
+        ]
+      ],
+      "height": 7.8,
+      "roofHeight": 2.4,
+      "groundAltitude": 10.2,
+      "groundOffset": 1.4,
+      "floors": 2,
+      "planarAccuracy": 3,
+      "verticalAccuracy": 2.5,
+      "source": "ign-bdtopo"
+    },
+    {
+      "id": "BATIMENT0000000316727679",
+      "rnbId": "N4Z1NYPCX6JF",
+      "isTarget": false,
+      "label": "Edificio vecino",
+      "footprint": [
+        [
+          57.12,
+          45.845
+        ],
+        [
+          50.556,
+          41.012
+        ],
+        [
+          56.024,
+          33.687
+        ],
+        [
+          60.216,
+          36.725
+        ],
+        [
+          59.853,
+          37.16
+        ],
+        [
+          62.343,
+          39.144
+        ]
+      ],
+      "height": 9.8,
+      "roofHeight": 2.2,
+      "groundAltitude": 7.9,
+      "groundOffset": -0.9,
+      "floors": 2,
+      "planarAccuracy": 3,
+      "verticalAccuracy": 1,
+      "source": "ign-bdtopo"
+    },
+    {
+      "id": "BATIMENT0000000316727737",
+      "rnbId": "171RF6TX7FBG",
+      "isTarget": false,
+      "label": "Edificio vecino",
+      "footprint": [
+        [
+          32.541,
+          -59.538
+        ],
+        [
+          31.414,
+          -68.679
+        ],
+        [
+          24.565,
+          -67.759
+        ],
+        [
+          25.682,
+          -58.717
+        ]
+      ],
+      "height": 9.1,
+      "roofHeight": 2.9,
+      "groundAltitude": 10.3,
+      "groundOffset": 1.5,
+      "floors": 3,
+      "planarAccuracy": 3,
+      "verticalAccuracy": 2.5,
+      "source": "ign-bdtopo"
+    },
+    {
+      "id": "BATIMENT0000000316727931",
+      "rnbId": "HNPM8AXG6TE8",
+      "isTarget": false,
+      "label": "Edificio vecino",
+      "footprint": [
+        [
+          57.997,
+          -31.292
+        ],
+        [
+          65.787,
+          -31.795
+        ],
+        [
+          65.393,
+          -38.39
+        ],
+        [
+          57.602,
+          -37.888
+        ]
+      ],
+      "height": 10.9,
+      "roofHeight": 1.8,
+      "groundAltitude": 10.3,
+      "groundOffset": 1.5,
+      "floors": 3,
+      "planarAccuracy": 3,
+      "verticalAccuracy": 2.5,
+      "source": "ign-bdtopo"
+    },
+    {
+      "id": "BATIMENT0000000316729482",
+      "rnbId": "MHGA2GCMAZ67",
+      "isTarget": false,
+      "label": "Edificio vecino",
+      "footprint": [
+        [
+          56.021,
+          -43.171
+        ],
+        [
+          61.981,
+          -43.909
+        ],
+        [
+          61.99,
+          -43.81
+        ],
+        [
+          62.025,
+          -40.095
+        ],
+        [
+          56.063,
+          -39.357
+        ],
+        [
+          56.056,
+          -41.666
+        ]
+      ],
+      "height": 3.4,
+      "roofHeight": 0.4,
+      "groundAltitude": 12.5,
+      "groundOffset": 3.7,
+      "floors": null,
+      "planarAccuracy": 5,
+      "verticalAccuracy": 1,
+      "source": "ign-bdtopo"
+    },
+    {
+      "id": "BATIMENT0000000316727997",
+      "rnbId": "7K8KABT4T5JD",
+      "isTarget": false,
+      "label": "Edificio vecino",
+      "footprint": [
+        [
+          -61.516,
+          -54.164
+        ],
+        [
+          -51.595,
+          -41.094
+        ],
+        [
+          -47.787,
+          -45.658
+        ],
+        [
+          -55.445,
+          -55.918
+        ]
+      ],
+      "height": 4.7,
+      "roofHeight": 2.4,
+      "groundAltitude": 8.6,
+      "groundOffset": -0.2,
+      "floors": 2,
+      "planarAccuracy": 3,
+      "verticalAccuracy": 2.5,
+      "source": "ign-bdtopo"
+    },
+    {
+      "id": "BATIMENT0000000316727860",
+      "rnbId": "53FZJQ5JD3GK",
+      "isTarget": false,
+      "label": "Edificio vecino",
+      "footprint": [
+        [
+          32.66,
+          60.912
+        ],
+        [
+          41.177,
+          58.436
+        ],
+        [
+          43.889,
+          67.333
+        ],
+        [
+          35.48,
+          69.901
+        ],
+        [
+          34.947,
+          68.442
+        ],
+        [
+          32.41,
+          69.274
+        ],
+        [
+          30.684,
+          63.502
+        ],
+        [
+          33.23,
+          62.77
+        ]
+      ],
+      "height": 11.2,
+      "roofHeight": 3.1,
+      "groundAltitude": 7.1,
+      "groundOffset": -1.7,
+      "floors": 3,
+      "planarAccuracy": 3,
+      "verticalAccuracy": 1,
+      "source": "ign-bdtopo"
+    },
+    {
+      "id": "BATIMENT0000000316727904",
+      "rnbId": "KVF8RQRTJX42",
+      "isTarget": false,
+      "label": "Edificio vecino",
+      "footprint": [
+        [
+          47.203,
+          -52.924
+        ],
+        [
+          46.998,
+          -57.427
+        ],
+        [
+          52.315,
+          -57.504
+        ],
+        [
+          52.412,
+          -53.092
+        ]
+      ],
+      "height": 4.2,
+      "roofHeight": 0.4,
+      "groundAltitude": 12.6,
+      "groundOffset": 3.8,
+      "floors": 2,
+      "planarAccuracy": 3,
+      "verticalAccuracy": 1,
+      "source": "ign-bdtopo"
+    },
+    {
+      "id": "BATIMENT0000000316727693",
+      "rnbId": "5KTPWNH1688R",
+      "isTarget": false,
+      "label": "Edificio vecino",
+      "footprint": [
+        [
+          2.011,
+          -72.757
+        ],
+        [
+          5.636,
+          -73.787
+        ],
+        [
+          3.312,
+          -80.611
+        ],
+        [
+          -3.322,
+          -78.405
+        ],
+        [
+          -2.625,
+          -76.257
+        ],
+        [
+          -6.132,
+          -75.037
+        ],
+        [
+          -4.83,
+          -70.633
+        ]
+      ],
+      "height": 7.5,
+      "roofHeight": 2.7,
+      "groundAltitude": 10.2,
+      "groundOffset": 1.4,
+      "floors": 2,
+      "planarAccuracy": 3,
+      "verticalAccuracy": 2.5,
+      "source": "ign-bdtopo"
+    },
+    {
+      "id": "BATIMENT0000000316727901",
+      "rnbId": "KBH4WF1PQCBB",
+      "isTarget": false,
+      "label": "Edificio vecino",
+      "footprint": [
+        [
+          46.998,
+          -57.427
+        ],
+        [
+          46.863,
+          -60.026
+        ],
+        [
+          52.281,
+          -60.114
+        ],
+        [
+          52.315,
+          -57.504
+        ]
+      ],
+      "height": 3.7,
+      "roofHeight": 0.4,
+      "groundAltitude": 12.8,
+      "groundOffset": 4,
+      "floors": null,
+      "planarAccuracy": 3,
+      "verticalAccuracy": 1,
+      "source": "ign-bdtopo"
+    },
+    {
+      "id": "BATIMENT0000000316727867",
+      "rnbId": "A96GJ83BK5WY",
+      "isTarget": false,
+      "label": "Edificio vecino",
+      "footprint": [
+        [
+          80.642,
+          -0.784
+        ],
+        [
+          80.854,
+          7.133
+        ],
+        [
+          73.643,
+          7.382
+        ],
+        [
+          73.431,
+          -0.536
+        ]
+      ],
+      "height": 10,
+      "roofHeight": 1.3,
+      "groundAltitude": 8.6,
+      "groundOffset": -0.2,
+      "floors": 2,
+      "planarAccuracy": 3,
+      "verticalAccuracy": 1,
+      "source": "ign-bdtopo"
+    },
+    {
+      "id": "BATIMENT0000000316727761",
+      "rnbId": "4ND6WQJMNND8",
+      "isTarget": false,
+      "label": "Edificio vecino",
+      "footprint": [
+        [
+          -40.994,
+          -58.327
+        ],
+        [
+          -44.511,
+          -53.891
+        ],
+        [
+          -51.981,
+          -59.847
+        ],
+        [
+          -51.175,
+          -60.925
+        ],
+        [
+          -52.143,
+          -61.641
+        ],
+        [
+          -54.516,
+          -63.436
+        ],
+        [
+          -51.161,
+          -67.456
+        ],
+        [
+          -49.015,
+          -65.942
+        ],
+        [
+          -47.764,
+          -67.663
+        ],
+        [
+          -46.035,
+          -66.312
+        ],
+        [
+          -43.653,
+          -64.416
+        ],
+        [
+          -43.291,
+          -64.851
+        ],
+        [
+          -38.654,
+          -61.352
+        ]
+      ],
+      "height": 6.5,
+      "roofHeight": 2.5,
+      "groundAltitude": 7.3,
+      "groundOffset": -1.5,
+      "floors": 3,
+      "planarAccuracy": 3,
+      "verticalAccuracy": 1,
+      "source": "ign-bdtopo"
+    },
+    {
+      "id": "BATIMENT0000000316727739",
+      "rnbId": "P87A6KJXHE7S",
+      "isTarget": false,
+      "label": "Edificio vecino",
+      "footprint": [
+        [
+          61.073,
+          -53.975
+        ],
+        [
+          61.472,
+          -54.011
+        ],
+        [
+          61.632,
+          -50.007
+        ],
+        [
+          61.776,
+          -48.412
+        ],
+        [
+          55.852,
+          -48.38
+        ],
+        [
+          55.838,
+          -54.105
+        ]
+      ],
+      "height": 9.2,
+      "roofHeight": 0.1,
+      "groundAltitude": 12.7,
+      "groundOffset": 3.9,
+      "floors": 2,
+      "planarAccuracy": 3,
+      "verticalAccuracy": 1,
+      "source": "ign-bdtopo"
+    },
+    {
+      "id": "BATIMENT0000000316727905",
+      "rnbId": "D2RG23MTMS1Q",
+      "isTarget": false,
+      "label": "Edificio vecino",
+      "footprint": [
+        [
+          34.076,
+          -65.906
+        ],
+        [
+          41.576,
+          -64.07
+        ],
+        [
+          42.738,
+          -68.998
+        ],
+        [
+          43.055,
+          -68.826
+        ],
+        [
+          43.273,
+          -69.75
+        ],
+        [
+          40.909,
+          -70.34
+        ],
+        [
+          40.691,
+          -69.416
+        ],
+        [
+          35.148,
+          -70.724
+        ]
+      ],
+      "height": 10.1,
+      "roofHeight": 1.3,
+      "groundAltitude": 10.9,
+      "groundOffset": 2.1,
+      "floors": 2,
+      "planarAccuracy": 3,
+      "verticalAccuracy": 2.5,
+      "source": "ign-bdtopo"
+    },
+    {
+      "id": "BATIMENT0000000316727680",
+      "rnbId": "837Q5Y8GV9ZH",
+      "isTarget": false,
+      "label": "Edificio vecino",
+      "footprint": [
+        [
+          62.343,
+          39.144
+        ],
+        [
+          69.143,
+          44.358
+        ],
+        [
+          69.25,
+          46.66
+        ],
+        [
+          69.365,
+          50.166
+        ],
+        [
+          68.16,
+          50.173
+        ],
+        [
+          67.091,
+          51.677
+        ],
+        [
+          63.107,
+          48.721
+        ],
+        [
+          62.399,
+          49.79
+        ],
+        [
+          57.12,
+          45.845
+        ]
+      ],
+      "height": 9.5,
+      "roofHeight": 2.8,
+      "groundAltitude": 8,
+      "groundOffset": -0.8,
+      "floors": 3,
+      "planarAccuracy": 3,
+      "verticalAccuracy": 1,
+      "source": "ign-bdtopo"
+    },
+    {
+      "id": "BATIMENT0000000316727902",
+      "rnbId": "GMPB2SFRBT3X",
+      "isTarget": false,
+      "label": "Edificio vecino",
+      "footprint": [
+        [
+          43.055,
+          -68.826
+        ],
+        [
+          42.738,
+          -68.998
+        ],
+        [
+          41.576,
+          -64.07
+        ],
+        [
+          49.9,
+          -62.009
+        ],
+        [
+          50.636,
+          -64.989
+        ],
+        [
+          49.712,
+          -65.207
+        ],
+        [
+          50.23,
+          -67.262
+        ]
+      ],
+      "height": 10.1,
+      "roofHeight": 1.3,
+      "groundAltitude": 10.9,
+      "groundOffset": 2.1,
+      "floors": 2,
+      "planarAccuracy": 3,
+      "verticalAccuracy": 2.5,
+      "source": "ign-bdtopo"
+    },
+    {
+      "id": "BATIMENT0000000316727995",
+      "rnbId": "PAXKV5ZD9MW6",
+      "isTarget": false,
+      "label": "Edificio vecino",
+      "footprint": [
+        [
+          -70.58,
+          -45.509
+        ],
+        [
+          -64.244,
+          -51.004
+        ],
+        [
+          -61.647,
+          -47.823
+        ],
+        [
+          -67.892,
+          -42.437
+        ]
+      ],
+      "height": 2.5,
+      "roofHeight": 1.2,
+      "groundAltitude": 7.1,
+      "groundOffset": -1.7,
+      "floors": null,
+      "planarAccuracy": 3,
+      "verticalAccuracy": 1,
+      "source": "ign-bdtopo"
+    },
+    {
+      "id": "BATIMENT0000000316727836",
+      "rnbId": null,
+      "isTarget": false,
+      "label": "Edificio vecino",
+      "footprint": [
+        [
+          31.302,
+          -76.606
+        ],
+        [
+          31.283,
+          -75.701
+        ],
+        [
+          27.741,
+          -75.983
+        ]
+      ],
+      "height": 1.2,
+      "roofHeight": 0.4,
+      "groundAltitude": 10.6,
+      "groundOffset": 1.8,
+      "floors": null,
+      "planarAccuracy": 3,
+      "verticalAccuracy": 1,
+      "source": "ign-bdtopo"
+    },
+    {
+      "id": "BATIMENT0000000316727837",
+      "rnbId": "EWHSVJCDYK6P",
+      "isTarget": false,
+      "label": "Edificio vecino",
+      "footprint": [
+        [
+          16.54,
+          -84.316
+        ],
+        [
+          16.753,
+          -77.503
+        ],
+        [
+          27.57,
+          -77.877
+        ],
+        [
+          27.679,
+          -76.681
+        ],
+        [
+          31.284,
+          -76.806
+        ],
+        [
+          32.19,
+          -76.787
+        ],
+        [
+          32.066,
+          -80.392
+        ],
+        [
+          32.012,
+          -82.095
+        ],
+        [
+          31.913,
+          -82.086
+        ],
+        [
+          31.713,
+          -82.069
+        ],
+        [
+          22.799,
+          -81.766
+        ],
+        [
+          22.918,
+          -83.786
+        ]
+      ],
+      "height": 1.7,
+      "roofHeight": 2.5,
+      "groundAltitude": 10.3,
+      "groundOffset": 1.5,
+      "floors": 1,
+      "planarAccuracy": 3,
+      "verticalAccuracy": 2.5,
+      "source": "ign-bdtopo"
+    },
+    {
+      "id": "BATIMENT0000000316727741",
+      "rnbId": "K2KQXANSCE3E",
+      "isTarget": false,
+      "label": "Edificio vecino",
+      "footprint": [
+        [
+          55.838,
+          -54.105
+        ],
+        [
+          55.718,
+          -65.447
+        ],
+        [
+          58.934,
+          -65.436
+        ],
+        [
+          58.789,
+          -64.82
+        ],
+        [
+          60.791,
+          -64.9
+        ],
+        [
+          61.073,
+          -53.975
+        ]
+      ],
+      "height": 7.3,
+      "roofHeight": 1.1,
+      "groundAltitude": 12.8,
+      "groundOffset": 4,
+      "floors": null,
+      "planarAccuracy": 3,
+      "verticalAccuracy": 1,
+      "source": "ign-bdtopo"
+    },
+    {
+      "id": "BATIMENT0000000316729302",
+      "rnbId": "1D55EW22MF8Y",
+      "isTarget": false,
+      "label": "Edificio vecino",
+      "footprint": [
+        [
+          80.563,
+          -32.827
+        ],
+        [
+          72.274,
+          -32.28
+        ],
+        [
+          71.844,
+          -39.274
+        ],
+        [
+          80.143,
+          -39.721
+        ],
+        [
+          80.233,
+          -38.724
+        ]
+      ],
+      "height": 9.4,
+      "roofHeight": 1.4,
+      "groundAltitude": 12,
+      "groundOffset": 3.2,
+      "floors": 2,
+      "planarAccuracy": 3,
+      "verticalAccuracy": 1,
+      "source": "ign-bdtopo"
+    },
+    {
+      "id": "BATIMENT0000000316727742",
+      "rnbId": "8J3R5BGYN611",
+      "isTarget": false,
+      "label": "Edificio vecino",
+      "footprint": [
+        [
+          67.795,
+          -52.973
+        ],
+        [
+          67.666,
+          -49.948
+        ],
+        [
+          66.76,
+          -49.967
+        ],
+        [
+          66.731,
+          -46.95
+        ],
+        [
+          67.636,
+          -46.931
+        ],
+        [
+          67.5,
+          -45.111
+        ],
+        [
+          72.645,
+          -44.872
+        ],
+        [
+          72.838,
+          -48.304
+        ],
+        [
+          74.043,
+          -48.313
+        ],
+        [
+          74.236,
+          -52.851
+        ],
+        [
+          71.618,
+          -52.917
+        ]
+      ],
+      "height": 9.2,
+      "roofHeight": 2.6,
+      "groundAltitude": 10.7,
+      "groundOffset": 1.9,
+      "floors": 2,
+      "planarAccuracy": 3,
+      "verticalAccuracy": 2.5,
+      "source": "ign-bdtopo"
+    },
+    {
+      "id": "BATIMENT0000000316727996",
+      "rnbId": "YSREAZFMSS9Q",
+      "isTarget": false,
+      "label": "Edificio vecino",
+      "footprint": [
+        [
+          -67.892,
+          -42.437
+        ],
+        [
+          -74.699,
+          -36.598
+        ],
+        [
+          -80.664,
+          -43.695
+        ],
+        [
+          -73.939,
+          -49.325
+        ],
+        [
+          -70.58,
+          -45.509
+        ]
+      ],
+      "height": 8.9,
+      "roofHeight": 1.6,
+      "groundAltitude": 5.9,
+      "groundOffset": -2.9,
+      "floors": 2,
+      "planarAccuracy": 3,
+      "verticalAccuracy": 1,
+      "source": "ign-bdtopo"
+    },
+    {
+      "id": "BATIMENT0000000316727859",
+      "rnbId": "RSYEKF2MFKQN",
+      "isTarget": false,
+      "label": "Edificio vecino",
+      "footprint": [
+        [
+          41.388,
+          81.926
+        ],
+        [
+          45.42,
+          80.96
+        ],
+        [
+          43.317,
+          69.898
+        ],
+        [
+          35.416,
+          71.414
+        ],
+        [
+          32.951,
+          71.938
+        ],
+        [
+          34.135,
+          77.256
+        ],
+        [
+          36.599,
+          76.732
+        ],
+        [
+          37.845,
+          82.748
+        ]
+      ],
+      "height": 7.2,
+      "roofHeight": 3.3,
+      "groundAltitude": 7.6,
+      "groundOffset": -1.2,
+      "floors": 2,
+      "planarAccuracy": 3,
+      "verticalAccuracy": 2.5,
+      "source": "ign-bdtopo"
+    },
+    {
+      "id": "BATIMENT0000000316727868",
+      "rnbId": "8DZ9AGH2R3FD",
+      "isTarget": false,
+      "label": "Edificio vecino",
+      "footprint": [
+        [
+          92.655,
+          -1.265
+        ],
+        [
+          93.038,
+          8.546
+        ],
+        [
+          81.931,
+          9.045
+        ],
+        [
+          81.798,
+          4.235
+        ],
+        [
+          81.63,
+          -0.974
+        ]
+      ],
+      "height": 9.2,
+      "roofHeight": 1.7,
+      "groundAltitude": 8.9,
+      "groundOffset": 0.1,
+      "floors": 3,
+      "planarAccuracy": 3,
+      "verticalAccuracy": 1,
+      "source": "ign-bdtopo"
+    },
+    {
+      "id": "BATIMENT0000000316727990",
+      "rnbId": "XCQ5Y5TFZG91/Z9SY9NRAX6NK",
+      "isTarget": false,
+      "label": "Edificio vecino",
+      "footprint": [
+        [
+          -60.749,
+          -63.476
+        ],
+        [
+          -60.205,
+          -64.128
+        ],
+        [
+          -57.344,
+          -60.267
+        ],
+        [
+          -62.402,
+          -56.193
+        ],
+        [
+          -65.362,
+          -60.046
+        ],
+        [
+          -64.709,
+          -60.607
+        ]
+      ],
+      "height": 4.7,
+      "roofHeight": 3.9,
+      "groundAltitude": 7.5,
+      "groundOffset": -1.3,
+      "floors": null,
+      "planarAccuracy": 3,
+      "verticalAccuracy": 1,
+      "source": "ign-bdtopo"
+    },
+    {
+      "id": "BATIMENT0000000316727740",
+      "rnbId": "842T9CH1MHWJ",
+      "isTarget": false,
+      "label": "Edificio vecino",
+      "footprint": [
+        [
+          67.795,
+          -52.973
+        ],
+        [
+          71.618,
+          -52.917
+        ],
+        [
+          72.167,
+          -61.305
+        ],
+        [
+          67.919,
+          -61.625
+        ],
+        [
+          67.928,
+          -62.63
+        ],
+        [
+          64.893,
+          -62.859
+        ],
+        [
+          64.629,
+          -60.223
+        ],
+        [
+          61.911,
+          -60.28
+        ],
+        [
+          61.34,
+          -59.926
+        ],
+        [
+          61.518,
+          -54.618
+        ],
+        [
+          64.543,
+          -54.489
+        ],
+        [
+          64.47,
+          -53.076
+        ]
+      ],
+      "height": 9,
+      "roofHeight": 3.2,
+      "groundAltitude": 10.9,
+      "groundOffset": 2.1,
+      "floors": 2,
+      "planarAccuracy": 3,
+      "verticalAccuracy": 2.5,
+      "source": "ign-bdtopo"
+    },
+    {
+      "id": "BATIMENT0000000316729303",
+      "rnbId": "TDVF67TXD5W1",
+      "isTarget": false,
+      "label": "Edificio vecino",
+      "footprint": [
+        [
+          80.233,
+          -38.724
+        ],
+        [
+          87.544,
+          -38.982
+        ],
+        [
+          87.919,
+          -31.481
+        ],
+        [
+          83.117,
+          -31.249
+        ],
+        [
+          83.072,
+          -31.747
+        ],
+        [
+          80.572,
+          -31.621
+        ],
+        [
+          80.563,
+          -32.827
+        ]
+      ],
+      "height": 8.9,
+      "roofHeight": 1.1,
+      "groundAltitude": 11.8,
+      "groundOffset": 3,
+      "floors": 2,
+      "planarAccuracy": 3,
+      "verticalAccuracy": 1,
+      "source": "ign-bdtopo"
+    },
+    {
+      "id": "BATIMENT0000000316727730",
+      "rnbId": "4T8N7MSGE7C9",
+      "isTarget": false,
+      "label": "Edificio vecino",
+      "footprint": [
+        [
+          83.248,
+          43.689
+        ],
+        [
+          83.364,
+          46.089
+        ],
+        [
+          83.577,
+          52.902
+        ],
+        [
+          73.458,
+          53.212
+        ],
+        [
+          73.306,
+          50.413
+        ],
+        [
+          72.708,
+          50.467
+        ],
+        [
+          72.55,
+          43.147
+        ],
+        [
+          83.276,
+          42.883
+        ]
+      ],
+      "height": 7.9,
+      "roofHeight": 2.3,
+      "groundAltitude": 8.1,
+      "groundOffset": -0.7,
+      "floors": 2,
+      "planarAccuracy": 3,
+      "verticalAccuracy": 1,
+      "source": "ign-bdtopo"
+    },
+    {
+      "id": "BATIMENT0000000316729384",
+      "rnbId": "ER9YMS2W6KQK",
+      "isTarget": false,
+      "label": "Anexo",
+      "footprint": [
+        [
+          -13.725,
+          92.426
+        ],
+        [
+          -16.66,
+          93.293
+        ],
+        [
+          -18.288,
+          88.618
+        ],
+        [
+          -15.696,
+          87.279
+        ]
+      ],
+      "height": 3.1,
+      "roofHeight": 2.4,
+      "groundAltitude": 3.9,
+      "groundOffset": -4.9,
+      "floors": 1,
+      "planarAccuracy": 5,
+      "verticalAccuracy": 1,
+      "source": "ign-bdtopo"
+    },
+    {
+      "id": "BATIMENT0000000316727764",
+      "rnbId": "WTXC78RXB2A5",
+      "isTarget": false,
+      "label": "Edificio vecino",
+      "footprint": [
+        [
+          8.632,
+          93.021
+        ],
+        [
+          7.838,
+          89.776
+        ],
+        [
+          -5.536,
+          92.993
+        ],
+        [
+          -5.03,
+          95.258
+        ],
+        [
+          1.757,
+          93.641
+        ],
+        [
+          2.045,
+          94.62
+        ]
+      ],
+      "height": 3,
+      "roofHeight": 1.2,
+      "groundAltitude": 6.2,
+      "groundOffset": -2.6,
+      "floors": null,
+      "planarAccuracy": 3,
+      "verticalAccuracy": 2.5,
+      "source": "ign-bdtopo"
+    },
+    {
+      "id": "BATIMENT0000000316727685",
+      "rnbId": "P3EXKYZY4AZS",
+      "isTarget": false,
+      "label": "Edificio vecino",
+      "footprint": [
+        [
+          59.139,
+          74.899
+        ],
+        [
+          59.236,
+          79.311
+        ],
+        [
+          60.948,
+          79.358
+        ],
+        [
+          61.945,
+          79.268
+        ],
+        [
+          67.96,
+          79.126
+        ],
+        [
+          67.727,
+          74.325
+        ],
+        [
+          66.613,
+          74.225
+        ],
+        [
+          66.321,
+          64.305
+        ],
+        [
+          64.319,
+          64.385
+        ],
+        [
+          61.511,
+          64.437
+        ],
+        [
+          61.583,
+          65.234
+        ],
+        [
+          61.021,
+          65.688
+        ],
+        [
+          60.567,
+          66.23
+        ],
+        [
+          60.531,
+          66.938
+        ],
+        [
+          60.593,
+          67.635
+        ],
+        [
+          60.756,
+          68.323
+        ],
+        [
+          61.191,
+          68.686
+        ],
+        [
+          61.825,
+          69.03
+        ],
+        [
+          62.02,
+          74.539
+        ]
+      ],
+      "height": 4.8,
+      "roofHeight": 4.6,
+      "groundAltitude": 8.8,
+      "groundOffset": 0,
+      "floors": 2,
+      "planarAccuracy": 3,
+      "verticalAccuracy": 2.5,
+      "source": "ign-bdtopo"
+    },
+    {
+      "id": "BATIMENT0000000316727991",
+      "rnbId": "DTYVKYDZDEF1",
+      "isTarget": false,
+      "label": "Edificio vecino",
+      "footprint": [
+        [
+          -64.709,
+          -60.607
+        ],
+        [
+          -60.749,
+          -63.476
+        ],
+        [
+          -61.88,
+          -64.881
+        ],
+        [
+          -64.64,
+          -68.751
+        ],
+        [
+          -63.979,
+          -69.213
+        ],
+        [
+          -66.378,
+          -72.413
+        ],
+        [
+          -66.939,
+          -73.064
+        ],
+        [
+          -73.618,
+          -69.147
+        ],
+        [
+          -71.102,
+          -65.757
+        ],
+        [
+          -69.498,
+          -66.907
+        ],
+        [
+          -68.484,
+          -65.691
+        ]
+      ],
+      "height": 4.3,
+      "roofHeight": 2.2,
+      "groundAltitude": 9.5,
+      "groundOffset": 0.7,
+      "floors": 2,
+      "planarAccuracy": 3,
+      "verticalAccuracy": 2.5,
+      "source": "ign-bdtopo"
+    },
+    {
+      "id": "BATIMENT0000000316729304",
+      "rnbId": "DAYW7ZBV17BC",
+      "isTarget": false,
+      "label": "Anexo",
+      "footprint": [
+        [
+          80.064,
+          -43.934
+        ],
+        [
+          80.113,
+          -50.067
+        ],
+        [
+          84.733,
+          -50.081
+        ],
+        [
+          84.633,
+          -48.967
+        ],
+        [
+          84.651,
+          -48.768
+        ],
+        [
+          84.485,
+          -43.93
+        ]
+      ],
+      "height": 3.2,
+      "roofHeight": 0.2,
+      "groundAltitude": 12.3,
+      "groundOffset": 3.5,
+      "floors": 1,
+      "planarAccuracy": 3,
+      "verticalAccuracy": 1,
+      "source": "ign-bdtopo"
+    },
+    {
+      "id": "BATIMENT0000000316727857",
+      "rnbId": "N4E59YPB4WY3",
+      "isTarget": false,
+      "label": "Edificio vecino",
+      "footprint": [
+        [
+          41.388,
+          81.926
+        ],
+        [
+          37.845,
+          82.748
+        ],
+        [
+          30.86,
+          84.383
+        ],
+        [
+          31.99,
+          87.998
+        ],
+        [
+          33.857,
+          87.529
+        ],
+        [
+          36.215,
+          95.856
+        ],
+        [
+          36.242,
+          96.155
+        ],
+        [
+          44.651,
+          93.588
+        ],
+        [
+          44.623,
+          93.289
+        ]
+      ],
+      "height": 8.7,
+      "roofHeight": 2.6,
+      "groundAltitude": 7.6,
+      "groundOffset": -1.2,
+      "floors": 2,
+      "planarAccuracy": 3,
+      "verticalAccuracy": 2.5,
+      "source": "ign-bdtopo"
+    },
+    {
+      "id": "BATIMENT0000000316727856",
+      "rnbId": "DBZFD86FBMB9",
+      "isTarget": false,
+      "label": "Edificio vecino",
+      "footprint": [
+        [
+          31.111,
+          88.28
+        ],
+        [
+          31.99,
+          87.998
+        ],
+        [
+          33.857,
+          87.529
+        ],
+        [
+          36.215,
+          95.856
+        ],
+        [
+          33.669,
+          96.588
+        ]
+      ],
+      "height": 6,
+      "roofHeight": 2.3,
+      "groundAltitude": 7.1,
+      "groundOffset": -1.7,
+      "floors": null,
+      "planarAccuracy": 3,
+      "verticalAccuracy": 1,
+      "source": "ign-bdtopo"
+    },
+    {
+      "id": "BATIMENT0000000316727834",
+      "rnbId": "VG4P4WSTDX9V",
+      "isTarget": false,
+      "label": "Edificio vecino",
+      "footprint": [
+        [
+          99.448,
+          -26.192
+        ],
+        [
+          99.831,
+          -17.486
+        ],
+        [
+          89.929,
+          -16.994
+        ],
+        [
+          89.528,
+          -25.9
+        ]
+      ],
+      "height": 10.2,
+      "roofHeight": 2,
+      "groundAltitude": 9.2,
+      "groundOffset": 0.4,
+      "floors": 3,
+      "planarAccuracy": 3,
+      "verticalAccuracy": 1,
+      "source": "ign-bdtopo"
+    },
+    {
+      "id": "BATIMENT0000000316729449",
+      "rnbId": "SHBNBJFS4Z8R",
+      "isTarget": false,
+      "label": "Edificio vecino",
+      "footprint": [
+        [
+          -85.441,
+          -39.848
+        ],
+        [
+          -87.58,
+          -37.947
+        ],
+        [
+          -91.691,
+          -41.193
+        ],
+        [
+          -89.452,
+          -43.103
+        ]
+      ],
+      "height": 2.9,
+      "roofHeight": 0.1,
+      "groundAltitude": 4.2,
+      "groundOffset": -4.6,
+      "floors": null,
+      "planarAccuracy": 5,
+      "verticalAccuracy": 1,
+      "source": "ign-bdtopo"
+    },
+    {
+      "id": "BATIMENT0000000316727731",
+      "rnbId": "K1DB23S3N23Q",
+      "isTarget": false,
+      "label": "Edificio vecino",
+      "footprint": [
+        [
+          83.248,
+          43.689
+        ],
+        [
+          83.276,
+          42.883
+        ],
+        [
+          83.177,
+          41.786
+        ],
+        [
+          83.008,
+          36.577
+        ],
+        [
+          92.638,
+          36.411
+        ],
+        [
+          92.47,
+          31.202
+        ],
+        [
+          96.972,
+          30.996
+        ],
+        [
+          97.283,
+          40.011
+        ],
+        [
+          95.081,
+          40.109
+        ],
+        [
+          95.179,
+          43.415
+        ],
+        [
+          90.568,
+          43.53
+        ],
+        [
+          90.64,
+          44.327
+        ],
+        [
+          89.598,
+          45.024
+        ],
+        [
+          87.894,
+          45.078
+        ],
+        [
+          86.935,
+          44.46
+        ],
+        [
+          86.763,
+          43.673
+        ]
+      ],
+      "height": 6.4,
+      "roofHeight": 2.9,
+      "groundAltitude": 8.5,
+      "groundOffset": -0.3,
+      "floors": 2,
+      "planarAccuracy": 3,
+      "verticalAccuracy": 1,
+      "source": "ign-bdtopo"
+    },
+    {
+      "id": "BATIMENT0000000316727784",
+      "rnbId": "3CKEJ65WK91J",
+      "isTarget": false,
+      "label": "Edificio vecino",
+      "footprint": [
+        [
+          -8.315,
+          -102.569
+        ],
+        [
+          -8.085,
+          -94.452
+        ],
+        [
+          -16.619,
+          -94.384
+        ],
+        [
+          -17.049,
+          -102.483
+        ]
+      ],
+      "height": 6.1,
+      "roofHeight": 2,
+      "groundAltitude": 8.9,
+      "groundOffset": 0.1,
+      "floors": 2,
+      "planarAccuracy": 3,
+      "verticalAccuracy": 1,
+      "source": "ign-bdtopo"
+    },
+    {
+      "id": "BATIMENT0000000316727684",
+      "rnbId": "NVCQY3PASXSH",
+      "isTarget": false,
+      "label": "Edificio vecino",
+      "footprint": [
+        [
+          66.321,
+          64.305
+        ],
+        [
+          66.613,
+          74.225
+        ],
+        [
+          67.727,
+          74.325
+        ],
+        [
+          69.331,
+          74.281
+        ],
+        [
+          72.04,
+          74.237
+        ],
+        [
+          72.059,
+          73.331
+        ],
+        [
+          75.664,
+          73.208
+        ],
+        [
+          75.594,
+          70.2
+        ],
+        [
+          75.585,
+          68.995
+        ],
+        [
+          75.435,
+          63.984
+        ]
+      ],
+      "height": 4.8,
+      "roofHeight": 1.8,
+      "groundAltitude": 8.9,
+      "groundOffset": 0.1,
+      "floors": 2,
+      "planarAccuracy": 3,
+      "verticalAccuracy": 2.5,
+      "source": "ign-bdtopo"
+    },
+    {
+      "id": "BATIMENT0000000331968688",
+      "rnbId": "WER9D4XG826Q",
+      "isTarget": false,
+      "label": "Edificio vecino",
+      "footprint": [
+        [
+          -99.501,
+          2.513
+        ],
+        [
+          -113.284,
+          8.981
+        ],
+        [
+          -114.725,
+          9.714
+        ],
+        [
+          -127.908,
+          -16.122
+        ],
+        [
+          -166.086,
+          2.796
+        ],
+        [
+          -175.682,
+          7.782
+        ],
+        [
+          -174.072,
+          11.153
+        ],
+        [
+          -185.517,
+          16.807
+        ],
+        [
+          -182.206,
+          23.441
+        ],
+        [
+          -211.62,
+          38.153
+        ],
+        [
+          -196.99,
+          67.776
+        ],
+        [
+          -189.497,
+          63.986
+        ],
+        [
+          -183.38,
+          76.092
+        ],
+        [
+          -141.387,
+          54.92
+        ],
+        [
+          -103.037,
+          35.685
+        ],
+        [
+          -95.735,
+          49.794
+        ],
+        [
+          -79.768,
+          41.923
+        ]
+      ],
+      "height": 15.2,
+      "roofHeight": 0,
+      "groundAltitude": 5,
+      "groundOffset": -3.8,
+      "floors": 3,
+      "planarAccuracy": 2.5,
+      "verticalAccuracy": 1.5,
+      "source": "ign-bdtopo",
+      "holes": [
+        [
+          [
+            -190.709,
+            47.216
+          ],
+          [
+            -174.362,
+            39.109
+          ],
+          [
+            -170.923,
+            46.033
+          ],
+          [
+            -187.271,
+            54.14
+          ]
+        ]
+      ]
+    }
+  ],
+  "roads": [
+    {
+      "id": "TRONROUT0000000023917326",
+      "name": "Allée Samuel de Champlain",
+      "points": [
+        [
+          40.726,
+          -94.636
+        ],
+        [
+          19.9,
+          -96.073
+        ],
+        [
+          4.382,
+          -96.581
+        ]
+      ],
+      "width": 4,
+      "isPath": false
+    },
+    {
+      "id": "TRONROUT0000000023917667",
+      "name": "Acceso",
+      "points": [
+        [
+          -109.739,
+          -108.685
+        ],
+        [
+          -105.445,
+          -108.973
+        ],
+        [
+          -103.107,
+          -109.786
+        ],
+        [
+          -102.761,
+          -110
+        ]
+      ],
+      "width": 4,
+      "isPath": false
+    },
+    {
+      "id": "TRONROUT0000000023917669",
+      "name": "Acceso",
+      "points": [
+        [
+          -110,
+          -108.747
+        ],
+        [
+          -109.739,
+          -108.685
+        ]
+      ],
+      "width": 4,
+      "isPath": false
+    },
+    {
+      "id": "TRONROUT0000000088720268",
+      "name": "Rue Abel Villard",
+      "points": [
+        [
+          -110,
+          -106.26
+        ],
+        [
+          -109.739,
+          -108.685
+        ]
+      ],
+      "width": 4,
+      "isPath": false
+    },
+    {
+      "id": "TRONROUT0000000088720275",
+      "name": "Allée Samuel de Champlain",
+      "points": [
+        [
+          39.974,
+          -106.324
+        ],
+        [
+          40.035,
+          -103.415
+        ],
+        [
+          40.448,
+          -98.832
+        ],
+        [
+          40.726,
+          -94.636
+        ]
+      ],
+      "width": 4,
+      "isPath": false
+    },
+    {
+      "id": "TRONROUT0000000088720276",
+      "name": "Allée Samuel de Champlain",
+      "points": [
+        [
+          45.044,
+          -110
+        ],
+        [
+          44.705,
+          -109.564
+        ],
+        [
+          39.974,
+          -106.324
+        ]
+      ],
+      "width": 4,
+      "isPath": false
+    },
+    {
+      "id": "TRONROUT0000000088720277",
+      "name": "Allée Samuel de Champlain",
+      "points": [
+        [
+          15.395,
+          -110
+        ],
+        [
+          18.449,
+          -107.697
+        ],
+        [
+          24.011,
+          -106.189
+        ],
+        [
+          30.742,
+          -106.194
+        ],
+        [
+          39.974,
+          -106.324
+        ]
+      ],
+      "width": 4,
+      "isPath": false
+    },
+    {
+      "id": "TRONROUT0000000296098153",
+      "name": "Rue Henri de Bournazel",
+      "points": [
+        [
+          4.382,
+          -96.581
+        ],
+        [
+          2.809,
+          -101.764
+        ],
+        [
+          -2.16,
+          -108.951
+        ],
+        [
+          -3.548,
+          -110
+        ]
+      ],
+      "width": 5,
+      "isPath": false
+    },
+    {
+      "id": "TRONROUT0000002333054826",
+      "name": "Rue Henri de Bournazel",
+      "points": [
+        [
+          4.382,
+          -96.581
+        ],
+        [
+          6.714,
+          -88.553
+        ]
+      ],
+      "width": 5,
+      "isPath": false
+    },
+    {
+      "id": "TRONROUT0000000023917318",
+      "name": "Rue Henri de Bournazel",
+      "points": [
+        [
+          49.204,
+          58.315
+        ],
+        [
+          55.695,
+          91.285
+        ],
+        [
+          60.652,
+          110
+        ]
+      ],
+      "width": 5,
+      "isPath": false
+    },
+    {
+      "id": "TRONROUT0000000023917328",
+      "name": "Rue Henri de Bournazel",
+      "points": [
+        [
+          11.414,
+          -73.204
+        ],
+        [
+          19.741,
+          -46.628
+        ],
+        [
+          34.18,
+          -4.629
+        ]
+      ],
+      "width": 5,
+      "isPath": false
+    },
+    {
+      "id": "TRONROUT0000000023917342",
+      "name": "Rue Goarem Dro",
+      "points": [
+        [
+          110,
+          -8.574
+        ],
+        [
+          109.438,
+          -9.009
+        ],
+        [
+          102.147,
+          -11.867
+        ],
+        [
+          34.18,
+          -4.629
+        ]
+      ],
+      "width": 3,
+      "isPath": false
+    },
+    {
+      "id": "TRONROUT0000000023917351",
+      "name": "Allée Charles Peguy",
+      "points": [
+        [
+          11.414,
+          -73.204
+        ],
+        [
+          37.207,
+          -74.628
+        ],
+        [
+          99.309,
+          -62.247
+        ],
+        [
+          110,
+          -56.463
+        ]
+      ],
+      "width": 4,
+      "isPath": false
+    },
+    {
+      "id": "TRONROUT0000000023917358",
+      "name": "Rue Henri de Bournazel",
+      "points": [
+        [
+          6.714,
+          -88.553
+        ],
+        [
+          8.45,
+          -82.681
+        ],
+        [
+          11.414,
+          -73.204
+        ]
+      ],
+      "width": 5,
+      "isPath": false
+    },
+    {
+      "id": "TRONROUT0000000023917379",
+      "name": "Rue de Verdun",
+      "points": [
+        [
+          49.204,
+          58.315
+        ],
+        [
+          93.232,
+          56.351
+        ],
+        [
+          110,
+          55.984
+        ]
+      ],
+      "width": 4,
+      "isPath": false
+    },
+    {
+      "id": "TRONROUT0000000023917456",
+      "name": "Rue Henri de Bournazel",
+      "points": [
+        [
+          34.18,
+          -4.629
+        ],
+        [
+          43.136,
+          27.818
+        ],
+        [
+          49.204,
+          58.315
+        ]
+      ],
+      "width": 5,
+      "isPath": false
+    },
+    {
+      "id": "TRONROUT0000000023917596",
+      "name": "impasse Jean-Baptiste Colbert",
+      "points": [
+        [
+          -60.012,
+          -67.562
+        ],
+        [
+          -48.064,
+          -53.168
+        ],
+        [
+          -30.752,
+          -38.354
+        ],
+        [
+          13.421,
+          -10.893
+        ],
+        [
+          24.098,
+          -6.131
+        ],
+        [
+          34.18,
+          -4.629
+        ]
+      ],
+      "width": 4,
+      "isPath": false
+    },
+    {
+      "id": "TRONROUT0000000088720274",
+      "name": "Allée Samuel de Champlain",
+      "points": [
+        [
+          110,
+          -74.763
+        ],
+        [
+          86.151,
+          -83.364
+        ],
+        [
+          53.154,
+          -91.639
+        ],
+        [
+          40.726,
+          -94.636
+        ]
+      ],
+      "width": 4,
+      "isPath": false
+    },
+    {
+      "id": "TRONROUT0000000300660270",
+      "name": "Passerelle Camille Claudel",
+      "points": [
+        [
+          -36.564,
+          95.391
+        ],
+        [
+          -19.174,
+          85.483
+        ]
+      ],
+      "width": 1.8,
+      "isPath": true
+    },
+    {
+      "id": "TRONROUT0000000331916470",
+      "name": "Allée Lanig le Dilosquer",
+      "points": [
+        [
+          -43.434,
+          99.427
+        ],
+        [
+          -36.564,
+          95.391
+        ]
+      ],
+      "width": 1.8,
+      "isPath": true
+    },
+    {
+      "id": "TRONROUT0000000331916471",
+      "name": "Allée Lanig le Dilosquer",
+      "points": [
+        [
+          -64.823,
+          110
+        ],
+        [
+          -71.361,
+          97.226
+        ],
+        [
+          -72.918,
+          94.453
+        ],
+        [
+          -82.002,
+          78.394
+        ]
+      ],
+      "width": 1.8,
+      "isPath": true
+    },
+    {
+      "id": "TRONROUT0000000353033694",
+      "name": "Sendero",
+      "points": [
+        [
+          -110,
+          -29.93
+        ],
+        [
+          -102.122,
+          -20.962
+        ],
+        [
+          -96.762,
+          -16.12
+        ],
+        [
+          -93.676,
+          -11.979
+        ],
+        [
+          -79.939,
+          11.096
+        ],
+        [
+          -77.253,
+          17.483
+        ],
+        [
+          -75.074,
+          24.922
+        ],
+        [
+          -68.76,
+          52.584
+        ],
+        [
+          -66.581,
+          60.023
+        ],
+        [
+          -62.175,
+          68.768
+        ],
+        [
+          -52.936,
+          84.31
+        ],
+        [
+          -43.434,
+          99.427
+        ]
+      ],
+      "width": 1.8,
+      "isPath": true
+    },
+    {
+      "id": "TRONROUT0000000353033696",
+      "name": "Allée Lanig le Dilosquer",
+      "points": [
+        [
+          -38.385,
+          110
+        ],
+        [
+          -43.434,
+          99.427
+        ]
+      ],
+      "width": 1.8,
+      "isPath": true
+    },
+    {
+      "id": "TRONROUT0000002292435118",
+      "name": "Parking du Steir",
+      "points": [
+        [
+          -84.981,
+          110
+        ],
+        [
+          -88.485,
+          101.183
+        ],
+        [
+          -92.465,
+          91.595
+        ],
+        [
+          -97.187,
+          81.574
+        ],
+        [
+          -104.253,
+          66.739
+        ],
+        [
+          -104.669,
+          66.575
+        ],
+        [
+          -105.575,
+          66.556
+        ],
+        [
+          -107.406,
+          67.426
+        ],
+        [
+          -110,
+          68.77
+        ]
+      ],
+      "width": 4,
+      "isPath": false
+    },
+    {
+      "id": "TRONROUT0000002333054824",
+      "name": "Acceso",
+      "points": [
+        [
+          6.714,
+          -88.553
+        ],
+        [
+          -18.888,
+          -88.353
+        ],
+        [
+          -45.886,
+          -85.816
+        ],
+        [
+          -72.705,
+          -80.181
+        ],
+        [
+          -77.824,
+          -79.014
+        ],
+        [
+          -92.675,
+          -75.464
+        ],
+        [
+          -109.113,
+          -68.354
+        ]
+      ],
+      "width": 3,
+      "isPath": false
+    },
+    {
+      "id": "TRONROUT0000002333054825",
+      "name": "Acceso",
+      "points": [
+        [
+          110,
+          -68.199
+        ],
+        [
+          103.039,
+          -71.023
+        ],
+        [
+          75.503,
+          -78.886
+        ],
+        [
+          47.08,
+          -85.464
+        ],
+        [
+          16.734,
+          -88.855
+        ],
+        [
+          6.714,
+          -88.553
+        ]
+      ],
+      "width": 1.8,
+      "isPath": true
+    },
+    {
+      "id": "TRONROUT0000002494251418",
+      "name": "Acceso",
+      "points": [
+        [
+          -109.113,
+          -68.354
+        ],
+        [
+          -110,
+          -67.958
+        ]
+      ],
+      "width": 3,
+      "isPath": false
+    }
+  ],
+  "parcel": {
+    "id": "29232000AL0538",
+    "label": "AL 0538",
+    "area": 1192,
+    "footprint": [
+      [
+        9.981,
+        21.566
+      ],
+      [
+        3.583,
+        17.814
+      ],
+      [
+        0.941,
+        16.254
+      ],
+      [
+        -1.307,
+        14.939
+      ],
+      [
+        -3.758,
+        13.503
+      ],
+      [
+        -5.423,
+        12.528
+      ],
+      [
+        -6.305,
+        11.994
+      ],
+      [
+        -6.868,
+        11.664
+      ],
+      [
+        -8.521,
+        10.708
+      ],
+      [
+        -10.963,
+        9.25
+      ],
+      [
+        -11.144,
+        9.146
+      ],
+      [
+        -13.509,
+        7.762
+      ],
+      [
+        -13.594,
+        7.71
+      ],
+      [
+        -16.161,
+        6.213
+      ],
+      [
+        -18.304,
+        4.949
+      ],
+      [
+        -20.851,
+        3.451
+      ],
+      [
+        -23.175,
+        2.074
+      ],
+      [
+        -27.556,
+        -0.495
+      ],
+      [
+        -22.68,
+        -7.144
+      ],
+      [
+        -16.544,
+        -15.513
+      ],
+      [
+        -14.745,
+        -17.957
+      ],
+      [
+        -12.946,
+        -20.41
+      ],
+      [
+        22.546,
+        0.489
+      ],
+      [
+        33.473,
+        6.797
+      ],
+      [
+        33.016,
+        7.069
+      ],
+      [
+        28.625,
+        9.847
+      ],
+      [
+        24.383,
+        12.5
+      ],
+      [
+        15.798,
+        17.907
+      ]
+    ]
+  },
+  "solar": {
+    "date": "2026-09-26",
+    "timeZone": "Europe/Paris",
+    "source": "apps/web/src/lib/solar.ts NOAA/Meeus",
+    "selected": {
+      "altitude": 39.32848482773413,
+      "azimuth": 196.98156154722508,
+      "direction": [
+        -0.22591882489768017,
+        0.6337655121173001,
+        0.73979859435359
+      ],
+      "isDaylight": true,
+      "minutes": 900,
+      "utc": "2026-09-26T13:00:00.000Z",
+      "disambiguation": "reject"
+    },
+    "sampleIntervalMinutes": 15,
+    "defaultFrame": 61,
+    "samples": [
+      {
+        "altitude": -35.596108475468355,
+        "azimuth": 319.3496583335591,
+        "direction": [
+          -0.5297129955610981,
+          -0.5820677430792425,
+          -0.6169289138955356
+        ],
+        "isDaylight": false,
+        "frame": 1,
+        "minutes": 0,
+        "localTime": "00:00",
+        "utc": "2026-09-25T22:00:00.000Z",
+        "elapsedMinutes": 0
+      },
+      {
+        "altitude": -37.16346447458306,
+        "azimuth": 323.58200609634343,
+        "direction": [
+          -0.47310600313752316,
+          -0.6040910725572676,
+          -0.6412836235643696
+        ],
+        "isDaylight": false,
+        "frame": 2,
+        "minutes": 15,
+        "localTime": "00:15",
+        "utc": "2026-09-25T22:15:00.000Z",
+        "elapsedMinutes": 15
+      },
+      {
+        "altitude": -38.57873313505556,
+        "azimuth": 327.9821215696777,
+        "direction": [
+          -0.4144722876276448,
+          -0.6235894714597082,
+          -0.662833986661297
+        ],
+        "isDaylight": false,
+        "frame": 3,
+        "minutes": 30,
+        "localTime": "00:30",
+        "utc": "2026-09-25T22:30:00.000Z",
+        "elapsedMinutes": 30
+      },
+      {
+        "altitude": -39.8275941318556,
+        "azimuth": 332.5461167595533,
+        "direction": [
+          -0.3540630543256685,
+          -0.6404796370758696,
+          -0.6814874819486717
+        ],
+        "isDaylight": false,
+        "frame": 4,
+        "minutes": 45,
+        "localTime": "00:45",
+        "utc": "2026-09-25T22:45:00.000Z",
+        "elapsedMinutes": 45
+      },
+      {
+        "altitude": -40.89610593574148,
+        "azimuth": 337.26454036677995,
+        "direction": [
+          -0.2921371145095573,
+          -0.6546894411966651,
+          -0.6971639992940172
+        ],
+        "isDaylight": false,
+        "frame": 5,
+        "minutes": 60,
+        "localTime": "01:00",
+        "utc": "2026-09-25T23:00:00.000Z",
+        "elapsedMinutes": 60
+      },
+      {
+        "altitude": -41.77124379973464,
+        "azimuth": 342.1217957500281,
+        "direction": [
+          -0.22895977661217007,
+          -0.6661582390883846,
+          -0.7097961828499557
+        ],
+        "isDaylight": false,
+        "frame": 6,
+        "minutes": 75,
+        "localTime": "01:15",
+        "utc": "2026-09-25T23:15:00.000Z",
+        "elapsedMinutes": 75
+      },
+      {
+        "altitude": -42.44150363609891,
+        "azimuth": 347.09597297579194,
+        "direction": [
+          -0.1648017095541327,
+          -0.6748371292895176,
+          -0.7193297195725463
+        ],
+        "isDaylight": false,
+        "frame": 7,
+        "minutes": 90,
+        "localTime": "01:30",
+        "utc": "2026-09-25T23:30:00.000Z",
+        "elapsedMinutes": 90
+      },
+      {
+        "altitude": -42.89752017678008,
+        "azimuth": 352.15923971296337,
+        "direction": [
+          -0.09993778312059508,
+          -0.6806891630735007,
+          -0.725723571877914
+        ],
+        "isDaylight": false,
+        "frame": 8,
+        "minutes": 105,
+        "localTime": "01:45",
+        "utc": "2026-09-25T23:45:00.000Z",
+        "elapsedMinutes": 105
+      },
+      {
+        "altitude": -43.132630922425584,
+        "azimuth": 357.2788666222024,
+        "direction": [
+          -0.034645890344153996,
+          -0.683689502702848,
+          -0.7289501534235334
+        ],
+        "isDaylight": false,
+        "frame": 9,
+        "minutes": 120,
+        "localTime": "02:00",
+        "utc": "2026-09-26T00:00:00.000Z",
+        "elapsedMinutes": 120
+      },
+      {
+        "altitude": -43.14331142908725,
+        "azimuth": 2.418851644785036,
+        "direction": [
+          0.03079424306738951,
+          -0.6838255278175945,
+          -0.7289954472415411
+        ],
+        "isDaylight": false,
+        "frame": 10,
+        "minutes": 135,
+        "localTime": "02:15",
+        "utc": "2026-09-26T00:15:00.000Z",
+        "elapsedMinutes": 135
+      },
+      {
+        "altitude": -42.92941742993241,
+        "azimuth": 7.541979920342726,
+        "direction": [
+          0.09610225714488023,
+          -0.6810968894597468,
+          -0.7258590657558233
+        ],
+        "isDaylight": false,
+        "frame": 11,
+        "minutes": 150,
+        "localTime": "02:30",
+        "utc": "2026-09-26T00:30:00.000Z",
+        "elapsedMinutes": 150
+      },
+      {
+        "altitude": -42.494195437826015,
+        "azimuth": 12.61205211433952,
+        "direction": [
+          0.16099835878537996,
+          -0.6755155115244057,
+          -0.7195542524079296
+        ],
+        "isDaylight": false,
+        "frame": 12,
+        "minutes": 165,
+        "localTime": "02:45",
+        "utc": "2026-09-26T00:45:00.000Z",
+        "elapsedMinutes": 165
+      },
+      {
+        "altitude": -41.84406010797951,
+        "azimuth": 17.595971547575402,
+        "direction": [
+          0.22520452045367154,
+          -0.6671055396512898,
+          -0.710107824864501
+        ],
+        "isDaylight": false,
+        "frame": 13,
+        "minutes": 180,
+        "localTime": "03:00",
+        "utc": "2026-09-26T01:00:00.000Z",
+        "elapsedMinutes": 180
+      },
+      {
+        "altitude": -40.98817375451725,
+        "azimuth": 22.46541613773627,
+        "direction": [
+          0.2884456713096655,
+          -0.6559032377349797,
+          -0.6975600600890844
+        ],
+        "isDaylight": false,
+        "frame": 14,
+        "minutes": 195,
+        "localTime": "03:15",
+        "utc": "2026-09-26T01:15:00.000Z",
+        "elapsedMinutes": 195
+      },
+      {
+        "altitude": -39.937890814652924,
+        "azimuth": 27.197920934433682,
+        "direction": [
+          0.3504508756651033,
+          -0.641956832518389,
+          -0.6819645217520626
+        ],
+        "isDaylight": false,
+        "frame": 15,
+        "minutes": 210,
+        "localTime": "03:30",
+        "utc": "2026-09-26T01:30:00.000Z",
+        "elapsedMinutes": 210
+      },
+      {
+        "altitude": -38.706141525461554,
+        "azimuth": 31.77732432310586,
+        "direction": [
+          0.41095449372646403,
+          -0.6253263069544369,
+          -0.6633878306969091
+        ],
+        "isDaylight": false,
+        "frame": 16,
+        "minutes": 225,
+        "localTime": "03:45",
+        "utc": "2026-09-26T01:45:00.000Z",
+        "elapsedMinutes": 225
+      },
+      {
+        "altitude": -37.30682438282054,
+        "azimuth": 36.19364503720158,
+        "direction": [
+          0.4696973196393845,
+          -0.6060831431822916,
+          -0.6419093794873633
+        ],
+        "isDaylight": false,
+        "frame": 17,
+        "minutes": 240,
+        "localTime": "04:00",
+        "utc": "2026-09-26T02:00:00.000Z",
+        "elapsedMinutes": 240
+      },
+      {
+        "altitude": -35.75426076664082,
+        "azimuth": 40.44253052555479,
+        "direction": [
+          0.5264276919652588,
+          -0.5843100162394428,
+          -0.6176209922390857
+        ],
+        "isDaylight": false,
+        "frame": 18,
+        "minutes": 255,
+        "localTime": "04:15",
+        "utc": "2026-09-26T02:15:00.000Z",
+        "elapsedMinutes": 255
+      },
+      {
+        "altitude": -34.06274411085628,
+        "azimuth": 44.52444285462798,
+        "direction": [
+          0.5809025718375801,
+          -0.5601004398404895,
+          -0.5906265311709042
+        ],
+        "isDaylight": false,
+        "frame": 19,
+        "minutes": 270,
+        "localTime": "04:30",
+        "utc": "2026-09-26T02:30:00.000Z",
+        "elapsedMinutes": 270
+      },
+      {
+        "altitude": -32.24619605413584,
+        "azimuth": 48.443735460044934,
+        "direction": [
+          0.6328885841681677,
+          -0.5335583657025152,
+          -0.5610414516044898
+        ],
+        "isDaylight": false,
+        "frame": 20,
+        "minutes": 285,
+        "localTime": "04:45",
+        "utc": "2026-09-26T02:45:00.000Z",
+        "elapsedMinutes": 285
+      },
+      {
+        "altitude": -30.317926692727795,
+        "azimuth": 52.20773924003231,
+        "direction": [
+          0.6821630174486366,
+          -0.5047977381531907,
+          -0.5289923072983138
+        ],
+        "isDaylight": false,
+        "frame": 21,
+        "minutes": 300,
+        "localTime": "05:00",
+        "utc": "2026-09-26T03:00:00.000Z",
+        "elapsedMinutes": 300
+      },
+      {
+        "altitude": -28.290486471793205,
+        "azimuth": 55.82593532099361,
+        "direction": [
+          0.7285147778678633,
+          -0.47394200594773916,
+          -0.4946162082123582
+        ],
+        "isDaylight": false,
+        "frame": 22,
+        "minutes": 315,
+        "localTime": "05:15",
+        "utc": "2026-09-26T03:15:00.000Z",
+        "elapsedMinutes": 315
+      },
+      {
+        "altitude": -26.175592807029155,
+        "azimuth": 59.30925483779134,
+        "direction": [
+          0.7717452936485777,
+          -0.4411235933497466,
+          -0.4580602330714574
+        ],
+        "isDaylight": false,
+        "frame": 23,
+        "minutes": 330,
+        "localTime": "05:30",
+        "utc": "2026-09-26T03:30:00.000Z",
+        "elapsedMinutes": 330
+      },
+      {
+        "altitude": -23.984113854165575,
+        "azimuth": 62.66951815387063,
+        "direction": [
+          0.8116693657342908,
+          -0.4064833327608616,
+          -0.419480799222225
+        ],
+        "isDaylight": false,
+        "frame": 24,
+        "minutes": 345,
+        "localTime": "05:45",
+        "utc": "2026-09-26T03:45:00.000Z",
+        "elapsedMinutes": 345
+      },
+      {
+        "altitude": -21.726093451262134,
+        "azimuth": 65.91900780695732,
+        "direction": [
+          0.848115961185072,
+          -0.370169861347403,
+          -0.379042992460177
+        ],
+        "isDaylight": false,
+        "frame": 25,
+        "minutes": 360,
+        "localTime": "06:00",
+        "utc": "2026-09-26T04:00:00.000Z",
+        "elapsedMinutes": 360
+      },
+      {
+        "altitude": -19.410803945600165,
+        "azimuth": 69.0701595648693,
+        "direction": [
+          0.8809289458758289,
+          -0.33233898421358843,
+          -0.3369198597440957
+        ],
+        "isDaylight": false,
+        "frame": 26,
+        "minutes": 375,
+        "localTime": "06:15",
+        "utc": "2026-09-26T04:15:00.000Z",
+        "elapsedMinutes": 375
+      },
+      {
+        "altitude": -17.046816574256905,
+        "azimuth": 72.13535202287767,
+        "direction": [
+          0.909967753362839,
+          -0.293153006867988,
+          -0.2932916678053518
+        ],
+        "isDaylight": false,
+        "frame": 27,
+        "minutes": 390,
+        "localTime": "06:30",
+        "utc": "2026-09-26T04:30:00.000Z",
+        "elapsedMinutes": 390
+      },
+      {
+        "altitude": -14.642081812974155,
+        "azimuth": 75.12677496586343,
+        "direction": [
+          0.9351079870548624,
+          -0.2527800398600218,
+          -0.2483451308050337
+        ],
+        "isDaylight": false,
+        "frame": 28,
+        "minutes": 405,
+        "localTime": "06:45",
+        "utc": "2026-09-26T04:45:00.000Z",
+        "elapsedMinutes": 405
+      },
+      {
+        "altitude": -12.204014425855872,
+        "azimuth": 78.0563585436949,
+        "direction": [
+          0.9562419531039379,
+          -0.21139327853117812,
+          -0.20227261039450214
+        ],
+        "isDaylight": false,
+        "frame": 29,
+        "minutes": 420,
+        "localTime": "07:00",
+        "utc": "2026-09-26T05:00:00.000Z",
+        "elapsedMinutes": 420
+      },
+      {
+        "altitude": -9.739579791881393,
+        "azimuth": 80.9357480053622,
+        "direction": [
+          0.9732791217366609,
+          -0.1691702609842797,
+          -0.1552712915835527
+        ],
+        "isDaylight": false,
+        "frame": 30,
+        "minutes": 435,
+        "localTime": "07:15",
+        "utc": "2026-09-26T05:15:00.000Z",
+        "elapsedMinutes": 435
+      },
+      {
+        "altitude": -7.255379474318051,
+        "azimuth": 83.77631157268809,
+        "direction": [
+          0.9861465150501916,
+          -0.12629210746674407,
+          -0.10754233792312028
+        ],
+        "isDaylight": false,
+        "frame": 31,
+        "minutes": 450,
+        "localTime": "07:30",
+        "utc": "2026-09-26T05:30:00.000Z",
+        "elapsedMinutes": 450
+      },
+      {
+        "altitude": -4.757735004542677,
+        "azimuth": 86.58917161372085,
+        "direction": [
+          0.9947890196089052,
+          -0.08294274439250073,
+          -0.059290029669359694
+        ],
+        "isDaylight": false,
+        "frame": 32,
+        "minutes": 465,
+        "localTime": "07:45",
+        "utc": "2026-09-26T05:45:00.000Z",
+        "elapsedMinutes": 465
+      },
+      {
+        "altitude": -2.252769557533407,
+        "azimuth": 89.38525142872265,
+        "direction": [
+          0.9991696225051786,
+          -0.039308116344197466,
+          -0.01072088859797242
+        ],
+        "isDaylight": false,
+        "frame": 33,
+        "minutes": 480,
+        "localTime": "08:00",
+        "utc": "2026-09-26T06:00:00.000Z",
+        "elapsedMinutes": 480
+      },
+      {
+        "altitude": 0.25351233775971727,
+        "azimuth": 92.17533161545185,
+        "direction": [
+          0.9992695698724037,
+          0.004424610551309376,
+          0.03795720680569761
+        ],
+        "isDaylight": true,
+        "frame": 34,
+        "minutes": 495,
+        "localTime": "08:15",
+        "utc": "2026-09-26T06:15:00.000Z",
+        "elapsedMinutes": 495
+      },
+      {
+        "altitude": 2.7551466284575943,
+        "azimuth": 94.97011113723283,
+        "direction": [
+          0.9950884471709516,
+          0.04806785049523728,
+          0.08653591194222002
+        ],
+        "isDaylight": true,
+        "frame": 35,
+        "minutes": 510,
+        "localTime": "08:30",
+        "utc": "2026-09-26T06:30:00.000Z",
+        "elapsedMinutes": 510
+      },
+      {
+        "altitude": 5.246132538454917,
+        "azimuth": 97.78026891570096,
+        "direction": [
+          0.9866441809046328,
+          0.0914344016844729,
+          0.13480730868772964
+        ],
+        "isDaylight": true,
+        "frame": 36,
+        "minutes": 525,
+        "localTime": "08:45",
+        "utc": "2026-09-26T06:45:00.000Z",
+        "elapsedMinutes": 525
+      },
+      {
+        "altitude": 7.720355746683207,
+        "azimuth": 100.61652202665113,
+        "direction": [
+          0.9739729617584998,
+          0.1343382483143992,
+          0.18256479617712437
+        ],
+        "isDaylight": true,
+        "frame": 37,
+        "minutes": 540,
+        "localTime": "09:00",
+        "utc": "2026-09-26T07:00:00.000Z",
+        "elapsedMinutes": 540
+      },
+      {
+        "altitude": 10.171511439392907,
+        "azimuth": 103.48967641380591,
+        "direction": [
+          0.9571290894896121,
+          0.17659535751481645,
+          0.22960397591723092
+        ],
+        "isDaylight": true,
+        "frame": 38,
+        "minutes": 555,
+        "localTime": "09:15",
+        "utc": "2026-09-26T07:15:00.000Z",
+        "elapsedMinutes": 555
+      },
+      {
+        "altitude": 12.59302693200738,
+        "azimuth": 106.41066547587047,
+        "direction": [
+          0.9361847402355432,
+          0.21802446778808368,
+          0.2757235274615343
+        ],
+        "isDaylight": true,
+        "frame": 39,
+        "minutes": 570,
+        "localTime": "09:30",
+        "utc": "2026-09-26T07:30:00.000Z",
+        "elapsedMinutes": 570
+      },
+      {
+        "altitude": 14.977983891998056,
+        "azimuth": 109.39057092248873,
+        "direction": [
+          0.9112296572345544,
+          0.25844786555412463,
+          0.32072607091833605
+        ],
+        "isDaylight": true,
+        "frame": 40,
+        "minutes": 585,
+        "localTime": "09:45",
+        "utc": "2026-09-26T07:45:00.000Z",
+        "elapsedMinutes": 585
+      },
+      {
+        "altitude": 17.319040698463937,
+        "azimuth": 112.44061895005115,
+        "direction": [
+          0.8823707662872062,
+          0.2976921465098025,
+          0.3644190125502714
+        ],
+        "isDaylight": true,
+        "frame": 41,
+        "minutes": 600,
+        "localTime": "10:00",
+        "utc": "2026-09-26T08:00:00.000Z",
+        "elapsedMinutes": 600
+      },
+      {
+        "altitude": 19.608356179654685,
+        "azimuth": 115.57214311577832,
+        "direction": [
+          0.8497317176058182,
+          0.3355889585239822,
+          0.40661536986623487
+        ],
+        "isDaylight": true,
+        "frame": 42,
+        "minutes": 615,
+        "localTime": "10:15",
+        "utc": "2026-09-26T08:15:00.000Z",
+        "elapsedMinutes": 615
+      },
+      {
+        "altitude": 21.83751693422379,
+        "azimuth": 118.79650338376553,
+        "direction": [
+          0.813452356010606,
+          0.3719757228678663,
+          0.44713457269341494
+        ],
+        "isDaylight": true,
+        "frame": 43,
+        "minutes": 630,
+        "localTime": "10:30",
+        "utc": "2026-09-26T08:30:00.000Z",
+        "elapsedMinutes": 630
+      },
+      {
+        "altitude": 23.99747171328729,
+        "azimuth": 122.1249488997488,
+        "direction": [
+          0.7736881217492246,
+          0.406696330725575,
+          0.4858032367517847
+        ],
+        "isDaylight": true,
+        "frame": 44,
+        "minutes": 645,
+        "localTime": "10:45",
+        "utc": "2026-09-26T08:45:00.000Z",
+        "elapsedMinutes": 645
+      },
+      {
+        "altitude": 26.07847793887251,
+        "azimuth": 125.56841053105143,
+        "direction": [
+          0.7306093845045206,
+          0.4396018119841755,
+          0.5224559064401082
+        ],
+        "isDaylight": true,
+        "frame": 45,
+        "minutes": 660,
+        "localTime": "11:00",
+        "utc": "2026-09-26T09:00:00.000Z",
+        "elapsedMinutes": 660
+      },
+      {
+        "altitude": 28.070067355180374,
+        "azimuth": 129.13720871988437,
+        "direction": [
+          0.6844007134387947,
+          0.4705509734192942,
+          0.5569357636735348
+        ],
+        "isDaylight": true,
+        "frame": 46,
+        "minutes": 675,
+        "localTime": "11:15",
+        "utc": "2026-09-26T09:15:00.000Z",
+        "elapsedMinutes": 675
+      },
+      {
+        "altitude": 29.961039955029957,
+        "azimuth": 132.84066370346568,
+        "direction": [
+          0.635260086410843,
+          0.499411003578514,
+          0.5890952996909669
+        ],
+        "isDaylight": true,
+        "frame": 47,
+        "minutes": 690,
+        "localTime": "11:30",
+        "utc": "2026-09-26T09:30:00.000Z",
+        "elapsedMinutes": 690
+      },
+      {
+        "altitude": 31.73949744807263,
+        "azimuth": 136.68659994932648,
+        "direction": [
+          0.5833980417502216,
+          0.5260580417536093,
+          0.6187969469772492
+        ],
+        "isDaylight": true,
+        "frame": 48,
+        "minutes": 705,
+        "localTime": "11:45",
+        "utc": "2026-09-26T09:45:00.000Z",
+        "elapsedMinutes": 705
+      },
+      {
+        "altitude": 33.392929214755235,
+        "azimuth": 140.6807462099407,
+        "direction": [
+          0.5290367762171242,
+          0.5503777085849146,
+          0.6459136686141664
+        ],
+        "isDaylight": true,
+        "frame": 49,
+        "minutes": 720,
+        "localTime": "12:00",
+        "utc": "2026-09-26T10:00:00.000Z",
+        "elapsedMinutes": 720
+      },
+      {
+        "altitude": 34.90836424346882,
+        "azimuth": 144.82604824435282,
+        "direction": [
+          0.47240919302293477,
+          0.572265596062051,
+          0.6703295024919945
+        ],
+        "isDaylight": true,
+        "frame": 50,
+        "minutes": 735,
+        "localTime": "12:15",
+        "utc": "2026-09-26T10:15:00.000Z",
+        "elapsedMinutes": 735
+      },
+      {
+        "altitude": 36.27260105760071,
+        "azimuth": 149.12193347971606,
+        "direction": [
+          0.4137579039855501,
+          0.5916277148039049,
+          0.6919400580725137
+        ],
+        "isDaylight": true,
+        "frame": 51,
+        "minutes": 750,
+        "localTime": "12:30",
+        "utc": "2026-09-26T10:30:00.000Z",
+        "elapsedMinutes": 750
+      },
+      {
+        "altitude": 37.4725231050847,
+        "azimuth": 153.5635943027421,
+        "direction": [
+          0.35333419008832073,
+          0.60838089668155,
+          0.7106529635958634
+        ],
+        "isDaylight": true,
+        "frame": 52,
+        "minutes": 765,
+        "localTime": "12:45",
+        "utc": "2026-09-26T10:45:00.000Z",
+        "elapsedMinutes": 765
+      },
+      {
+        "altitude": 38.49549870289122,
+        "azimuth": 158.1413849390708,
+        "direction": [
+          0.29139692490758484,
+          0.6224531510983545,
+          0.7263882617733661
+        ],
+        "isDaylight": true,
+        "frame": 53,
+        "minutes": 780,
+        "localTime": "13:00",
+        "utc": "2026-09-26T11:00:00.000Z",
+        "elapsedMinutes": 780
+      },
+      {
+        "altitude": 39.32985228526998,
+        "azimuth": 162.8404481232683,
+        "direction": [
+          0.22821146551575722,
+          0.6337839733821039,
+          0.7390787522931118
+        ],
+        "isDaylight": true,
+        "frame": 54,
+        "minutes": 795,
+        "localTime": "13:15",
+        "utc": "2026-09-26T11:15:00.000Z",
+        "elapsedMinutes": 795
+      },
+      {
+        "altitude": 39.96537857175786,
+        "azimuth": 167.64069142442497,
+        "direction": [
+          0.16404851560526412,
+          0.6423246039472886,
+          0.7486702796903775
+        ],
+        "isDaylight": true,
+        "frame": 55,
+        "minutes": 810,
+        "localTime": "13:30",
+        "utc": "2026-09-26T11:30:00.000Z",
+        "elapsedMinutes": 810
+      },
+      {
+        "altitude": 40.39385614147989,
+        "azimuth": 172.5172091032273,
+        "direction": [
+          0.09918296571645144,
+          0.6480382371579761,
+          0.7551219653094935
+        ],
+        "isDaylight": true,
+        "frame": 56,
+        "minutes": 825,
+        "localTime": "13:45",
+        "utc": "2026-09-26T11:45:00.000Z",
+        "elapsedMinutes": 825
+      },
+      {
+        "altitude": 40.60950594017991,
+        "azimuth": 177.44118932498452,
+        "direction": [
+          0.033892715532225455,
+          0.6509001789767879,
+          0.7584063823846929
+        ],
+        "isDaylight": true,
+        "frame": 57,
+        "minutes": 840,
+        "localTime": "14:00",
+        "utc": "2026-09-26T12:00:00.000Z",
+        "elapsedMinutes": 840
+      },
+      {
+        "altitude": 40.60933791847794,
+        "azimuth": 182.38126482083112,
+        "direction": [
+          -0.03154251672134806,
+          0.6508979527033046,
+          0.7585096735082091
+        ],
+        "isDaylight": true,
+        "frame": 58,
+        "minutes": 855,
+        "localTime": "14:15",
+        "utc": "2026-09-26T12:15:00.000Z",
+        "elapsedMinutes": 855
+      },
+      {
+        "altitude": 40.393338202236265,
+        "azimuth": 187.3051764814567,
+        "direction": [
+          -0.09684239265493914,
+          0.6480313523910872,
+          0.7554316099443055
+        ],
+        "isDaylight": true,
+        "frame": 59,
+        "minutes": 870,
+        "localTime": "14:30",
+        "utc": "2026-09-26T12:30:00.000Z",
+        "elapsedMinutes": 870
+      },
+      {
+        "altitude": 39.96446952059563,
+        "azimuth": 192.18155026154446,
+        "direction": [
+          -0.16172715474859065,
+          0.6423124436941899,
+          0.7491855925553582
+        ],
+        "isDaylight": true,
+        "frame": 60,
+        "minutes": 885,
+        "localTime": "14:45",
+        "utc": "2026-09-26T12:45:00.000Z",
+        "elapsedMinutes": 885
+      },
+      {
+        "altitude": 39.32848482773413,
+        "azimuth": 196.98156154722508,
+        "direction": [
+          -0.22591882489768017,
+          0.6337655121173001,
+          0.73979859435359
+        ],
+        "isDaylight": true,
+        "frame": 61,
+        "minutes": 900,
+        "localTime": "15:00",
+        "utc": "2026-09-26T13:00:00.000Z",
+        "elapsedMinutes": 900
+      },
+      {
+        "altitude": 38.49358128527228,
+        "azimuth": 201.68028718602744,
+        "direction": [
+          -0.28914239532487973,
+          0.6224269589351498,
+          0.7273110448883149
+        ],
+        "isDaylight": true,
+        "frame": 62,
+        "minutes": 915,
+        "localTime": "15:15",
+        "utc": "2026-09-26T13:15:00.000Z",
+        "elapsedMinutes": 915
+      },
+      {
+        "altitude": 37.46994213649772,
+        "azimuth": 206.25761437436054,
+        "direction": [
+          -0.35112700676250685,
+          0.6083451452059171,
+          0.7117766569833505
+        ],
+        "isDaylight": true,
+        "frame": 63,
+        "minutes": 930,
+        "localTime": "15:30",
+        "utc": "2026-09-26T13:30:00.000Z",
+        "elapsedMinutes": 930
+      },
+      {
+        "altitude": 36.26922325135953,
+        "azimuth": 210.69866418225712,
+        "direction": [
+          -0.4116071088632671,
+          0.5915801845239852,
+          0.6932621965835079
+        ],
+        "isDaylight": true,
+        "frame": 64,
+        "minutes": 945,
+        "localTime": "15:45",
+        "utc": "2026-09-26T13:45:00.000Z",
+        "elapsedMinutes": 945
+      },
+      {
+        "altitude": 34.904038843466665,
+        "azimuth": 214.99376929060412,
+        "direction": [
+          -0.47032359785615757,
+          0.5722036854453747,
+          0.6718471966618377
+        ],
+        "isDaylight": true,
+        "frame": 65,
+        "minutes": 960,
+        "localTime": "16:00",
+        "utc": "2026-09-26T14:00:00.000Z",
+        "elapsedMinutes": 960
+      },
+      {
+        "altitude": 33.3874899286721,
+        "azimuth": 219.13810167959244,
+        "direction": [
+          -0.5270249265800107,
+          0.5502984446675174,
+          0.6476236164315239
+        ],
+        "isDaylight": true,
+        "frame": 66,
+        "minutes": 975,
+        "localTime": "16:15",
+        "utc": "2026-09-26T14:15:00.000Z",
+        "elapsedMinutes": 975
+      },
+      {
+        "altitude": 31.7327639712794,
+        "azimuth": 223.13107010228785,
+        "direction": [
+          -0.5814681821439696,
+          0.5259580922538984,
+          0.6206954473385697
+        ],
+        "isDaylight": true,
+        "frame": 67,
+        "minutes": 990,
+        "localTime": "16:30",
+        "utc": "2026-09-26T14:30:00.000Z",
+        "elapsedMinutes": 990
+      },
+      {
+        "altitude": 29.952819031632476,
+        "azimuth": 226.97560359683717,
+        "direction": [
+          -0.6334201265873443,
+          0.49928669047076935,
+          0.5911782674902885
+        ],
+        "isDaylight": true,
+        "frame": 68,
+        "minutes": 1005,
+        "localTime": "16:45",
+        "utc": "2026-09-26T14:45:00.000Z",
+        "elapsedMinutes": 1005
+      },
+      {
+        "altitude": 28.060153370587308,
+        "azimuth": 230.67741609176974,
+        "direction": [
+          -0.682658196086531,
+          0.4703982879317213,
+          0.55919874644601
+        ],
+        "isDaylight": true,
+        "frame": 69,
+        "minutes": 1020,
+        "localTime": "17:00",
+        "utc": "2026-09-26T15:00:00.000Z",
+        "elapsedMinutes": 1020
+      },
+      {
+        "altitude": 26.066653065951492,
+        "azimuth": 234.2443188961443,
+        "direction": [
+          -0.7289714544322281,
+          0.4394164309358988,
+          0.5248941025068946
+        ],
+        "isDaylight": true,
+        "frame": 70,
+        "minutes": 1035,
+        "localTime": "17:15",
+        "utc": "2026-09-26T15:15:00.000Z",
+        "elapsedMinutes": 1035
+      },
+      {
+        "altitude": 23.983505652282375,
+        "azimuth": 237.68562043893866,
+        "direction": [
+          -0.7721614966830375,
+          0.4064736341416504,
+          0.48841151479862893
+        ],
+        "isDaylight": true,
+        "frame": 71,
+        "minutes": 1050,
+        "localTime": "17:30",
+        "utc": "2026-09-26T15:30:00.000Z",
+        "elapsedMinutes": 1050
+      },
+      {
+        "altitude": 21.821166292278207,
+        "azimuth": 241.0116303783038,
+        "direction": [
+          -0.812043299129518,
+          0.37171081281998836,
+          0.4499074926821642
+        ],
+        "isDaylight": true,
+        "frame": 72,
+        "minutes": 1065,
+        "localTime": "17:45",
+        "utc": "2026-09-26T15:45:00.000Z",
+        "elapsedMinutes": 1065
+      },
+      {
+        "altitude": 19.589363530596344,
+        "azimuth": 244.233269531857,
+        "direction": [
+          -0.848446011930226,
+          0.33527667909536163,
+          0.40954720520897314
+        ],
+        "isDaylight": true,
+        "frame": 73,
+        "minutes": 1080,
+        "localTime": "18:00",
+        "utc": "2026-09-26T16:00:00.000Z",
+        "elapsedMinutes": 1080
+      },
+      {
+        "altitude": 17.297133359328775,
+        "azimuth": 247.36177750776184,
+        "direction": [
+          -0.8812136910169475,
+          0.2973271048094958,
+          0.36750377346347174
+        ],
+        "isDaylight": true,
+        "frame": 74,
+        "minutes": 1095,
+        "localTime": "18:15",
+        "utc": "2026-09-26T16:15:00.000Z",
+        "elapsedMinutes": 1095
+      },
+      {
+        "altitude": 14.952872445822853,
+        "azimuth": 250.4085051115506,
+        "direction": [
+          -0.9102059661381141,
+          0.25802445371415766,
+          0.323957528839959
+        ],
+        "isDaylight": true,
+        "frame": 75,
+        "minutes": 1110,
+        "localTime": "18:30",
+        "utc": "2026-09-26T16:30:00.000Z",
+        "elapsedMinutes": 1110
+      },
+      {
+        "altitude": 12.564403516382441,
+        "azimuth": 253.38477708754834,
+        "direction": [
+          -0.9352986421802739,
+          0.217536885828412,
+          0.27909524044636175
+        ],
+        "isDaylight": true,
+        "frame": 76,
+        "minutes": 1125,
+        "localTime": "18:45",
+        "utc": "2026-09-26T16:45:00.000Z",
+        "elapsedMinutes": 1125
+      },
+      {
+        "altitude": 10.13904781628552,
+        "azimuth": 256.3018112424496,
+        "direction": [
+          -0.9563842311865646,
+          0.17603763699085462,
+          0.2331093149154702
+        ],
+        "isDaylight": true,
+        "frame": 77,
+        "minutes": 1140,
+        "localTime": "19:00",
+        "utc": "2026-09-26T17:00:00.000Z",
+        "elapsedMinutes": 1140
+      },
+      {
+        "altitude": 7.683701165508452,
+        "azimuth": 259.1706815223976,
+        "direction": [
+          -0.9733724127966662,
+          0.1337042766688327,
+          0.1861969720668433
+        ],
+        "isDaylight": true,
+        "frame": 78,
+        "minutes": 1155,
+        "localTime": "19:15",
+        "utc": "2026-09-26T17:15:00.000Z",
+        "elapsedMinutes": 1155
+      },
+      {
+        "altitude": 5.204911400172928,
+        "azimuth": 262.00231453208715,
+        "direction": [
+          -0.9861904211362433,
+          0.09071794717881675,
+          0.13855939996543082
+        ],
+        "isDaylight": true,
+        "frame": 79,
+        "minutes": 1170,
+        "localTime": "19:30",
+        "utc": "2026-09-26T17:30:00.000Z",
+        "elapsedMinutes": 1170
+      },
+      {
+        "altitude": 2.708955961692155,
+        "azimuth": 264.80751089815476,
+        "direction": [
+          -0.9947833564959176,
+          0.04726258762796215,
+          0.0904008929680741
+        ],
+        "isDaylight": true,
+        "frame": 80,
+        "minutes": 1185,
+        "localTime": "19:45",
+        "utc": "2026-09-26T17:45:00.000Z",
+        "elapsedMinutes": 1185
+      },
+      {
+        "altitude": 0.2019191030784474,
+        "azimuth": 267.596984561756,
+        "direction": [
+          -0.9991144204671322,
+          0.0035241458766024913,
+          0.04192797646520806
+        ],
+        "isDaylight": true,
+        "frame": 81,
+        "minutes": 1200,
+        "localTime": "20:00",
+        "utc": "2026-09-26T18:00:00.000Z",
+        "elapsedMinutes": 1200
+      },
+      {
+        "altitude": -2.3102313126636242,
+        "azimuth": 270.38141443573824,
+        "direction": [
+          -0.9991650735268975,
+          -0.04031021812760674,
+          -0.006651477918043259
+        ],
+        "isDaylight": false,
+        "frame": 82,
+        "minutes": 1215,
+        "localTime": "20:15",
+        "utc": "2026-09-26T18:15:00.000Z",
+        "elapsedMinutes": 1215
+      },
+      {
+        "altitude": -4.821567101532124,
+        "azimuth": 273.17150383547425,
+        "direction": [
+          -0.9949351143963705,
+          -0.08405293417999976,
+          -0.055129142899323025
+        ],
+        "isDaylight": false,
+        "frame": 83,
+        "minutes": 1230,
+        "localTime": "20:30",
+        "utc": "2026-09-26T18:30:00.000Z",
+        "elapsedMinutes": 1230
+      },
+      {
+        "altitude": -7.326122610092398,
+        "azimuth": 275.9780436658887,
+        "direction": [
+          -0.9864426808347128,
+          -0.12751682540390685,
+          -0.10329712806527896
+        ],
+        "isDaylight": false,
+        "frame": 84,
+        "minutes": 1245,
+        "localTime": "20:45",
+        "utc": "2026-09-26T18:45:00.000Z",
+        "elapsedMinutes": 1245
+      },
+      {
+        "altitude": -9.817816509573166,
+        "azimuth": 278.81197551939465,
+        "direction": [
+          -0.9737241718629712,
+          -0.17051591017272105,
+          -0.15094887050832642
+        ],
+        "isDaylight": false,
+        "frame": 85,
+        "minutes": 1260,
+        "localTime": "21:00",
+        "utc": "2026-09-26T19:00:00.000Z",
+        "elapsedMinutes": 1260
+      },
+      {
+        "altitude": -12.290371920635605,
+        "azimuth": 281.6844505967255,
+        "direction": [
+          -0.9568340917537684,
+          -0.21286619888278316,
+          -0.19788001978708322
+        ],
+        "isDaylight": false,
+        "frame": 86,
+        "minutes": 1275,
+        "localTime": "21:15",
+        "utc": "2026-09-26T19:15:00.000Z",
+        "elapsedMinutes": 1275
+      },
+      {
+        "altitude": -14.737234389911244,
+        "azimuth": 284.6068796731844,
+        "direction": [
+          -0.9358448164553379,
+          -0.2543864821892412,
+          -0.2438893134047858
+        ],
+        "isDaylight": false,
+        "frame": 87,
+        "minutes": 1290,
+        "localTime": "21:30",
+        "utc": "2026-09-26T19:30:00.000Z",
+        "elapsedMinutes": 1290
+      },
+      {
+        "altitude": -17.151487507444806,
+        "azimuth": 287.59096817051955,
+        "direction": [
+          -0.9108462834476061,
+          -0.2948991073524825,
+          -0.28877943904023395
+        ],
+        "isDaylight": false,
+        "frame": 88,
+        "minutes": 1305,
+        "localTime": "21:45",
+        "utc": "2026-09-26T19:45:00.000Z",
+        "elapsedMinutes": 1305
+      },
+      {
+        "altitude": -19.525766396800712,
+        "azimuth": 290.6487287257111,
+        "direction": [
+          -0.8819456063640106,
+          -0.3342307393191248,
+          -0.33235787986658094
+        ],
+        "isDaylight": false,
+        "frame": 89,
+        "minutes": 1320,
+        "localTime": "22:00",
+        "utc": "2026-09-26T20:00:00.000Z",
+        "elapsedMinutes": 1320
+      },
+      {
+        "altitude": -21.8521699960972,
+        "azimuth": 293.7924614518419,
+        "direction": [
+          -0.8492666160289514,
+          -0.3722131033026292,
+          -0.37443773932198654
+        ],
+        "isDaylight": false,
+        "frame": 90,
+        "minutes": 1335,
+        "localTime": "22:15",
+        "utc": "2026-09-26T20:15:00.000Z",
+        "elapsedMinutes": 1335
+      },
+      {
+        "altitude": -24.122174036971018,
+        "azimuth": 297.03468941471874,
+        "direction": [
+          -0.8129493298732007,
+          -0.40868370570594964,
+          -0.4148385417836277
+        ],
+        "isDaylight": false,
+        "frame": 91,
+        "minutes": 1350,
+        "localTime": "22:30",
+        "utc": "2026-09-26T20:30:00.000Z",
+        "elapsedMinutes": 1350
+      },
+      {
+        "altitude": -26.326548000349067,
+        "azimuth": 300.38803386369466,
+        "direction": [
+          -0.7731493520075146,
+          -0.44348653024890583,
+          -0.4533870057447022
+        ],
+        "isDaylight": false,
+        "frame": 92,
+        "minutes": 1365,
+        "localTime": "22:45",
+        "utc": "2026-09-26T20:45:00.000Z",
+        "elapsedMinutes": 1365
+      },
+      {
+        "altitude": -28.455281172472322,
+        "azimuth": 303.865010819335,
+        "direction": [
+          -0.7300372065223442,
+          -0.47647270634287053,
+          -0.4899177861675904
+        ],
+        "isDaylight": false,
+        "frame": 93,
+        "minutes": 1380,
+        "localTime": "23:00",
+        "utc": "2026-09-26T21:00:00.000Z",
+        "elapsedMinutes": 1380
+      },
+      {
+        "altitude": -30.4975252722136,
+        "azimuth": 307.47772844061876,
+        "direction": [
+          -0.6837976068650327,
+          -0.5075011468731064,
+          -0.5242741828167163
+        ],
+        "isDaylight": false,
+        "frame": 94,
+        "minutes": 1395,
+        "localTime": "23:15",
+        "utc": "2026-09-26T21:15:00.000Z",
+        "elapsedMinutes": 1395
+      },
+      {
+        "altitude": -32.44156393238521,
+        "azimuth": 311.23746433539134,
+        "direction": [
+          -0.6346286644336846,
+          -0.5364391526082068,
+          -0.5563088115679157
+        ],
+        "isDaylight": false,
+        "frame": 95,
+        "minutes": 1410,
+        "localTime": "23:30",
+        "utc": "2026-09-26T21:30:00.000Z",
+        "elapsedMinutes": 1410
+      },
+      {
+        "altitude": -34.27482241190109,
+        "azimuth": 315.15410537158755,
+        "direction": [
+          -0.5827410397748629,
+          -0.5631629806719077,
+          -0.5858842358033233
+        ],
+        "isDaylight": false,
+        "frame": 96,
+        "minutes": 1425,
+        "localTime": "23:45",
+        "utc": "2026-09-26T21:45:00.000Z",
+        "elapsedMinutes": 1425
+      }
+    ],
+    "sunrise": "2026-09-26T06:08:29.619Z",
+    "sunset": "2026-09-26T18:06:10.751Z",
+    "solarNoon": "2026-09-26T12:07:46.167Z",
+    "daylightMinutes": 717.6855333333333
+  }
+}
