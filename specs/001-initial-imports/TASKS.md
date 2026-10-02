@@ -21,6 +21,8 @@
 - [x] A pedido posterior del usuario, trazar contexto aproximado desde Carto y aérea de Maps: parcelas 7, 9, 11 y 12, techos observados separados de las parcelas, y calles Zeballos/Dardo Rocha/La Cautiva. Registrar controles/errores y crear overlay 2D; mantener el original intacto y sin sombras/alturas vecinas.
 - [x] Incluir el vecino pegado de esquina del lote 9 confirmado por el usuario. La mínima traslación calculada preserva su polígono y queda dentro del margen propagado del trazado; encaje provisional pendiente de revisión, no mensura.
 - [ ] Aprobar correspondencias, norte, límites construidos reales y alturas: los contornos planos aproximados no completan el gate de vecinos métricos/sombras.
+- [x] Corrección posterior de calles/veredas: sustituir bandas catastrales completas por calzadas y vereda exterior continua con esquinas compartidas; separar calzada opuesta y separador de Zeballos. Registrar secciones visuales en píxeles, nunca medidas normativas.
+- [x] Revisar sobre aérea ampliada ocho cuerpos de techo (11:3, 12:2, 7:2, 9:1), preservar sus formas y posiciones relativas y registrar ajuste rígido limitado de grupos 7/9. La cubierta posterior incierta del 9 permanece fuera del preview; no forzar su atribución por contención.
 
 ### Hito de preview web
 

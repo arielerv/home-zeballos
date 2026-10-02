@@ -44,6 +44,48 @@ export function signedArea(points: Point2[]) {
   }, 0) / 2
 }
 
+/** Offset an open frontage to its left, in SOURCE coordinates, not metres.
+ * Shared miter intersections keep adjacent strips connected at corners.
+ * Reject reversals/degenerate edges instead of drawing spikes.
+ */
+export function offsetFrontage(points: Point2[], distance: number): Point2[] {
+  if (points.length < 2 || !Number.isFinite(distance) || distance < 0) throw new Error('Invalid frontage offset')
+  const normals = points.slice(1).map((p, i): Point2 => {
+    const dx = p[0] - points[i][0], dy = p[1] - points[i][1]
+    const length = Math.hypot(dx, dy)
+    if (length < 1e-8) throw new Error('Duplicate frontage vertex')
+    return [-dy / length, dx / length]
+  })
+  return points.map((p, i) => {
+    const before = normals[Math.max(0, i - 1)], after = normals[Math.min(i, normals.length - 1)]
+    const denominator = 1 + before[0] * after[0] + before[1] * after[1]
+    if (denominator < .1) throw new Error('Frontage reversal would create an unbounded miter')
+    return [p[0] + distance * (before[0] + after[0]) / denominator, p[1] + distance * (before[1] + after[1]) / denominator]
+  })
+}
+
+export function frontageStrip(inner: Point2[], outer: Point2[], start = 0, end = inner.length - 1): Point2[] {
+  if (inner.length !== outer.length || start < 0 || end >= inner.length || start >= end) throw new Error('Invalid strip range')
+  return [...inner.slice(start, end + 1), ...outer.slice(start, end + 1).reverse()]
+}
+
+/** Simple polygon check for source traces and transformed review contours. */
+export function isSimplePolygon(points: Point2[]): boolean {
+  if (points.length < 3 || points.some(p => p.some(v => !Number.isFinite(v))) || Math.abs(signedArea(points)) < 1e-8) return false
+  const cross = (a: Point2, b: Point2, c: Point2) => (b[0] - a[0]) * (c[1] - a[1]) - (b[1] - a[1]) * (c[0] - a[0])
+  const on = (a: Point2, b: Point2, c: Point2) => Math.abs(cross(a, b, c)) < 1e-8 && c[0] >= Math.min(a[0], b[0]) - 1e-8 && c[0] <= Math.max(a[0], b[0]) + 1e-8 && c[1] >= Math.min(a[1], b[1]) - 1e-8 && c[1] <= Math.max(a[1], b[1]) + 1e-8
+  return points.every((a, i) => {
+    const b = points[(i + 1) % points.length]
+    if (Math.hypot(a[0] - b[0], a[1] - b[1]) < 1e-8) return false
+    return points.every((c, j) => {
+      if (j === i || j === (i + 1) % points.length || i === (j + 1) % points.length) return true
+      const d = points[(j + 1) % points.length]
+      const proper = cross(a, b, c) * cross(a, b, d) < 0 && cross(c, d, a) * cross(c, d, b) < 0
+      return !proper && !on(a, b, c) && !on(a, b, d) && !on(c, d, a) && !on(c, d, b)
+    })
+  })
+}
+
 /** Sutherland-Hodgman intersection. Lot boundaries must be convex (validated in tests). */
 export function clipToLot(subject: Point2[], clip: Point2[]): Point2[] {
   let output = subject

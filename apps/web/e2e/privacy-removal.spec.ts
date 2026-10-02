@@ -81,7 +81,7 @@ test('Casa Documentation keeps the exact original T3 dossier menu and layout, wi
 
   await page.locator('.dossier-sidebar nav button').nth(1).click()
   await expect(page.locator('.dossier-surfaces tbody tr')).toHaveCount(11)
-  await expect(page.locator('.dossier-plan-card img')).toHaveAttribute('src', /planos%20tentativa|planos-tentativa/)
+  await expect(page.locator('.dossier-plan-card img')).toHaveAttribute('src', /casa-2071-planta-limpia/)
   await expect(page.locator('.dossier-content')).not.toContainText('Carrez')
   await page.locator('.dossier-sidebar nav button').nth(4).click()
   await expect(page.locator('.dossier-source-card')).toHaveCount(8)

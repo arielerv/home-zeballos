@@ -24,6 +24,15 @@ test('Casa keeps the T3-style inspector and solar controls with the Blender mode
   for (const lot of ['lot-7', 'lot-9', 'lot-11', 'lot-12']) await expect(page.locator(`[data-casa-context="${lot}"]`)).toContainText('approximate')
   for (const street of ['zeballos', 'dardo', 'cautiva']) await expect(page.locator(`[data-casa-context="${street}"]`)).toBeVisible()
   await expect(page.locator('.casa-model-viewer canvas')).toBeVisible()
+  let previousPlanPosition: string | undefined
+  await expect.poll(async () => {
+    const box = await page.locator('[data-casa-context="lot-9"]').boundingBox()
+    const position = box ? `${Math.round(box.x)},${Math.round(box.y)}` : undefined
+    const settled = position !== undefined && position === previousPlanPosition
+    previousPlanPosition = position
+    return settled
+  }, { timeout: 10000 }).toBe(true)
+  await page.locator('.casa-model-viewer').screenshot({ path: testInfo.outputPath('casa-context-sidewalk-plan.png') })
   await page.getByRole('button', { name: 'Hide neighbors', exact: true }).click()
   await expect(page.locator('[data-casa-context="station"]')).toHaveCount(0)
   await expect(page.locator('[data-casa-context="lot-11"]')).toHaveCount(0)
@@ -68,6 +77,9 @@ test('Casa keeps the T3-style inspector and solar controls with the Blender mode
   const neighbors = page.getByRole('checkbox', { name: 'Neighbors', exact: true })
   await expect(neighbors).toBeEnabled()
   await neighbors.check()
+  await expect(page.locator('.building-workspace')).toContainText('eight roof bodies')
+  await expect(page.locator('.building-workspace')).toContainText('continuous sidewalk')
+  await expect(page.locator('.building-workspace')).toContainText('rear roof of 9 has no secure attribution')
   await expect(page.locator('[data-casa-context="station"]')).toBeVisible()
   // Wait for the real camera transition via render stability, not a fixed delay.
   let previousContextFrame: Buffer | undefined

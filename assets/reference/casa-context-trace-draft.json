@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "status": "approximate-context-review-only",
   "requestedAt": "2026-10-02",
   "metricCalibrated": false,
@@ -41,18 +41,53 @@
   "modelSource": "apps/web/public/models/casa-2071/casa-2071-maqueta-revision.glb",
   "siteObject": "Contorno trazado de la planta - no mensura",
   "modelUnits": "existing arbitrary review display coordinates, NOT calibrated metres",
+  "revision": {
+    "request": "las calles estan muy anchas y algo deformadas.. tenes que agregarle las veredas a la manzana o las casas en general. ademas revisa las casas de los vecinos porque no estan muy bien",
+    "reviewedAt": "2026-10-02",
+    "evidence": "Same north-up 80m aerial, checked at 40m for roof detail and 120m for the divided avenue. Research images remain private. Coordinates below remain in the original 1055x654 aerial frame.",
+    "detailView": {"url":"https://www.google.com/maps/@-34.65883,-58.63555,40m/data=!3m1!1e3", "originalToDetailPixels":{"scale":2,"translation":[-528,-327]}, "status":"visual screen correspondence, NOT metric calibration"},
+    "roofReview": "Lot 11 has a west wing, triangular rear roof and front body, not one simplified envelope. Lot 12 main roof and small rear annex are separate. Lot 7 has a notched flat-roof body plus west annex. Lot 9 retains its identifiable front body; the apparent rear roof at [637,361]..[697,375] fails the parcel assignment and is NOT added as a neighbor. Surface types are visual observations, not construction specifications.",
+    "placement": "Use one rigid source-pixel shift for all bodies of a neighbor, never shift/deform individual bodies. Lots 11/12 retain >=98% unshifted. Retraced lot 7 needs a small minimum shift bounded by the same declared source uncertainty as lot 9. These are review placements, not validated footprints; report raw and fitted fractions and displacement units."
+  },
+  "roadReview": {
+    "units": "cartography source pixels; observed aerial sections transformed to this frame, NOT metres",
+    "blockFrontage": [[547,475],[591,663],[615,774],[687,848],[1417,1038],[1487,950],[1316,260]],
+    "frontageSource": "Visible Carto parcel frontage and both 6m-labeled chamfers (labels not used as scale). The open chain covers the visible neighboring block faces, not an invented full block.",
+    "sidewalkSectionAerial": [[303,408],[320,404]],
+    "carriagewaySectionsAerial": [
+      {"street":"La Cautiva", "points":[[226,302],[291,289]]},
+      {"street":"Dardo Rocha", "points":[[738,425],[791,413]]},
+      {"street":"Zeballos nearest lane", "points":[[353,512],[338,569]]}
+    ],
+    "sectionStatus": "Approximate visual curb picks; tree/shadow occlusion remains. Use the mean transformed carriageway section for a coherent schematic strip, not cadastral public-space width. Sidewalk extends outward from the parcel frontage; corner joins are shared, not independently skewed polygons.",
+    "avenue": {"source":"https://www.google.com/maps/@-34.65900,-58.63570,120m/data=!3m1!1e3", "medianCartoPixels":18, "oppositeLane":"same schematic section as near lane; approximate visual estimate from broader aerial", "medianStatus":"estimated source-pixel separator, not measured width"},
+    "streetRanges": {"cautiva":[0,3],"zeballos":[3,4],"dardo":[4,6]},
+    "supersedes": "The historic streets[].polygon shapes below represented the whole public corridor, including sidewalks. Preserve them as rejected trace history; do not render them as asphalt."
+  },
   "neighbors": [
-    {"id":"lot-11", "lot":"11", "sharedEdge":[5,6,0], "parcel":[[591,663],[902,575],[952,757],[922,907],[687,848],[615,774]], "roofAerial":[[339,351],[467,350],[483,407],[473,432],[459,451],[353,416],[329,402]]},
-    {"id":"lot-12", "lot":"12", "sharedEdge":[5], "parcel":[[547,475],[931,367],[974,554],[902,575],[591,663]], "roofAerial":[[314,277],[451,252],[471,307],[483,318],[338,350]]},
-    {"id":"lot-7", "lot":"7", "sharedEdge":[4,5], "parcel":[[931,367],[1316,260],[1358,445],[974,554]], "roofAerial":[[550,214],[619,199],[640,270],[570,286],[556,268]]},
-    {"id":"lot-9", "lot":"9", "sharedEdge":[1,2,3], "parcel":[[1252,670],[1402,630],[1487,950],[1417,1038],[1187,974]], "roofAerial":[[613,423],[681,438],[671,493],[593,470]], "roofScope":"only the clear front tiled roof body; rear roof/garage parcel assignment is uncertain and omitted", "ownerConfirmedAdjacency":true, "placement":"minimum shape-preserving translation inside conservative source-pixel uncertainty envelope; estimated, not measured"}
+    {"id":"lot-11", "lot":"11", "sharedEdge":[5,6,0], "parcel":[[591,663],[902,575],[952,757],[922,907],[687,848],[615,774]], "roofAerial":[[339,351],[467,350],[483,407],[473,432],[459,451],[353,416],[329,402]], "roofBodies":[
+      {"id":"west", "surface":"tile", "polygon":[[324,355],[372,352],[369,384],[338,401]]},
+      {"id":"rear", "surface":"tile", "polygon":[[372,352],[461,323],[484,407]]},
+      {"id":"front", "surface":"tile", "polygon":[[372,352],[484,407],[473,445],[363,427]]}
+    ]},
+    {"id":"lot-12", "lot":"12", "sharedEdge":[5], "parcel":[[547,475],[931,367],[974,554],[902,575],[591,663]], "roofAerial":[[314,277],[451,252],[471,307],[483,318],[338,350]], "roofBodies":[
+      {"id":"main", "surface":"tile", "polygon":[[316,279],[459,258],[468,316],[334,350]]},
+      {"id":"annex", "surface":"tile", "polygon":[[465,290],[490,285],[497,311],[472,321]]}
+    ]},
+    {"id":"lot-7", "lot":"7", "sharedEdge":[4,5], "parcel":[[931,367],[1316,260],[1358,445],[974,554]], "roofAerial":[[550,214],[619,199],[640,270],[570,286],[556,268]], "roofBodies":[
+      {"id":"main", "surface":"flat", "polygon":[[556,212],[585,203],[587,224],[630,214],[640,273],[588,285],[584,271],[569,273]]},
+      {"id":"annex", "surface":"flat", "polygon":[[531,243],[556,235],[562,258],[534,264]]}
+    ]},
+    {"id":"lot-9", "lot":"9", "sharedEdge":[1,2,3], "parcel":[[1252,670],[1402,630],[1487,950],[1417,1038],[1187,974]], "roofAerial":[[613,423],[681,438],[671,493],[593,470]], "roofBodies":[
+      {"id":"front", "surface":"tile", "polygon":[[613,423],[681,438],[671,493],[593,470]]}
+    ], "roofScope":"only the clear front tiled roof body; rear roof/garage parcel assignment is uncertain and omitted", "ownerConfirmedAdjacency":true, "placement":"minimum shape-preserving translation inside conservative source-pixel uncertainty envelope; estimated, not measured"}
   ],
   "streets": [
     {"id":"zeballos", "label":"Zeballos", "polygon":[[230,713],[687,848],[1417,1038],[1765,1132],[1850,1390],[1740,1370],[250,949],[170,914]]},
     {"id":"dardo", "label":"Dardo Rocha", "polygon":[[1240,0],[1487,950],[1417,1038],[1765,1132],[1810,1120],[1570,0]]},
     {"id":"cautiva", "label":"La Cautiva", "polygon":[[254,0],[422,0],[615,774],[687,848],[354,790],[439,686]]}
   ],
-  "processing": "Least-squares affine carto-to-existing-display-site fit over all seven common corners. Roof pixels mapped by separate inferred aerial-to-carto least-squares fit. Containment must reach 98%; never replace a roof by a clipped parcel-shaped roof. For owner-confirmed corner lot 9 only, a minimum rigid translation may fit the unchanged polygon inside the lot if its length is bounded by the conservative sum of declared picking uncertainty (15 aerial pixels) and actual affine residual mapped back to aerial pixels (5.8623 max). Computed shift is 18.9484 pixels, inside the 20.8623-pixel envelope. This is explicitly a provisional placement compensation, NOT verification of real building boundaries. No heights, no extrusion, no neighbor shadows. Streets include approximate sidewalks, not measured lane widths.",
+  "processing": "Least-squares affine carto-to-existing-display-site fit over all seven common corners. Retraced roof bodies use the same inferred aerial-to-carto fit. Weighted body-area containment must reach 98%; never clip or deform roofs. All bodies of a neighbor share one minimum SOURCE-pixel rigid translation, bounded by 15 picking + 5.8623 inverse-projected residual = 20.8623 aerial pixels. Revised lot 7 shift is 5.4482 pixels; lot 9 retains 18.9484; lots 11/12 remain unshifted. Report raw failures as well as estimated placed fractions. No heights, extrusion, shadows or verified wall footprints. Road/sidewalk offsets are computed in source Carto pixels from recorded visual sections: sidewalk 38.4708; schematic lane 125.3290; median 18 estimated. Shared miter joins preserve corner continuity. Legacy public-space polygons are history only, NOT rendered asphalt. No conversion to metric widths or model calibration.",
   "limitations": [
     "Parcel polygons and roof outlines are different objects, shown with different styles.",
     "Roof-to-lot assignments and both transforms are approximate, unreviewed; image roofs are not surveyed wall footprints.",
